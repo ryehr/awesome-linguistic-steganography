@@ -10016,10 +10016,11 @@
   }
  ],
  "charts": [
+  "assets/taxonomy.svg",
+  "assets/papers-by-year.svg",
   "assets/generative-targets.svg",
   "assets/llm-era-features.svg",
   "assets/metric-adoption.svg",
-  "assets/papers-by-year.svg",
   "assets/steganalysis-by-year.svg"
  ]
 }

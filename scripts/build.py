@@ -22,7 +22,7 @@ PAGES = "https://ryehr.github.io/awesome-linguistic-steganography/"
 
 AREAS = {"surveys": "Surveys", "modification": "Modification-based", "generative": "Generative",
          "steganalysis": "Steganalysis"}
-AREA_COLOR = {"modification": "#C28F00", "generative": "#005CB8", "steganalysis": "#563194", "surveys": "#5F6B7A"}
+AREA_COLOR = {"modification": "#E67800", "generative": "#005CB8", "steganalysis": "#563194", "surveys": "#5F6B7A"}
 TARGET_COLOR = {"security": "#2F855A", "efficiency": "#005CB8", "robustness": "#E67800", "multiple": "#8E44AD"}
 GROUP_COLOR = {"security": "#2F855A", "efficiency": "#005CB8", "robustness": "#E67800"}
 LINK_KEYS = ["paper", "arxiv", "code", "project", "video", "slides", "poster"]
@@ -142,33 +142,40 @@ def nice_max(v):
     return v, v // 5
 
 
-def svg(w, h, title, body):
+W = 900  # about the width of GitHub's README column, so charts render at ~1:1
+
+
+def svg(w, h, title, body, note=""):
+    sub = f'<text x="24" y="64" font-size="15" fill="#5f6b7a">{escape(note)}</text>' if note else ""
     return (f'<svg xmlns="http://www.w3.org/2000/svg" width="{w}" height="{h}" viewBox="0 0 {w} {h}" '
-            f'font-family="{FONT}"><rect width="{w}" height="{h}" rx="10" fill="#ffffff" stroke="#e1e4e8"/>'
-            f'<text x="20" y="30" font-size="17" font-weight="600" fill="#0D2F71">{escape(title)}</text>{body}</svg>\n')
+            f'font-family="{FONT}"><rect x="0.5" y="0.5" width="{w - 1}" height="{h - 1}" rx="12" fill="#ffffff" '
+            f'stroke="#e1e4e8"/><text x="24" y="40" font-size="22" font-weight="700" fill="#0D2F71">'
+            f'{escape(title)}</text>{sub}{body}</svg>\n')
 
 
-def legend(items, x, y):
+def legend(items, x, y, size=16):
     out = []
     for label, color in items:
-        out.append(f'<rect x="{x}" y="{y - 10}" width="12" height="12" rx="2" fill="{color}"/>'
-                   f'<text x="{x + 17}" y="{y}" font-size="13" fill="#3d4752">{escape(label)}</text>')
-        x += 32 + 7.2 * len(label)
+        out.append(f'<rect x="{x}" y="{y - 13}" width="16" height="16" rx="3" fill="{color}"/>'
+                   f'<text x="{x + 22}" y="{y}" font-size="{size}" fill="#3d4752">{escape(label)}</text>')
+        x += 46 + 0.55 * size * len(label)
     return "".join(out)
 
 
-def stacked_bars(title, cats, series, w=860, h=330):
-    left, right, top, bottom = 46, 18, 70, 38
+def stacked_bars(title, cats, series, note="", w=W, h=430):
+    top = 124 if note else 104
+    left, right, bottom = 58, 22, 46
     pw, ph = w - left - right, h - top - bottom
     totals = [sum(vals[i] for _, _, vals in series) for i in range(len(cats))]
     ymax, step = nice_max(max(totals) or 1)
-    body = [legend([(s[0], s[1]) for s in series], 20, 54)]
+    body = [legend([(s[0], s[1]) for s in series], 24, top - 34)]
     for v in range(0, ymax + 1, step):
         y = top + ph - v / ymax * ph
         body.append(f'<line x1="{left}" x2="{w - right}" y1="{y:.1f}" y2="{y:.1f}" stroke="#eaecef"/>'
-                    f'<text x="{left - 8}" y="{y + 4:.1f}" font-size="11" fill="#6a737d" text-anchor="end">{v}</text>')
+                    f'<text x="{left - 10}" y="{y + 5:.1f}" font-size="15" fill="#5f6b7a" text-anchor="end">{v}</text>')
     slot = pw / len(cats)
-    bw = min(28, slot * 0.72)
+    bw = min(44, slot * 0.72)
+    every = 1 if slot >= 44 else 2
     for i, cat in enumerate(cats):
         x = left + i * slot + (slot - bw) / 2
         y0 = top + ph
@@ -178,58 +185,141 @@ def stacked_bars(title, cats, series, w=860, h=330):
                 body.append(f'<rect x="{x:.1f}" y="{y0 - hgt:.1f}" width="{bw:.1f}" height="{hgt:.1f}" fill="{color}"/>')
             y0 -= hgt
         if totals[i]:
-            body.append(f'<text x="{x + bw / 2:.1f}" y="{y0 - 4:.1f}" font-size="11" fill="#24292e" '
+            body.append(f'<text x="{x + bw / 2:.1f}" y="{y0 - 6:.1f}" font-size="15" font-weight="600" fill="#24292e" '
                         f'text-anchor="middle">{totals[i]}</text>')
-        if len(cats) <= 16 or i % 2 == len(cats) % 2 or i == len(cats) - 1:
-            body.append(f'<text x="{x + bw / 2:.1f}" y="{top + ph + 18}" font-size="11" fill="#6a737d" '
+        if (len(cats) - 1 - i) % every == 0:
+            body.append(f'<text x="{x + bw / 2:.1f}" y="{top + ph + 26}" font-size="15" fill="#5f6b7a" '
                         f'text-anchor="middle">{escape(str(cat))}</text>')
-    return svg(w, h, title, "".join(body))
+    return svg(w, h, title, "".join(body), note)
 
 
-def line_chart(title, labels, series, w=860, h=330, note=""):
-    left, right, top, bottom = 52, 150, 70, 46
+def line_chart(title, labels, series, note="", w=W, h=420):
+    left, right, top, bottom = 64, 230, 96, 52
     pw, ph = w - left - right, h - top - bottom
     body = []
     for v in range(0, 101, 25):
         y = top + ph - v / 100 * ph
         body.append(f'<line x1="{left}" x2="{left + pw}" y1="{y:.1f}" y2="{y:.1f}" stroke="#eaecef"/>'
-                    f'<text x="{left - 8}" y="{y + 4:.1f}" font-size="11" fill="#6a737d" text-anchor="end">{v}%</text>')
+                    f'<text x="{left - 10}" y="{y + 5:.1f}" font-size="15" fill="#5f6b7a" text-anchor="end">{v}%</text>')
     xs = [left + i * pw / (len(labels) - 1) for i in range(len(labels))]
     for x, lab in zip(xs, labels):
-        body.append(f'<text x="{x:.1f}" y="{top + ph + 20}" font-size="12" fill="#6a737d" text-anchor="middle">'
+        body.append(f'<text x="{x:.1f}" y="{top + ph + 30}" font-size="16" fill="#3d4752" text-anchor="middle">'
                     f'{escape(lab)}</text>')
+    label_y, last = {}, -99
+    for v, name in sorted(((vals[-1], name) for name, _, vals in series), reverse=True):  # labels >= 22 px apart
+        y = max(top + ph - v / 100 * ph + 5, last + 22)
+        label_y[name], last = y, y
     for name, color, vals in series:
         pts = " ".join(f"{x:.1f},{top + ph - v / 100 * ph:.1f}" for x, v in zip(xs, vals))
-        body.append(f'<polyline points="{pts}" fill="none" stroke="{color}" stroke-width="3"/>')
+        body.append(f'<polyline points="{pts}" fill="none" stroke="{color}" stroke-width="4" stroke-linejoin="round"/>')
         for x, v in zip(xs, vals):
-            body.append(f'<circle cx="{x:.1f}" cy="{top + ph - v / 100 * ph:.1f}" r="4.5" fill="{color}"/>')
-        body.append(f'<text x="{xs[-1] + 12:.1f}" y="{top + ph - vals[-1] / 100 * ph + 4:.1f}" font-size="13" '
-                    f'fill="{color}" font-weight="600">{escape(name)} {vals[-1]}%</text>')
-    if note:
-        body.append(f'<text x="20" y="54" font-size="12" fill="#6a737d">{escape(note)}</text>')
-    return svg(w, h, title, "".join(body))
+            body.append(f'<circle cx="{x:.1f}" cy="{top + ph - v / 100 * ph:.1f}" r="6" fill="{color}"/>')
+        body.append(f'<text x="{xs[-1] + 16:.1f}" y="{label_y[name]:.1f}" font-size="17" fill="{color}" '
+                    f'font-weight="700">{escape(name)} {vals[-1]}%</text>')
+    return svg(w, h, title, "".join(body), note)
 
 
-def heatmap(title, cols, rows, w=860, note=""):
-    left, top, rh = 210, 78, 22
+def heatmap(title, cols, rows, note="", w=W):
+    left, top, rh = 250, 112, 34
     cw = (w - left - 24) / len(cols)
     h = top + rh * len(rows) + 24
-    body = [f'<text x="20" y="54" font-size="12" fill="#6a737d">{escape(note)}</text>'] if note else []
+    body = []
     for j, c in enumerate(cols):
-        body.append(f'<text x="{left + j * cw + cw / 2:.1f}" y="{top - 8}" font-size="12" font-weight="600" '
+        body.append(f'<text x="{left + j * cw + cw / 2:.1f}" y="{top - 12}" font-size="16" font-weight="700" '
                     f'fill="#3d4752" text-anchor="middle">{escape(c)}</text>')
     for i, (label, color, vals) in enumerate(rows):
         y = top + i * rh
-        body.append(f'<rect x="20" y="{y + 4}" width="4" height="{rh - 8}" fill="{color}"/>'
-                    f'<text x="30" y="{y + rh / 2 + 4:.1f}" font-size="12" fill="#24292e">{escape(label)}</text>')
+        body.append(f'<rect x="24" y="{y + 6}" width="6" height="{rh - 12}" rx="2" fill="{color}"/>'
+                    f'<text x="40" y="{y + rh / 2 + 6:.1f}" font-size="16" fill="#24292e">{escape(label)}</text>')
         for j, v in enumerate(vals):
-            op = 0.06 + 0.94 * v / 100 if v else 0
-            fill = color if v else "#f6f8fa"
-            body.append(f'<rect x="{left + j * cw + 1:.1f}" y="{y + 1}" width="{cw - 2:.1f}" height="{rh - 2}" '
-                        f'fill="{fill}" fill-opacity="{op if v else 1:.2f}"/>'
-                        f'<text x="{left + j * cw + cw / 2:.1f}" y="{y + rh / 2 + 4:.1f}" font-size="11" '
+            fill = mix(color, 0.08 + 0.92 * v / 100) if v else "#f6f8fa"
+            body.append(f'<rect x="{left + j * cw + 2:.1f}" y="{y + 2}" width="{cw - 4:.1f}" height="{rh - 4}" '
+                        f'rx="4" fill="{fill}"/><text x="{left + j * cw + cw / 2:.1f}" y="{y + rh / 2 + 6:.1f}" '
+                        f'font-size="16" font-weight="{600 if v >= 50 else 400}" '
                         f'fill="{"#ffffff" if v >= 50 else "#24292e"}" text-anchor="middle">{v}%</text>')
-    return svg(w, h, title, "".join(body))
+    return svg(w, h, title, "".join(body), note)
+
+
+def mix(color, t):
+    """Blend white -> color by t in [0, 1]."""
+    c = [int(color.lstrip("#")[i:i + 2], 16) for i in (0, 2, 4)]
+    return "#" + "".join(f"{round(255 + (v - 255) * t):02X}" for v in c)
+
+
+def wrap(text, width):
+    lines, cur = [], ""
+    for word in text.split():
+        if cur and len(cur) + 1 + len(word) > width:
+            lines.append(cur)
+            cur = word
+        else:
+            cur = f"{cur} {word}".strip()
+    return lines + [cur]
+
+
+def taxonomy_svg(taxonomy, papers, w=W):
+    """Horizontal tree (area -> group -> leaf) with entry counts, in the style of the survey's figures."""
+    ROW, BOX, GAP_G, GAP_A = 38, 30, 14, 34
+    AX, AW, GX, GW, LX = 24, 196, 254, 236, 528
+    LW = w - 24 - LX
+    body, y = [], 84
+    for area in ("modification", "generative", "steganalysis"):
+        color, node, recs = AREA_COLOR[area], taxonomy[area], papers[area]
+        groups = []
+        for k1, n1 in node["children"].items():
+            p1 = f"{area}/{k1}"
+            items = [(n2["name"], sum(f"{p1}/{k2}" in r.get("categories", []) for r in recs))
+                     for k2, n2 in n1["children"].items()]
+            extra = sum(p1 in r.get("categories", []) for r in recs)
+            if extra:
+                items.append(("Not further classified", extra))
+            groups.append((n1["name"], sum(under(r.get("categories", []), p1) for r in recs), items))
+        pending = sum(area in r.get("categories", []) for r in recs)
+        if pending:
+            groups.append(("Awaiting classification", pending, []))
+
+        area_top, mids = y, []
+        for gname, gcount, items in groups:
+            g_top = y
+            block = len(items) * ROW - (ROW - BOX) if items else 0
+            g_bot = g_top + max(block, 48)
+            offset = (g_bot - g_top - block) / 2
+            rows = [(g_top + offset + i * ROW, name, count) for i, (name, count) in enumerate(items)]
+            y = g_bot + (ROW - BOX)
+            mid = (g_top + g_bot) / 2
+            for ry, name, count in rows:
+                body.append(f'<path d="M{GX + GW},{mid:.0f} H{GX + GW + 18} V{ry + BOX / 2:.0f} H{LX}" fill="none" '
+                            f'stroke="{color}" stroke-width="2"/>'
+                            f'<rect x="{LX}" y="{ry}" width="{LW}" height="{BOX}" rx="7" fill="{mix(color, 0.1)}"/>'
+                            f'<text x="{LX + 14}" y="{ry + 21}" font-size="16" fill="#24292e">{escape(name)}</text>'
+                            f'<rect x="{LX + LW - 54}" y="{ry + 4}" width="46" height="22" rx="11" '
+                            f'fill="{color if count else "#c9cfd6"}"/><text x="{LX + LW - 31}" y="{ry + 20}" '
+                            f'font-size="15" font-weight="700" fill="#ffffff" text-anchor="middle">{count}</text>')
+            lines = wrap(gname, 24)
+            body.append(f'<rect x="{GX}" y="{g_top}" width="{GW}" height="{g_bot - g_top}" rx="9" fill="{mix(color, 0.28)}"/>')
+            ty = mid - (len(lines) * 19 + 18) / 2 + 15
+            for k, line in enumerate(lines):
+                body.append(f'<text x="{GX + 14}" y="{ty + 19 * k:.0f}" font-size="16" font-weight="700" '
+                            f'fill="#1f2933">{escape(line)}</text>')
+            body.append(f'<text x="{GX + 14}" y="{ty + 19 * len(lines):.0f}" font-size="14" fill="#3d4752">'
+                        f'{gcount} entr{"y" if gcount == 1 else "ies"}</text>')
+            mids.append(mid)
+            y += GAP_G
+        area_bot = y - GAP_G
+        amid = (area_top + area_bot) / 2
+        for mid in mids:
+            body.append(f'<path d="M{AX + AW},{amid:.0f} H{AX + AW + 20} V{mid:.0f} H{GX}" fill="none" '
+                        f'stroke="{color}" stroke-width="2.5"/>')
+        lines = wrap(node["name"], 14)
+        body.append(f'<rect x="{AX}" y="{area_top}" width="{AW}" height="{area_bot - area_top}" rx="12" fill="{color}"/>')
+        ty = amid - (len(lines) * 23 + 22) / 2 + 18
+        for k, line in enumerate(lines):
+            body.append(f'<text x="{AX + AW / 2}" y="{ty + 23 * k:.0f}" font-size="19" font-weight="700" fill="#ffffff" '
+                        f'text-anchor="middle">{escape(line)}</text>')
+        body.append(f'<text x="{AX + AW / 2}" y="{ty + 23 * len(lines) + 2:.0f}" font-size="16" fill="#ffffff" '
+                    f'text-anchor="middle" opacity="0.9">{len(recs)} entries</text>')
+        y = area_bot + GAP_A
+    return svg(w, y - GAP_A + 24, "Taxonomy (number of entries)", "".join(body))
 
 
 # ---------------------------------------------------------------------------
@@ -275,10 +365,11 @@ def statistics(papers, metrics):
             vals.append(pct(hit, len(sub)))
         adoption.append((label, GROUP_COLOR[group_of[tid]], vals))
     stg_years = sorted({r["year"] for r in stg})
-    stg_kind = {k: [0] * len(stg_years) for k in ("self-trained", "pre-trained", "LLM-based")}
+    stg_kind = {k: [0] * len(stg_years) for k in ("self-trained", "pre-trained", "LLM-based", "not annotated")}
     for r in stg:
         f = r.get("features") or {}
-        kind = "LLM-based" if f.get("llm_based") else "pre-trained" if f.get("pretrained") else "self-trained"
+        kind = ("LLM-based" if f.get("llm_based") else "pre-trained" if f.get("pretrained")
+                else "self-trained" if "pretrained" in f else "not annotated")
         stg_kind[kind][stg_years.index(r["year"])] += 1
     all_papers = [r for recs in papers.values() for r in recs]
     return {
@@ -292,32 +383,35 @@ def statistics(papers, metrics):
     }
 
 
-def write_charts(S):
+def write_charts(S, taxonomy, papers):
+    """Write all SVGs; return the trend charts (name, alt text) in display order."""
     ASSETS.mkdir(parents=True, exist_ok=True)
     charts = {
-        "papers-by-year.svg": stacked_bars(
-            "Papers per year", S["span"],
+        "papers-by-year.svg": ("Papers per year", stacked_bars(
+            "Papers per year, by area", S["span"],
             [(AREAS[a], AREA_COLOR[a], [S["by_year"][a].get(y, 0) for y in S["span"]])
-             for a in ("modification", "generative", "steganalysis")]),
-        "generative-targets.svg": stacked_bars(
+             for a in ("modification", "generative", "steganalysis")])),
+        "generative-targets.svg": ("Generative methods by targeted metric", stacked_bars(
             "Generative methods per year, by targeted metric", S["gen_years"],
-            [(t.capitalize(), c, S["targets"][t]) for t, c in TARGET_COLOR.items()]),
-        "llm-era-features.svg": line_chart(
+            [(t.capitalize(), c, S["targets"][t]) for t, c in TARGET_COLOR.items()])),
+        "llm-era-features.svg": ("Methodology features of generative methods", line_chart(
             "Methodology features of generative methods", [p for p, _ in PERIODS],
             [(label, c, S["features"][label]) for label, c in
              zip(GEN_FEATURES.values(), ("#005CB8", "#2F855A", "#E67800", "#C0392B"))],
-            note="Share of generative-method papers in each period (entries with all four features annotated)"),
-        "metric-adoption.svg": heatmap(
+            note="Share of generative-method papers per period (entries with all four features annotated)")),
+        "metric-adoption.svg": ("Adoption of evaluation metrics", heatmap(
             "Evaluation metrics adopted by generative-method papers",
             [f"{p} (n={n})" for (p, _), n in zip(PERIODS, S["eval_n"])], S["adoption"],
-            note="Share of papers in each period that report the metric"),
-        "steganalysis-by-year.svg": stacked_bars(
+            note="Share of papers in each period that report the metric")),
+        "steganalysis-by-year.svg": ("Steganalysis methods per year", stacked_bars(
             "Steganalysis methods per year, by representation", S["stg_years"],
-            [(k, c, S["stg_kind"][k]) for k, c in zip(S["stg_kind"], ("#9AA5B1", "#563194", "#D81B60"))]),
+            [(k, c, S["stg_kind"][k]) for k, c in
+             zip(S["stg_kind"], ("#9AA5B1", "#563194", "#D81B60", "#E1E4E8"))])),
     }
-    for name, content in charts.items():
+    (ASSETS / "taxonomy.svg").write_text(taxonomy_svg(taxonomy, papers), encoding="utf-8")
+    for name, (_, content) in charts.items():
         (ASSETS / name).write_text(content, encoding="utf-8")
-    return list(charts)
+    return [(name, alt) for name, (alt, _) in charts.items()]
 
 
 # ---------------------------------------------------------------------------
@@ -459,26 +553,6 @@ def code_md(papers):
     return "\n".join(out)
 
 
-def mermaid(taxonomy, papers):
-    lines = ["```mermaid", "mindmap", "  root((Linguistic steganography))"]
-    for area in ("modification", "generative", "steganalysis"):
-        node, recs = taxonomy[area], papers[area]
-        lines.append(f"    {node['name']} · {len(recs)}")
-        for k1, n1 in node["children"].items():
-            p1 = f"{area}/{k1}"
-            n = sum(under(r.get("categories", []), p1) for r in recs)
-            lines.append(f"      {n1['name'].split(' (')[0]} · {n}")
-            for k2, n2 in n1["children"].items():
-                m = sum(f"{p1}/{k2}" in r.get("categories", []) for r in recs)
-                if m:
-                    lines.append(f"        {n2['name']} · {m}")
-        pending = sum(area in r.get("categories", []) for r in recs)
-        if pending:
-            lines.append(f"      Awaiting classification · {pending}")
-    lines.append("```")
-    return "\n".join(lines)
-
-
 def badges(S):
     b = lambda label, value, color: f"https://img.shields.io/badge/{label}-{value}-{color}"
     return " ".join([
@@ -498,13 +572,13 @@ def render_readme(papers, taxonomy, metrics, datasets, S, charts):
         f"| [Evaluation metrics](#evaluation-metrics) | {len(metrics)} | |",
         f"| [Datasets](#datasets-and-benchmarks) | {len(datasets)} | |",
     ])
-    figs = "\n".join(f'<img src="docs/assets/{c}" width="49%" alt="{c[:-4]}"/>' for c in charts)
+    figs = "\n\n".join(f"![{alt}](docs/assets/{name})" for name, alt in charts)
     values = {
         "BADGES": badges(S), "PAGES": PAGES, "REPO": REPO, "COUNTS": counts, "CHARTS": figs,
         "N_PAPERS": str(S["n_papers"]), "N_METHODS": str(S["n_methods"]), "N_NOLINK": str(S["n_nolink"]),
         "N_NOCODE": str(S["n_papers"] - S["n_code"]), "N_BEYOND": str(S["n_beyond"]),
         "BEYOND": beyond_md(papers),
-        "TAXONOMY": mermaid(taxonomy, papers), "SURVEYS": surveys_md(papers["surveys"]),
+        "TAXONOMY": "![Taxonomy with entry counts](docs/assets/taxonomy.svg)", "SURVEYS": surveys_md(papers["surveys"]),
         "MODIFICATION": area_section("modification", papers["modification"], taxonomy),
         "GENERATIVE": area_section("generative", papers["generative"], taxonomy),
         "GENERATIVE_TABLE": generative_table(papers["generative"]),
@@ -523,7 +597,7 @@ def render_readme(papers, taxonomy, metrics, datasets, S, charts):
 # ---------------------------------------------------------------------------
 #  Pages data
 # ---------------------------------------------------------------------------
-def write_pages_data(papers, taxonomy, metrics, datasets, S):
+def write_pages_data(papers, taxonomy, metrics, datasets, S, charts):
     names = {p: n["name"] for p, n in leaves(taxonomy).items()}
     all_names = {p: n["name"] for p, n in nodes(taxonomy).items()}
     entries = []
@@ -542,7 +616,7 @@ def write_pages_data(papers, taxonomy, metrics, datasets, S):
                   "metrics": len(metrics), "datasets": len(datasets),
                   "by_area": {a: len(papers[a]) for a in AREAS}},
         "taxonomy": taxonomy, "category_names": names, "entries": entries, "metrics": metrics,
-        "datasets": datasets, "charts": [f"assets/{c}" for c in sorted(p.name for p in ASSETS.glob("*.svg"))],
+        "datasets": datasets, "charts": ["assets/taxonomy.svg"] + [f"assets/{name}" for name, _ in charts],
     }
     (DOCS / "data.json").write_text(json.dumps(data, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
 
@@ -556,9 +630,9 @@ def main():
         print("Validation failed:\n  " + "\n  ".join(errors), file=sys.stderr)
         sys.exit(1)
     S = statistics(papers, metrics)
-    charts = write_charts(S)
+    charts = write_charts(S, taxonomy, papers)
     (ROOT / "README.md").write_text(render_readme(papers, taxonomy, metrics, datasets, S, charts), encoding="utf-8")
-    write_pages_data(papers, taxonomy, metrics, datasets, S)
+    write_pages_data(papers, taxonomy, metrics, datasets, S, charts)
     print(f"OK: {S['n_papers']} entries ({S['n_methods']} methods, {len(papers['steganalysis'])} steganalysis, "
           f"{len(papers['surveys'])} surveys), {S['n_code']} with code; wrote README.md, docs/data.json, "
           f"{len(charts)} charts")

@@ -38,13 +38,15 @@ The collection was seeded from our survey *[A Comprehensive Survey on Linguistic
 | [Evaluation metrics](#evaluation-metrics) | 23 | |
 | [Datasets](#datasets-and-benchmarks) | 4 | |
 
-<p align="center">
-<img src="docs/assets/papers-by-year.svg" width="49%" alt="papers-by-year"/>
-<img src="docs/assets/generative-targets.svg" width="49%" alt="generative-targets"/>
-<img src="docs/assets/llm-era-features.svg" width="49%" alt="llm-era-features"/>
-<img src="docs/assets/metric-adoption.svg" width="49%" alt="metric-adoption"/>
-<img src="docs/assets/steganalysis-by-year.svg" width="49%" alt="steganalysis-by-year"/>
-</p>
+![Papers per year](docs/assets/papers-by-year.svg)
+
+![Generative methods by targeted metric](docs/assets/generative-targets.svg)
+
+![Methodology features of generative methods](docs/assets/llm-era-features.svg)
+
+![Adoption of evaluation metrics](docs/assets/metric-adoption.svg)
+
+![Steganalysis methods per year](docs/assets/steganalysis-by-year.svg)
 
 **Help wanted:** 39 entries still lack a paper link and 275 lack a code link. If you know one, please [open an issue](https://github.com/ryehr/awesome-linguistic-steganography/issues/new/choose).
 
@@ -134,49 +136,7 @@ The collection was seeded from our survey *[A Comprehensive Survey on Linguistic
 
 Methods are organised by *how* bits are embedded (modifying a covertext vs. generating a stegotext) and, for generative methods, by the *targeted metric* (security, efficiency, robustness). Steganalysis methods are organised by the representations they build on. Numbers are entry counts; an entry may belong to several categories.
 
-```mermaid
-mindmap
-  root((Linguistic steganography))
-    Modification-based Methods · 59
-      Format-based · 26
-        Space-based · 9
-        Encoding-based · 8
-        Font-based · 8
-        Spelling-based · 2
-      Lexicon-based · 22
-        Synonym-based · 13
-        Masked-LM-based · 9
-      Rewriting-based · 11
-        Syntax-based · 3
-        Paraphrasing-based · 8
-    Generative Linguistic Steganography · 139
-      Toward Higher Security · 81
-        Optimizing Modeling · 31
-        Provable Security · 26
-        Powered by LLMs · 16
-        Other · 8
-      Toward Higher Efficiency · 32
-        More Embedding Units · 9
-        Entropy / Utilization · 12
-        Other · 11
-      Toward Higher Robustness · 27
-        Tokenization Inconsistency · 8
-        External Modification · 17
-        Context Synchronization · 1
-      Awaiting classification · 1
-    Linguistic Steganalysis · 78
-      Self-trained Word Representations · 23
-        RNN-based · 3
-        CNN-based · 5
-        GNN-based · 6
-        Hybrid · 6
-        Other · 3
-      Pre-trained Word Representations · 45
-        Masked-LM-based · 28
-        Generative LM / LLM-based · 9
-        Other · 5
-      Awaiting classification · 10
-```
+![Taxonomy with entry counts](docs/assets/taxonomy.svg)
 
 ## Surveys
 
