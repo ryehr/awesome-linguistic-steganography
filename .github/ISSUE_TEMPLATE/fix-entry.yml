@@ -1,0 +1,17 @@
+name: Fix an entry
+description: Report a wrong link, category, venue, feature or missing code.
+labels: [correction]
+body:
+  - type: input
+    id: entry
+    attributes:
+      label: Entry (title or id)
+    validations:
+      required: true
+  - type: textarea
+    id: fix
+    attributes:
+      label: What should be changed?
+      placeholder: e.g. code is at https://github.com/..., category should be generative/robustness/tokenization
+    validations:
+      required: true

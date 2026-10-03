@@ -1,0 +1,23 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -r requirements.txt
+      - name: Validate data and regenerate README / dashboard
+        run: python scripts/build.py
+      - name: Generated files must be committed
+        run: |
+          if ! git diff --exit-code -- README.md docs/; then
+            echo "::error::Generated files are out of date. Run 'python scripts/build.py' and commit the result."
+            exit 1
+          fi

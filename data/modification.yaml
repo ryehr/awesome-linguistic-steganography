@@ -1,0 +1,589 @@
+# Modification-based methods (edit a covertext).
+# Schema and contribution guide: CONTRIBUTING.md.  Seeded from the survey; edit freely.
+
+- id: kar2026secure
+  title: A Secure Data Hiding Approach Using Natural Language Processing
+  authors: [Nirmalya Kar, Priyanka Biswas, Subhrajyoti Deb, Abhijit Das]
+  year: 2026
+  venue: International Journal of Computational Intelligence Systems
+  links:
+    paper: "https://doi.org/10.1007/s44196-026-01253-8"
+  categories: [modification/lexicon/masked-lm]
+  added: '2026-10-03'
+
+- id: nassef2026arabic
+  name: BioStegoScript
+  title: Arabic calligraphy-based text steganography framework with biologically-encoded secret messages, enhanced embedding
+    capacity and automated extraction
+  authors: [Mohammad Nassef, Ali A. Hamzah]
+  year: 2026
+  venue: PeerJ Computer Science
+  links:
+    paper: "https://doi.org/10.7717/peerj-cs.3931"
+  categories: [modification/format/font]
+  added: '2026-10-03'
+
+- id: tcheunteu2026high
+  title: High embedding capacity text steganography using optimal color combinations from 24-bit space
+  authors: [Stéphane Willy Mossebo Tcheunteu, Hervé Talé Kalachi, Stéphane Gael Raymond Ekodeck, Leonel Moyou Metcheka, Jean
+      Marsien Ayemidie Moto, René Ndoundam]
+  year: 2026
+  venue: Journal of Computer Security
+  links:
+    paper: "https://doi.org/10.1177/0926227x251411812"
+  categories: [modification/format/font]
+  added: '2026-10-03'
+
+- id: xiang2026semantic
+  name: LDStega
+  title: Semantic compensation-driven low-distortion linguistic steganography
+  authors: [Lingyun Xiang, Songjun Liang, Song Jiang]
+  year: 2026
+  venue: IJAACS
+  links:
+    paper: "https://doi.org/10.1504/ijaacs.2026.152851"
+  categories: [modification/lexicon/masked-lm]
+  added: '2026-10-03'
+
+- id: stoilov2025ai
+  title: AI-generated text steganography - hiding secrets in plain sight using synonym encoding
+  authors: [Petar Stoilov, Plamen Zahariev]
+  year: 2025
+  venue: Cyber-AI
+  links:
+    paper: "https://doi.org/10.1109/cyber-ai66431.2025.11233312"
+  categories: [modification/lexicon/synonym]
+  added: '2026-10-03'
+
+- id: ishtiaq2025enhancing
+  title: "Enhancing Imperceptibility: Zero-width Character-based Text Steganography for Preserving Message Privacy"
+  authors: [Saqib Ishtiaq, Naveed Ejaz, Muhammad Usman Hashmi, S.I. Shah]
+  year: 2025
+  venue: Acta Informatica Pragensia
+  links:
+    paper: "https://doi.org/10.18267/j.aip.271"
+  categories: [modification/format/encoding]
+  added: '2026-10-03'
+
+- id: hellmeier2025innamark
+  name: Innamark
+  title: "Innamark: A Whitespace Replacement Information-Hiding Method"
+  authors: [Malte Hellmeier, Hendrik Norkowski, Ernst-Christoph Schrewe, Haydar Qarawlus, Falk Howar]
+  year: 2025
+  venue: IEEE Access
+  links:
+    paper: "https://doi.org/10.1109/ACCESS.2025.3583591"
+    arxiv: "https://arxiv.org/abs/2502.12710"
+  categories: [modification/format/space]
+  added: '2026-10-03'
+
+- id: xiang2025linguistic
+  title: Linguistic Steganography Based on Sentence Attribute Encoding
+  authors: [Lingyun Xiang, Xu He, Xi Zhang, Chengfu Ou]
+  year: 2025
+  venue: Computers, Materials and Continua
+  links:
+    paper: "https://doi.org/https://doi.org/10.32604/cmc.2025.065804"
+  categories: [modification/rewriting/paraphrase]
+  survey_key: XIANG20252375
+
+- id: ou2025promising
+  title: Promising Multi-Granularity Linguistic Steganography by Jointing Syntactic and Lexical Manipulations
+  authors: [Chengfu Ou, Lingyun Xiang, Yangfan Liu]
+  year: 2025
+  venue: AAAI
+  links:
+    paper: "https://doi.org/10.1609/aaai.v39i23.34682"
+  categories: [modification/rewriting/syntax]
+  survey_key: Ou_Xiang_Liu_2025
+
+- id: kandala2025raster
+  name: GPC
+  title: "Raster Domain Text Steganography: A Unified Framework for Multimodal Secure Embedding"
+  authors: [A V Uday Kiran Kandala]
+  year: 2025
+  venue: arXiv
+  links:
+    arxiv: "https://arxiv.org/abs/2512.21698"
+  categories: [modification/format/font]
+  added: '2026-10-03'
+
+- id: ozturk2024character
+  title: A Character Based Steganography Using Masked Language Modeling
+  authors: [Emır Öztürk, Andaç Şahın Mesut, Özlem Aydin Fıdan]
+  year: 2024
+  venue: IEEE Access
+  links:
+    paper: "https://doi.org/10.1109/ACCESS.2024.3354710"
+  categories: [modification/lexicon/masked-lm]
+  survey_key: '10400450'
+
+- id: ding2024joint
+  title: Joint Linguistic Steganography With BERT Masked Language Model and Graph Attention Network
+  authors: [Changhao Ding, Zhangjie Fu, Qi Yu, Fan Wang, Xianyi Chen]
+  year: 2024
+  venue: IEEE Transactions on Cognitive and Developmental Systems
+  links:
+    paper: "https://doi.org/10.1109/TCDS.2023.3296413"
+  categories: [modification/lexicon/masked-lm]
+  survey_key: '10185651'
+
+- id: gao2024linguistic
+  title: Linguistic Secret Sharing via Ambiguous Token Selection for IoT Security
+  authors: [Kai Gao, Ji-Hwei Horng, Ching-Chun Chang, Chin-Chen Chang]
+  year: 2024
+  venue: Electronics
+  links:
+    paper: "https://doi.org/10.3390/electronics13214216"
+  categories: [modification/lexicon/synonym]
+  survey_key: electronics13214216
+
+- id: yang2024semantic
+  title: Semantic-Preserving Linguistic Steganography by Pivot Translation and Semantic-Aware Bins Coding
+  authors: [Tianyu Yang, Hanzhou Wu, Biao Yi, Guorui Feng, Xinpeng Zhang]
+  year: 2024
+  venue: IEEE TDSC
+  links:
+    paper: "https://doi.org/10.1109/TDSC.2023.3247493"
+  categories: [modification/rewriting/paraphrase]
+  survey_key: '10049662'
+
+- id: gurunath20233
+  title: A new 3-bit hiding covert channel algorithm for public data and medical data security using format-based text steganography
+  authors: [R Gurunath, Debabrata Samanta]
+  year: 2023
+  venue: Journal of Database Management (JDM)
+  links: {}
+  categories: [modification/format/space]
+  survey_key: gurunath2023new
+
+- id: xiang2023cpg
+  name: CPG-LS
+  title: "CPG-LS: Causal Perception Guided Linguistic Steganography"
+  authors: [Lingyun Xiang, Jiali Xia, Yangfan Liu, Yan Gui]
+  year: 2023
+  venue: IEEE SPL
+  links:
+    paper: "https://doi.org/10.1109/LSP.2023.3332298"
+  categories: [modification/lexicon/masked-lm]
+  survey_key: '10315184'
+
+- id: chang2023reversible
+  title: Reversible Linguistic Steganography With Bayesian Masked Language Modeling
+  authors: [Ching-Chun Chang]
+  year: 2023
+  venue: IEEE Transactions on Computational Social Systems
+  links:
+    paper: "https://doi.org/10.1109/TCSS.2022.3162233"
+  categories: [modification/lexicon/masked-lm]
+  survey_key: '9753668'
+
+- id: li2023rewriting
+  name: Rewriting-Stego
+  title: "Rewriting-Stego: Generating Natural and Controllable Steganographic Text with Pre-trained Language Model"
+  authors: [Fanxiao Li, Sixing Wu, Jiong Yu, Shuoxin Wang, BingBing Song, Renyang Liu, Haoseng Lai, Wei Zhou]
+  year: 2023
+  venue: Database Systems for Advanced Applications
+  links: {}
+  categories: [modification/rewriting/paraphrase]
+  survey_key: 10.1007/978-3-031-30637-2_41
+
+- id: zheng2022autoregressive
+  title: Autoregressive linguistic steganography based on BERT and consistency coding
+  authors: [Xiaoyan Zheng, Hanzhou Wu]
+  year: 2022
+  venue: Security and Communication Networks
+  links: {}
+  categories: [modification/lexicon/masked-lm]
+  survey_key: zheng2022autoregressive
+
+- id: zheng2022general
+  title: General Framework for Reversible Data Hiding in Texts Based on Masked Language Modeling
+  authors: [Xiaoyan Zheng, Yurun Fang, Hanzhou Wu]
+  year: 2022
+  venue: MMSP
+  links:
+    paper: "https://doi.org/10.1109/MMSP55362.2022.9948940"
+  categories: [modification/lexicon/masked-lm]
+  survey_key: '9948940'
+
+- id: serret2022linguistic
+  title: Linguistic Steganography for Messaging Applications.
+  authors: [Elsa Serret, Antoine Lesueur, Alban Gabillon]
+  year: 2022
+  venue: ICISSP
+  links: {}
+  categories: [modification/lexicon/synonym]
+  survey_key: serret2022linguistic
+
+- id: ueoka2021frustratingly
+  title: Frustratingly Easy Edit-based Linguistic Steganography with a Masked Language Model
+  authors: [Honai Ueoka, Yugo Murawaki, Sadao Kurohashi]
+  year: 2021
+  venue: NAACL
+  links:
+    paper: "https://aclanthology.org/2021.naacl-main.433"
+  categories: [modification/lexicon/masked-lm]
+  survey_key: ueoka-etal-2021-frustratingly
+
+- id: bashir2020high
+  title: A High Capacity Text Steganography Utilizing Unicode Zero-Width Characters
+  authors: [Hafsat Muhammad Bashir, Qianmu Li, Jun Hou]
+  year: 2020
+  venue: iThings/GreenCom/CPSCom/SmartData
+  links:
+    paper: "https://doi.org/10.1109/iThings-GreenCom-CPSCom-SmartData-Cybermatics50389.2020.00116"
+  categories: [modification/format/encoding]
+  survey_key: '9291576'
+
+- id: mahato2020modified
+  title: A modified approach to data hiding in Microsoft Word documents by change-tracking technique
+  authors: [Susmita Mahato, Danish Ali Khan, Dilip Kumar Yadav]
+  year: 2020
+  venue: Journal of King Saud University - Computer and Information Sciences
+  links:
+    paper: "https://doi.org/https://doi.org/10.1016/j.jksuci.2017.08.004"
+  categories: [modification/lexicon/synonym]
+  survey_key: MAHATO2020216
+
+- id: baawi2020improvement
+  title: Improvement of “Text Steganography Based on Unicode of Characters in Multilingual” by Custom Font with Special Properties
+  authors: [Salwa Shakir Baawi, Dhamyaa A. Nasrawi, Lina Talib abdulameer]
+  year: 2020
+  venue: "IOP Conference Series: Materials Science and Engineering"
+  links:
+    paper: "https://doi.org/10.1088/1757-899X/870/1/012125"
+  categories: [modification/format/font]
+  survey_key: Baawi_2020
+
+- id: xiang2019word
+  title: A word-frequency-preserving steganographic method based on synonym substitution
+  authors: [Lingyun Xiang, Xiao Yang, Jiahe Zhang, Weizheng Wang]
+  year: 2019
+  venue: International Journal of Computational Science and Engineering
+  links: {}
+  categories: [modification/lexicon/synonym]
+  survey_key: xiang2019word
+
+- id: rabevohitra2019text
+  title: Text Cover Steganography Using Font Color of the Invisible Characters and Optimized Primary Color-intensities
+  authors: [Feno Heriniaina Rabevohitra, Yantao Li]
+  year: 2019
+  venue: ICCT
+  links:
+    paper: "https://doi.org/10.1109/ICCT46805.2019.8947188"
+  categories: [modification/format/encoding]
+  survey_key: '8947188'
+
+- id: naharuddin2018high
+  title: A High Capacity and Imperceptible Text Steganography Using Binary Digit Mapping on ASCII Characters
+  authors: [Alfin Naharuddin, Adhi Dharma Wibawa, Surya Sumpeno]
+  year: 2018
+  venue: ISITIA
+  links:
+    paper: "https://doi.org/10.1109/ISITIA.2018.8711087"
+  categories: [modification/format/encoding]
+  survey_key: '8711087'
+
+- id: ahvanooey2018aitsteg
+  name: AITSteg
+  title: "AITSteg: An Innovative Text Steganography Technique for Hidden Transmission of Text Message via Social Media"
+  authors: [Milad Taleby Ahvanooey, Qianmu Li, Jun Hou, Hassan Dana Mazraeh, Jing Zhang]
+  year: 2018
+  venue: IEEE Access
+  links:
+    paper: "https://doi.org/10.1109/ACCESS.2018.2866063"
+  categories: [modification/format/encoding]
+  survey_key: '8440030'
+
+- id: ditta2018information
+  title: "Information hiding: Arabic text steganography by using Unicode characters to hide secret data"
+  authors: [Allah Ditta, Cai Yongquan, Muhammad Azeem, Khurram Gulzar Rana, Haiyang Yu, Muhammad Qasim Memon]
+  year: 2018
+  venue: International Journal of Electronic Security and Digital Forensics
+  links: {}
+  categories: [modification/format/encoding]
+  survey_key: ditta2018information
+
+- id: alsaadi2018text
+  title: Text steganography in font color of MS excel sheet
+  authors: [Husam Ibrahiem Alsaadi, Maad Kamal Al-Anni, Rafah M. Almuttairi, Oguz Bayat, Osman Nuri Ucan]
+  year: 2018
+  venue: First International Conference on Data Science, E-Learning and Information Systems
+  links:
+    paper: "https://doi.org/10.1145/3279996.3280006"
+  categories: [modification/format/font]
+  survey_key: 10.1145/3279996.3280006
+
+- id: xiang2017linguistic
+  title: A novel linguistic steganography based on synonym run-length encoding
+  authors: [Lingyun Xiang, Xinhui Wang, Chunfang Yang, Peng Liu]
+  year: 2017
+  venue: IEICE transactions on Information and Systems
+  links: {}
+  categories: [modification/lexicon/synonym]
+  survey_key: xiang2017novel
+
+- id: kumar2016space
+  title: A space based reversible high capacity text steganography scheme using font type and style
+  authors: [Rajeev Kumar, Aruna Malik, Samayveer Singh, Bijendra Kumar, Satish Chand]
+  year: 2016
+  venue: ICCCA
+  links:
+    paper: "https://doi.org/10.1109/CCAA.2016.7813878"
+  categories: [modification/format/space]
+  survey_key: '7813878'
+
+- id: wilson2016avoiding
+  title: "Avoiding detection on twitter: embedding strategies for linguistic steganography"
+  authors: [Alex Wilson, Andrew D Ker]
+  year: 2016
+  venue: Electronic Imaging
+  links: {}
+  categories: [modification/rewriting/paraphrase]
+  survey_key: wilson2016avoiding
+
+- id: barmawi2016linguistic
+  title: Linguistic Based Steganography Using Lexical Substitution and Syntactical Transformation
+  authors: [Ari Barmawi]
+  year: 2016
+  venue: ICITCS
+  links:
+    paper: "https://doi.org/10.1109/ICITCS.2016.7740349"
+  categories: [modification/rewriting/syntax]
+  survey_key: '7740349'
+
+- id: ramakrishnan2016text
+  title: "Text steganography: a novel character-level embedding algorithm using font attribute"
+  authors: [Bala Krishnan Ramakrishnan, Prasanth Kumar Thandra, AV Satya Murty Srinivasula]
+  year: 2016
+  venue: Security and Communication Networks
+  links: {}
+  categories: [modification/format/font, modification/format/space]
+  survey_key: ramakrishnan2016text
+
+- id: kumar2015efficient
+  title: An efficient text steganography scheme using Unicode Space Characters
+  authors: [Rajeev Kumar, Satish Chand, Samayveer Singh]
+  year: 2015
+  venue: Int. J. Forensic Comput. Sci
+  links: {}
+  categories: [modification/format/space]
+  survey_key: kumar2015efficient
+
+- id: hosmani2015dual
+  title: Dual Stage Text Steganography Using Unicode Homoglyphs
+  authors: [Sachin Hosmani, H. G. Rama Bhat, K. Chandrasekaran]
+  year: 2015
+  venue: Security in Computing and Communications
+  links: {}
+  categories: [modification/format/encoding]
+  survey_key: 10.1007/978-3-319-22915-7_26
+
+- id: mahato2014approach
+  title: A Novel Approach to Text Steganography Using Font Size of Invisible Space Characters in Microsoft Word Document
+  authors: [Susmita Mahato, Dilip Kumar Yadav, Danish Ali Khan]
+  year: 2014
+  venue: Intelligent Computing, Networking, and Informatics
+  links: {}
+  categories: [modification/format/space]
+  survey_key: 10.1007/978-81-322-1665-0_107
+
+- id: clarke2014hide
+  name: Hide-as-you-Type
+  title: "Hide-as-you-Type: An Approach to Natural Language Steganography through Sentence Modification"
+  authors: [Charles A. Clarke, Eckhard Pfluegel, Dimitris Tsaptsinos]
+  year: 2014
+  venue: HPCC/CSS/ICESS
+  links:
+    paper: "https://doi.org/10.1109/HPCC.2014.152"
+  categories: [modification/rewriting/paraphrase]
+  survey_key: '7056859'
+
+- id: wilson2014linguistic
+  title: "Linguistic steganography on twitter: hierarchical language modeling with manual interaction"
+  authors: [Alex Wilson, Phil Blunsom, Andrew D Ker]
+  year: 2014
+  venue: Media Watermarking, Security, and Forensics
+  links: {}
+  categories: [modification/rewriting/paraphrase]
+  survey_key: wilson2014linguistic
+
+- id: chang2014practical
+  title: Practical Linguistic Steganography using Contextual Synonym Substitution and a Novel Vertex Coding Method
+  authors: [Ching-Yun Chang, Stephen Clark]
+  year: 2014
+  venue: Computational Linguistics
+  links:
+    paper: "https://doi.org/10.1162/COLI_a_00176"
+  categories: [modification/lexicon/synonym]
+  survey_key: chang-clark-2014-practical
+
+- id: qi2013secure
+  title: A secure text steganography based on synonym substitution
+  authors: [Cao Qi, Sun Xingming, Xiang Lingyun]
+  year: 2013
+  venue: IEEE Conference Anthology
+  links:
+    paper: "https://doi.org/10.1109/ANTHOLOGY.2013.6784896"
+  categories: [modification/lexicon/synonym]
+  survey_key: '6784896'
+
+- id: ali2013text
+  title: New text steganography technique by using mixed-case font
+  authors: [Abdelmgeid Amin Ali, et al.]
+  year: 2013
+  venue: International Journal of Computer Applications
+  links: {}
+  categories: [modification/format/font]
+  survey_key: ali2013new
+
+- id: rahma2013text
+  title: Text steganography based on unicode of characters in multilingual
+  authors: [Abdul Monem S Rahma, Wesam S Bhaya, Dhamyaa A Al-Nasrawi]
+  year: 2013
+  venue: International Journal of Engineering Research and Applications
+  links: {}
+  categories: [modification/format/encoding]
+  survey_key: rahma2013text
+
+- id: singh2012approach
+  title: A novel approach of text steganography based on null spaces
+  authors: [Prem Singh, Rajat Chaudhary, Ambika Agarwal]
+  year: 2012
+  venue: IOSR Journal of Computer Engineering
+  links: {}
+  categories: [modification/format/space]
+  survey_key: singh2012novel
+
+- id: gardiner2012stegchat
+  name: Stegchat
+  title: "Stegchat: a synonym-substitution based algorithm for text steganography"
+  authors: [Joseph Gardiner]
+  year: 2012
+  venue: MSc thesis, University of Birmingham
+  links: {}
+  categories: [modification/lexicon/synonym]
+  survey_key: gardiner2012stegchat
+
+- id: por2012unispach
+  name: UniSpaCh
+  title: "UniSpaCh: A text-based data hiding method using Unicode space characters"
+  authors: [Lip Yee Por, KokSheik Wong, Kok Onn Chee]
+  year: 2012
+  venue: Journal of Systems and Software
+  links:
+    paper: "https://doi.org/https://doi.org/10.1016/j.jss.2011.12.023"
+  categories: [modification/format/space]
+  survey_key: POR20121075
+
+- id: wai2011syntactic
+  title: Syntactic bank-based linguistic steganography approach
+  authors: [Ei Nyein Chan Wai, May Aye Khine]
+  year: 2011
+  venue: International Conference on Information Communication and Management IPCSIT
+  links: {}
+  categories: [modification/rewriting/syntax]
+  survey_key: wai2011syntactic
+
+- id: chang2010linguistic
+  title: Linguistic Steganography Using Automatically Generated Paraphrases
+  authors: [Ching-Yun Chang, Stephen Clark]
+  year: 2010
+  venue: NAACL
+  links:
+    paper: "https://aclanthology.org/N10-1084/"
+  categories: [modification/rewriting/paraphrase]
+  survey_key: chang-clark-2010-linguistic
+
+- id: chang2010practical
+  title: Practical Linguistic Steganography Using Contextual Synonym Substitution and Vertex Colour Coding
+  authors: [Ching-Yun Chang, Stephen Clark]
+  year: 2010
+  venue: EMNLP
+  links:
+    paper: "https://aclanthology.org/D10-1116/"
+  categories: [modification/lexicon/synonym]
+  survey_key: chang-clark-2010-practical
+
+- id: khairullah2009text
+  title: A Novel Text Steganography System Using Font Color of the Invisible Characters in Microsoft Word Documents
+  authors: [Md. Khairullah]
+  year: 2009
+  venue: Second International Conference on Computer and Electrical Engineering
+  links:
+    paper: "https://doi.org/10.1109/ICCEE.2009.127"
+  categories: [modification/format/font]
+  survey_key: '5380435'
+
+- id: kermanidis2009empirical
+  title: "Empirical Paraphrasing of Modern Greek Text in Two Phases: An Application to Steganography"
+  authors: [Katia Lida Kermanidis, Emmanouil Magkos]
+  year: 2009
+  venue: Computational Linguistics and Intelligent Text Processing
+  links: {}
+  categories: [modification/rewriting/paraphrase]
+  survey_key: 10.1007/978-3-642-00382-0_43
+
+- id: rafat2009enhanced
+  title: "Enhanced text steganography by changing word's spelling"
+  authors: [Khan Farhan Rafat]
+  year: 2009
+  venue: International Conference on Frontiers of Information Technology
+  links:
+    paper: "https://doi.org/10.1145/1838002.1838082"
+  categories: [modification/format/spelling]
+  survey_key: 10.1145/1838002.1838082
+
+- id: muhammad2009synonym
+  title: Synonym based Malay linguistic text steganography
+  authors: [Hasanah Zulcefli Muhammad, Sharifah Mumtazah Syed Ahmad Abdul Rahman, Asma Shakil]
+  year: 2009
+  venue: Innovative Technologies in Intelligent Systems and Industrial Applications
+  links:
+    paper: "https://doi.org/10.1109/CITISIA.2009.5224169"
+  categories: [modification/lexicon/synonym]
+  survey_key: '5224169'
+
+- id: shiralishahreza2008synonym
+  title: A New Synonym Text Steganography
+  authors: [M. Hassan Shirali-Shahreza, Mohammad Shirali-Shahreza]
+  year: 2008
+  venue: Information Hiding
+  links:
+    paper: "https://doi.org/10.1109/IIH-MSP.2008.6"
+  categories: [modification/lexicon/synonym]
+  survey_key: '4604331'
+
+- id: shiralishahreza2008text
+  title: Text Steganography by Changing Words Spelling
+  authors: [Mohammad Shirali-Shahreza]
+  year: 2008
+  venue: International Conference on Advanced Communication Technology
+  links:
+    paper: "https://doi.org/10.1109/ICACT.2008.4494159"
+  categories: [modification/format/spelling]
+  survey_key: '4494159'
+
+- id: bolshakov2005method
+  title: A Method of Linguistic Steganography Based on Collocationally-Verified Synonymy
+  authors: [Igor A. Bolshakov]
+  year: 2005
+  venue: Information Hiding
+  links: {}
+  categories: [modification/lexicon/synonym]
+  survey_key: 10.1007/978-3-540-30114-1_13
+
+- id: brassil1995electronic
+  title: Electronic marking and identification techniques to discourage document copying
+  authors:
+  - J.T. Brassil
+  - S. Low
+  - N.F. Maxemchuk
+  - "L. O'Gorman"
+  year: 1995
+  venue: IEEE Journal on Selected Areas in Communications
+  links:
+    paper: "https://doi.org/10.1109/49.464718"
+  categories: [modification/format/space]
+  survey_key: '464718'

@@ -1,0 +1,39 @@
+name: New paper candidates
+
+on:
+  schedule:
+    - cron: "0 3 1 * *"   # 03:00 UTC on the 1st of every month
+  workflow_dispatch:
+    inputs:
+      since:
+        description: "Earliest publication date (YYYY-MM-DD); default: 60 days ago"
+        required: false
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  search:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -r requirements.txt
+      - name: Search arXiv, OpenAlex and Crossref
+        id: search
+        run: |
+          SINCE="${{ github.event.inputs.since }}"
+          SINCE="${SINCE:-$(date -u -d '-60 days' +%F)}"
+          python scripts/find_new_papers.py --since "$SINCE" --out candidates.md
+          echo "count=$(grep -c '^- \[ \]' candidates.md || true)" >> "$GITHUB_OUTPUT"
+          echo "month=$(date -u +%Y-%m)" >> "$GITHUB_OUTPUT"
+      - name: Open an issue with the candidates
+        if: steps.search.outputs.count != '0'
+        uses: peter-evans/create-issue-from-file@v5
+        with:
+          title: "New paper candidates (${{ steps.search.outputs.month }}, ${{ steps.search.outputs.count }} papers)"
+          content-filepath: candidates.md
+          labels: new-papers

@@ -1,0 +1,67 @@
+# Surveys and systematic reviews.
+# Schema and contribution guide: CONTRIBUTING.md.  Seeded from the survey; edit freely.
+
+- id: yan2026comprehensive
+  name: This survey
+  title: "A Comprehensive Survey on Linguistic Steganography: Methods, Countermeasures, Evaluation, and Challenges"
+  authors: [Ruiyi Yan, Chenhui Chu, Zhongliang Yang, Yugo Murawaki]
+  year: 2026
+  venue: EMNLP
+  links: {}
+  coverage: {methods: 148, steganalysis: 60, metrics: 23}
+
+- id: setiadi2025ai
+  title: "AI-Powered Steganography: Advances in Image, Linguistic, and 3D Mesh Data Hiding – A Survey"
+  authors: [De Rosal Ignatius Moses Setiadi, Sudipta Kr Ghosal, Aditya Kumar Sahu]
+  year: 2025
+  venue: Journal of Future Artificial Intelligence and Technologies
+  links:
+    paper: "https://doi.org/10.62411/faith.3048-3719-76"
+  added: '2026-10-03'
+
+- id: muhammad2025enhancing
+  title: "Enhancing Knowledge Security through Text Steganography: A Review of Techniques and Tools"
+  authors: [Mohd Hilal Muhammad, Zulhazlin Abas, Mohd Zhafri Mohd Zukhi, Muhammad Khairul Zharif Nor A’zam]
+  year: 2025
+  venue: Journal of Information System and Technology Management
+  links:
+    paper: "https://doi.org/10.35631/jistm.1038022"
+  added: '2026-10-03'
+
+- id: wu2024linguistic
+  title: Linguistic Steganography and Linguistic Steganalysis
+  authors: [Hanzhou Wu, Tianyu Yang, Xiaoyan Zheng, Yurun Fang]
+  year: 2024
+  venue: Adversarial Multimedia Forensics
+  links:
+    paper: "https://doi.org/10.1007/978-3-031-49803-9_7"
+  coverage: {methods: 28, steganalysis: 29, metrics: 8}
+  survey_key: Wu2024
+
+- id: badawy2023comprehensive
+  title: A Comprehensive Review on Deep Learning-Based Generative Linguistic Steganography
+  authors: [Israa Lotfy Badawy, Khaled Nagaty, Abeer Hamdy]
+  year: 2023
+  venue: Learning in the Age of Digital and Green Transition
+  links: {}
+  coverage: {methods: 18, steganalysis: null, metrics: 12}
+  survey_key: 10.1007/978-3-031-26876-2_61
+
+- id: xiang2022generative
+  title: "Generative Linguistic Steganography: A Comprehensive Review."
+  authors: [Lingyun Xiang, Rong Wang, Zhongliang Yang, Yuling Liu]
+  year: 2022
+  venue: KSII TIIS
+  links: {}
+  coverage: {methods: 37, steganalysis: null, metrics: 11}
+  survey_key: xiang2022generative
+
+- id: majeed2021review
+  title: A Review on Text Steganography Techniques
+  authors: [Mohammed Abdul Majeed, Rossilawati Sulaiman, Zarina Shukur, Mohammad Kamrul Hasan]
+  year: 2021
+  venue: Mathematics
+  links:
+    paper: "https://doi.org/10.3390/math9212829"
+  coverage: {methods: 50, steganalysis: null, metrics: null}
+  survey_key: math9212829

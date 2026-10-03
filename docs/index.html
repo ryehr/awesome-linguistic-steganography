@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Awesome Linguistic Steganography · Dashboard</title>
+  <meta name="description" content="Interactive dashboard of research on linguistic steganography and steganalysis.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="hero">
+    <div class="wrap">
+      <h1>Awesome Linguistic Steganography</h1>
+      <p class="lead">A curated, data-driven collection of research on hiding messages in natural-language text and detecting them.</p>
+      <nav class="links">
+        <a id="repo-link" href="#">GitHub repository</a>
+        <a href="#explorer">Explore papers</a>
+        <a href="#metrics">Evaluation metrics</a>
+        <a href="#datasets">Datasets</a>
+        <a id="contribute-link" href="#">Contribute</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section id="stats" class="cards" aria-label="Statistics"></section>
+
+    <section id="trends">
+      <h2>Trends</h2>
+      <div id="charts" class="charts"></div>
+    </section>
+
+    <section id="explorer">
+      <h2>Explore papers</h2>
+      <div class="controls">
+        <input id="q" type="search" placeholder="Search title, author, method, venue…" aria-label="Search">
+        <select id="area" aria-label="Area"></select>
+        <select id="category" aria-label="Category"></select>
+        <label class="years">Year
+          <input id="from" type="number" inputmode="numeric" aria-label="From year"> –
+          <input id="to" type="number" inputmode="numeric" aria-label="To year">
+        </label>
+        <select id="sort" aria-label="Sort">
+          <option value="new">Newest first</option>
+          <option value="old">Oldest first</option>
+          <option value="title">Title A–Z</option>
+        </select>
+      </div>
+      <div id="chips" class="chips" aria-label="Feature filters"></div>
+      <p id="count" class="muted"></p>
+      <div class="table-wrap">
+        <table id="papers">
+          <thead><tr><th>Year</th><th>Paper</th><th>Venue</th><th>Category</th><th>Features</th><th>Links</th></tr></thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </section>
+
+    <section id="metrics">
+      <h2>Evaluation metrics</h2>
+      <p class="muted">↑ / ↓: higher / lower is better for the steganographer.</p>
+      <div class="table-wrap"><table id="metric-table"></table></div>
+    </section>
+
+    <section id="datasets">
+      <h2>Datasets and benchmarks</h2>
+      <div class="table-wrap"><table id="dataset-table"></table></div>
+    </section>
+  </main>
+
+  <footer class="wrap muted">
+    Generated from <code>data/*.yaml</code> by <code>scripts/build.py</code>.
+    Missing a paper? <a id="issue-link" href="#">Open an issue</a> or send a pull request.
+  </footer>
+  <script src="app.js"></script>
+</body>
+</html>

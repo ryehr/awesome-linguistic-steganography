@@ -1,0 +1,56 @@
+name: Suggest a paper
+description: Add a paper, preprint, dataset or tool on linguistic steganography / steganalysis.
+labels: [new-papers]
+body:
+  - type: input
+    id: title
+    attributes:
+      label: Title
+    validations:
+      required: true
+  - type: input
+    id: link
+    attributes:
+      label: Paper link (DOI, ACL Anthology, arXiv, ...)
+    validations:
+      required: true
+  - type: input
+    id: code
+    attributes:
+      label: Code link (optional)
+  - type: input
+    id: venue
+    attributes:
+      label: Venue and year
+      placeholder: e.g. EMNLP 2026, IEEE TIFS 2025, arXiv 2026
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      options:
+        - Generative linguistic steganography
+        - Modification-based steganography
+        - Linguistic steganalysis
+        - Survey
+        - Dataset / benchmark
+        - Tool / other
+    validations:
+      required: true
+  - type: input
+    id: category
+    attributes:
+      label: Category (optional)
+      description: A path from data/taxonomy.yaml, e.g. generative/security/provable.
+  - type: checkboxes
+    id: features
+    attributes:
+      label: Features (generative methods, optional)
+      options:
+        - label: LLM-adaptable
+        - label: Training-free
+        - label: Asymmetric (extraction differs from embedding, e.g. needs no LM)
+        - label: Black-box (API-only access)
+  - type: textarea
+    id: notes
+    attributes:
+      label: Notes

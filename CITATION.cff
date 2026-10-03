@@ -1,0 +1,30 @@
+cff-version: 1.2.0
+message: "If you use this collection, please cite the survey below."
+title: "Awesome Linguistic Steganography"
+type: dataset
+authors:
+  - family-names: Yan
+    given-names: Ruiyi
+  - family-names: Chu
+    given-names: Chenhui
+  - family-names: Yang
+    given-names: Zhongliang
+  - family-names: Murawaki
+    given-names: Yugo
+repository-code: "https://github.com/ryehr/awesome-linguistic-steganography"
+url: "https://ryehr.github.io/awesome-linguistic-steganography/"
+license: CC0-1.0
+preferred-citation:
+  type: conference-paper
+  title: "A Comprehensive Survey on Linguistic Steganography: Methods, Countermeasures, Evaluation, and Challenges"
+  authors:
+    - family-names: Yan
+      given-names: Ruiyi
+    - family-names: Chu
+      given-names: Chenhui
+    - family-names: Yang
+      given-names: Zhongliang
+    - family-names: Murawaki
+      given-names: Yugo
+  collection-title: "Proceedings of the 2026 Conference on Empirical Methods in Natural Language Processing"
+  year: 2026

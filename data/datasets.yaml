@@ -1,0 +1,44 @@
+# Datasets used as covertext corpora / steganalysis benchmarks.
+# Schema and contribution guide: CONTRIBUTING.md.  Seeded from the survey; edit freely.
+
+- id: imdb
+  name: IMDB
+  description: 50k movie reviews for binary sentiment classification.
+  links:
+    paper: "https://aclanthology.org/P11-1015/"
+  reference:
+    title: Learning Word Vectors for Sentiment Analysis
+    authors: [Andrew L. Maas, Raymond E. Daly, Peter T. Pham, Dan Huang, Andrew Y. Ng, Christopher Potts]
+    year: 2011
+    venue: ACL
+
+- id: twitter
+  name: Twitter (Sentiment140)
+  description: 1.6M tweets labelled by distant supervision; noisy short texts.
+  links: {}
+  reference:
+    title: Twitter sentiment classification using distant supervision
+    authors: [Alec Go, Richa Bhayani, Lei Huang]
+    year: 2009
+    venue: CS224N project report, Stanford
+
+- id: news
+  name: News (All the News)
+  description: Up to 2.7M news articles and essays from 27 American publications.
+  links: {}
+  reference:
+    title: All the News
+    authors: [Kaggle]
+    year: 2017
+    venue: "https://www.kaggle.com/snapcrack/all-the-news/data"
+
+- id: sn-stego
+  name: SN-Stego
+  description: Social-network text steganalysis dataset that keeps the social-graph context of each text.
+  links:
+    paper: "https://doi.org/10.3724/2096-7004.di.2025.0126"
+  reference:
+    title: "SN-Stego: Dataset for Social Networks Text Steganalysis via Local Group Discovery and Sample Distribution Regulation"
+    authors: [Qiong Xu, Ru Zhang, Jianyi Liu, Yongfeng Huang]
+    year: 2025
+    venue: Data Intelligence

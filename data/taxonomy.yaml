@@ -1,0 +1,77 @@
+# Category tree.  Entries reference nodes by path, preferably leaves such as "generative/security/provable".
+# A coarser node ("steganalysis/pre-trained", or just "steganalysis") marks an entry whose finer category
+# is not known yet; such entries are listed as "awaiting classification" in the README.
+# Follows the taxonomy of Yan et al. (EMNLP 2026); new leaves may be added via pull request.
+
+modification:
+  name: Modification-based Methods
+  description: Embed bits by editing an existing covertext; lightweight, but capacity is bounded by the editable positions.
+  children:
+    format:
+      name: Format-based (non-linguistic)
+      description: Exploit physical features of text symbols without changing the linguistic content.
+      children:
+        space: {name: Space-based, description: Bits in line / word / character spacing or invisible whitespace.}
+        encoding: {name: Encoding-based, description: Visually identical glyphs with different code points (homoglyphs, zero-width characters).}
+        font: {name: Font-based, description: Font colour, case, spacing, or specially designed fonts.}
+        spelling: {name: Spelling-based, description: Alternative spellings such as US/UK variants.}
+    lexicon:
+      name: Lexicon-based
+      description: Replace words or word forms while preserving meaning.
+      children:
+        synonym: {name: Synonym-based, description: Choose among synonyms under contextual, frequency, or grammatical constraints.}
+        masked-lm: {name: Masked-LM-based, description: A masked language model proposes context-appropriate replacements that encode bits.}
+    rewriting:
+      name: Rewriting-based
+      description: Alter the syntactic structure or paraphrase whole sentences.
+      children:
+        syntax: {name: Syntax-based, description: Choose among alternative grammatical structures of the same sentence.}
+        paraphrase: {name: Paraphrasing-based, description: Choose among alternative phrasings of the same meaning.}
+
+generative:
+  name: Generative Linguistic Steganography
+  description: Generate the stegotext with a language model so that sampling decisions encode the secret bits; no covertext is needed.
+  children:
+    security:
+      name: Toward Higher Security
+      description: Improve imperceptibility, up to provable (distribution-preserving) security.
+      children:
+        modeling: {name: Optimizing Modeling, description: Better language modelling and coding (RNN / VAE / adversarial / controllable generation).}
+        provable: {name: Provable Security, description: Keep the LM's sampling distribution (near-)unchanged, e.g. KL = 0 at every step.}
+        llm: {name: Powered by LLMs, description: Black-box access, prompting, in-context learning, or agentic strategies on LLMs.}
+        other: {name: Other, description: Other security-oriented designs.}
+    efficiency:
+      name: Toward Higher Efficiency
+      description: Raise embedding capacity or embedding / extraction speed.
+      children:
+        units: {name: More Embedding Units, description: Embed below the word level (characters, script features) or across streams.}
+        entropy: {name: Entropy / Utilization, description: Use more of the entropy offered by the generative model.}
+        other: {name: Other, description: Other efficiency-oriented designs.}
+    robustness:
+      name: Toward Higher Robustness
+      description: Make extraction reliable in practice.
+      children:
+        tokenization: {name: Tokenization Inconsistency, description: Resolve mismatches between sent tokens and re-tokenized received text.}
+        external: {name: External Modification, description: Survive active tampering such as substitution, deletion, or insertion.}
+        synchronization: {name: Context Synchronization, description: Relax or repair the requirement that both sides share the exact prompt or context (added after the survey).}
+
+steganalysis:
+  name: Linguistic Steganalysis
+  description: Binary classifiers that decide whether a text is a stegotext (countermeasures).
+  children:
+    self-trained:
+      name: Self-trained Word Representations
+      description: Neural detectors trained from scratch.
+      children:
+        rnn: {name: RNN-based, description: Recurrent models of sequential dependencies.}
+        cnn: {name: CNN-based, description: Local n-gram features.}
+        gnn: {name: GNN-based, description: Texts as graphs; message passing for global anomalies.}
+        hybrid: {name: Hybrid, description: Combinations of RNN / CNN / GNN / attention.}
+        other: {name: Other, description: Other self-trained detectors.}
+    pre-trained:
+      name: Pre-trained Word Representations
+      description: Detectors built on pre-trained models.
+      children:
+        masked-lm: {name: Masked-LM-based, description: BERT-style contextual features, frozen or fine-tuned.}
+        llm: {name: Generative LM / LLM-based, description: LLMs fine-tuned (e.g. with LoRA) or prompted for detection.}
+        other: {name: Other, description: Other pre-trained representations (word2vec, GloVe, ELECTRA, ...).}

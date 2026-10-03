@@ -1,0 +1,995 @@
+# Linguistic steganalysis (detect stegotexts).
+# Schema and contribution guide: CONTRIBUTING.md.  Seeded from the survey; edit freely.
+
+- id: chang2026anomaly
+  title: Anomaly-Guided Test-time Adaptation for Linguistic Steganalysis
+  authors: [Haowei Chang, Juan Wen, Wanli Peng, Yinghan Zhou]
+  year: 2026
+  venue: ACM IH&MMSec
+  links:
+    paper: "https://doi.org/10.1145/3785353.3815069"
+  categories: [steganalysis]
+  added: '2026-10-03'
+
+- id: cao2026breaking
+  title: "Breaking the \"Provable Security\": Detecting Finite-Precision Artifacts in LLM-based Steganography via Low-Probability\
+    \ Vanishing"
+  authors: [Wenzhao Cao, Yaofei Wang, Donghui Hu]
+  year: 2026
+  venue: Findings of ACL
+  links:
+    paper: "https://doi.org/10.18653/v1/2026.findings-acl.1013"
+  categories: [steganalysis/pre-trained/llm]
+  features: {pretrained: true, llm_based: true}
+  added: '2026-10-03'
+
+- id: huang2026contextual
+  title: Contextual Relationship Feature-Enhanced Steganalysis for Social Texts
+  authors: [Kaibo Huang, Xiaohan Zhang, Wansheng Wu, Yukun Wei, Zhongliang Yang]
+  year: 2026
+  venue: ICASSP
+  links:
+    paper: "https://doi.org/10.1109/ICASSP55912.2026.11460766"
+  categories: [steganalysis/self-trained/hybrid]
+  backbone: GNNs
+  features: {pretrained: false, llm_based: false}
+  datasets: [other]
+  survey_key: '11460766'
+
+- id: liu2026fadrw
+  name: FADRW
+  title: "FADRW: A Feature-Aware Modulated and Dynamically Reweighted Loss for Few-Shot Linguistic Steganalysis"
+  authors: [Shuo Liu, Xianghong Lin, Yukun Wei, Zhongliang Yang]
+  year: 2026
+  venue: IEEE SPL
+  links:
+    paper: "https://doi.org/10.1109/LSP.2026.3700567"
+    arxiv: "https://arxiv.org/abs/2606.07655"
+  categories: [steganalysis]
+  added: '2026-10-03'
+
+- id: wen2026htlin
+  name: HTLIN-Stega
+  title: "HTLIN-Stega: Hierarchical Text-Label Integration Network for Text Steganalysis"
+  authors: [Juan Wen, Jianghao Jia, Jing Wang, Ziwei Zhang, Yiming Xue]
+  year: 2026
+  venue: Chinese Journal of Electronics
+  links:
+    paper: "https://doi.org/10.23919/cje.2024.00.245"
+  categories: [steganalysis]
+  added: '2026-10-03'
+
+- id: shportko2026kolmogorov
+  title: Kolmogorov Complexity Bounds for LLM Steganography and a Perplexity-Based Detection Proxy
+  authors: [Andrii Shportko]
+  year: 2026
+  venue: arXiv
+  links:
+    arxiv: "https://arxiv.org/abs/2603.21567"
+  categories: [steganalysis/pre-trained]
+  features: {pretrained: true}
+  added: '2026-10-03'
+
+- id: barlow2026large
+  title: Large-Language-Model-Driven Linguistic Steganalysis for Highly Concealed Text Detection
+  authors: [Sofia Barlow]
+  year: 2026
+  venue: SOCIAL AND MANAGEMENT SCIENCES RESEARCH JOURNAL
+  links: {}
+  categories: [steganalysis/pre-trained/llm]
+  backbone: LLM (model-agnostic)
+  features: {pretrained: true, llm_based: true}
+  datasets: [other]
+  survey_key: barlow2026large
+
+- id: luo2026ontrastive
+  title: Ontrastive Hypersphere for One-Class Linguistic Steganalysis
+  authors: [Yufei Luo, Zhen Yang, Xin Xu, Yelei Wang, Ru Zhang]
+  year: 2026
+  venue: ICASSP
+  links:
+    paper: "https://doi.org/10.1109/ICASSP55912.2026.11462507"
+  categories: [steganalysis/pre-trained/masked-lm]
+  backbone: BERT
+  features: {pretrained: true, llm_based: false}
+  datasets: [imdb, twitter, news]
+  survey_key: '11462507'
+
+- id: zhang2026qwen
+  name: Q-HiDu
+  title: Qwen-Enhanced Hierarchical Dual-Attention Network for Text Steganalysis
+  authors: [Yexin Zhang, Ziping Zhao, Wei Yang, Wei Xia]
+  year: 2026
+  venue: CSAIDE
+  links:
+    paper: "https://doi.org/10.1145/3819836.3819840"
+  categories: [steganalysis/pre-trained/llm]
+  features: {pretrained: true, llm_based: true}
+  added: '2026-10-03'
+
+- id: lei2026reed
+  name: REED
+  title: "REED: Post-Training Representation Editing for Cross-Domain Linguistic Steganalysis"
+  authors: [Ruohan Lei, Jianxin Gao, Wanli Peng, Huimin Pei]
+  year: 2026
+  venue: arXiv
+  links:
+    arxiv: "https://arxiv.org/abs/2605.28298"
+  categories: [steganalysis/pre-trained]
+  features: {pretrained: true}
+  added: '2026-10-03'
+
+- id: yiming2026text
+  name: HAM-Stega
+  title: Text Steganalysis Method Based on Hierarchy-Aware Matching
+  authors: ['JIA Jianghao, ZHANG Ziwei, GAO Liting, WEN Juan, XUE Yiming']
+  year: 2026
+  venue: Computer Engineering
+  links:
+    paper: "https://doi.org/10.19678/j.issn.1000-3428.0069385"
+  categories: [steganalysis]
+  added: '2026-10-03'
+
+- id: wang2026user
+  title: User profile constructed by multiple attributes for optimizing linguistic steganalysis in social networks
+  authors: [Yihao Wang, Ruiqi Song, Lingxiao Li, Yifan Tang, Ru Zhang, Jianyi Liu]
+  year: 2026
+  venue: Expert Systems with Applications
+  links:
+    paper: "https://doi.org/https://doi.org/10.1016/j.eswa.2025.129311"
+    code: "https://github.com/WangYH-BUPT/UP4LS"
+  categories: [steganalysis/pre-trained/masked-lm]
+  backbone: BERT
+  features: {pretrained: true, llm_based: false}
+  datasets: [other]
+  survey_key: WANG2026129311
+
+- id: xu2025aggregated
+  title: Aggregated text steganalysis toward social network based on efficient multi-perspective feature fusion
+  authors: [Qiong Xu, Ru Zhang, Jianyi Liu, Yongfeng Huang]
+  year: 2025
+  venue: Knowledge-Based Systems
+  links:
+    paper: "https://doi.org/10.1016/j.knosys.2025.115129"
+  categories: [steganalysis]
+  added: '2026-10-03'
+
+- id: yang2025class
+  title: Class-Aware Adversarial Unsupervised Domain Adaptation for Linguistic Steganalysis
+  authors: [Zhen Yang, Yufei Luo, Jinshuai Yang, Xin Xu, Ru Zhang, Yongfeng Huang]
+  year: 2025
+  venue: IEEE TIFS
+  links:
+    paper: "https://doi.org/10.1109/tifs.2025.3569409"
+  categories: [steganalysis/pre-trained]
+  features: {pretrained: true}
+  added: '2026-10-03'
+
+- id: luo2025clustering
+  title: Clustering-Driven Pseudo-Labeling in Source-Free Domain Adaptation for Linguistic Steganalysis
+  authors: [Yufei Luo, Zhen Yang, Xin Xu, Yelei Wang, Ru Zhang, Yongfeng Huang]
+  year: 2025
+  venue: ACM IH&MMSec
+  links:
+    paper: "https://doi.org/10.1145/3733102.3733114"
+  categories: [steganalysis/pre-trained/masked-lm]
+  backbone: BERT; Bi-LSTMs
+  features: {pretrained: true, llm_based: false}
+  datasets: [imdb, twitter, news]
+  survey_key: 10.1145/3733102.3733114
+
+- id: jiang2025context
+  name: CASS-LS
+  title: Context-Aware and Semantic-Synergistic Linguistic Steganalysis for Social Networks
+  authors: [Yuwen Jiang, Zhen Yang, Xin Xu, Qingying Niu, Jiangrui Zhao]
+  year: 2025
+  venue: IEEE SPL
+  links:
+    paper: "https://doi.org/10.1109/lsp.2025.3639346"
+  categories: [steganalysis]
+  added: '2026-10-03'
+
+- id: nie2025cross
+  title: Cross-domain text steganalysis based on domain adversarial learning
+  authors: [Haiping NIE, Zhuo Chen, Junwei Du, Ying Meng]
+  year: 2025
+  venue: Scientia Sinica Informationis
+  links:
+    paper: "https://doi.org/10.1360/ssi-2024-0352"
+  categories: [steganalysis/pre-trained/masked-lm]
+  features: {pretrained: true, llm_based: false}
+  added: '2026-10-03'
+
+- id: niu2025domain
+  title: Domain-Assisted Few-Shot Linguistic Steganalysis in Imbalanced Class Scenarios
+  authors: [Qingying Niu, Zhen Yang, Yufei Luo, Jiangrui Zhao, Yuwen Jiang]
+  year: 2025
+  venue: IEEE SPL
+  links:
+    paper: "https://doi.org/10.1109/lsp.2025.3553427"
+  categories: [steganalysis]
+  added: '2026-10-03'
+
+- id: li2025general
+  title: General Steganalysis of Generative Linguistic Steganography Based on Dynamic Segment-Level Lexical Association Extraction
+  authors: [Songbin Li, Hui Du, Jingang Wang]
+  year: 2025
+  venue: IEEE SPL
+  links:
+    paper: "https://doi.org/10.1109/LSP.2024.3510457"
+  categories: [steganalysis/pre-trained/other]
+  backbone: Word2vec; LSTMs; CNNs
+  features: {pretrained: true, llm_based: false}
+  datasets: [imdb, twitter, news]
+  survey_key: '10772620'
+
+- id: huang2025gsdfuse
+  name: GSDFuse
+  title: "GSDFuse: Capturing Cognitive Inconsistencies from Multi-Dimensional Weak Signals in Social Media Steganalysis"
+  authors: [Kaibo Huang, Zipei Zhang, Yukun Wei, TianXin Zhang, Zhongliang Yang, Linna Zhou]
+  year: 2025
+  venue: arXiv
+  links:
+    arxiv: "https://arxiv.org/abs/2505.17085"
+  categories: [steganalysis/self-trained/gnn]
+  backbone: GNNs
+  features: {pretrained: false, llm_based: false}
+  datasets: [twitter, other]
+  survey_key: huang2025gsdfusecapturingcognitiveinconsistencies
+
+- id: xiao2025heterogeneous
+  title: Heterogeneous Domain Remapping for Universal Detection of Generative Linguistic Steganography
+  authors: [Tong Xiao, Jingang Wang, Songbin Li]
+  year: 2025
+  venue: IEEE SPL
+  links:
+    paper: "https://doi.org/10.1109/LSP.2025.3549015"
+  categories: [steganalysis/pre-trained/masked-lm]
+  backbone: RoBERTa; CNNs
+  features: {pretrained: true, llm_based: false}
+  datasets: [imdb, twitter, news]
+  survey_key: '10916785'
+
+- id: wang2025kike
+  name: KIKE
+  title: "KIKE: Linguistic Steganalysis Based on Knowledge Infusion and Knowledge Encoding"
+  authors: [Zhuang Wang, Xuekai Chen, Zhongliang Yang, Linna Zhou]
+  year: 2025
+  venue: ICASSP
+  links:
+    paper: "https://doi.org/10.1109/ICASSP49660.2025.10887993"
+  categories: [steganalysis/pre-trained/masked-lm]
+  backbone: BERT; GNNs
+  features: {pretrained: true, llm_based: false}
+  datasets: [other]
+  survey_key: '10887993'
+
+- id: zhang2025linguistic
+  title: Linguistic Steganalysis Based on Few-Shot Adversarial Training
+  authors: [Ziwei Zhang, Juan Wen, Liting Gao, Wanli Peng, Yiming Xue]
+  year: 2025
+  venue: IEEE TDSC
+  links:
+    paper: "https://doi.org/10.1109/TDSC.2025.3532524"
+  categories: [steganalysis/pre-trained/masked-lm]
+  backbone: BERT; CNNs
+  features: {pretrained: true, llm_based: false}
+  datasets: [imdb, twitter, news]
+  survey_key: '10849805'
+
+- id: tang2025linguistic
+  title: "Linguistic Steganalysis via LLMs: Two Modes for Efficient Detection of Strongly Concealed Stego"
+  authors: [Yifan Tang, Yihao Wang, Ru Zhang, Jianyi Liu]
+  year: 2025
+  venue: IEEE SPL
+  links:
+    paper: "https://doi.org/10.1109/LSP.2024.3496817"
+  categories: [steganalysis/pre-trained/llm]
+  backbone: LLM (model-agnostic); LoRA
+  features: {pretrained: true, llm_based: true}
+  datasets: [imdb, twitter, news]
+  survey_key: '10752347'
+
+- id: yang2025linguistic
+  title: Linguistic Steganalysis via Text Dual Attention Fusing Statistical and Multi-Layer Semantic Features
+  authors: [Zhen Yang, Zihan Xu, Xin Xu, Zhongliang Yang, Ru Zhang]
+  year: 2025
+  venue: IEEE SPL
+  links:
+    paper: "https://doi.org/10.1109/LSP.2025.3538494"
+  categories: [steganalysis/pre-trained/other]
+  backbone: ERNIE sun2019ernieenhancedrepresentationknowledge; Attention
+  features: {pretrained: true, llm_based: false}
+  datasets: [imdb, twitter, news]
+  survey_key: '10870426'
+
+- id: wang2025llm
+  title: LLM-Based Tuning-Free Linguistic Steganalysis
+  authors: [Yuyi Wang, Huili Wang, Kaiyi Pang, Yamin Li, Yongfeng Huang]
+  year: 2025
+  venue: EIECT
+  links:
+    paper: "https://doi.org/10.1109/eiect68017.2025.11332162"
+  categories: [steganalysis/pre-trained/llm]
+  features: {pretrained: true, llm_based: true}
+  added: '2026-10-03'
+
+- id: li2025msed
+  name: MSED
+  title: "MSED: A Linguistic Steganalysis Method Based on Multi-granularity Semantic Extraction Using Dual-Mode Fusion"
+  authors: [Huifeng Li, Qianmu Li, Yingquan Chen, Qing Chang, Xiaocong Wu]
+  year: 2025
+  venue: ACNS
+  links:
+    paper: "https://doi.org/10.1007/978-3-031-95764-2_8"
+  categories: [steganalysis]
+  added: '2026-10-03'
+
+- id: wang2025multi
+  title: Multi-Classification of Linguistic Steganography Driven by Large Language Models
+  authors: [Jie Wang, Yihao Wang, Yihao Li, Ru Zhang, Jianyi Liu]
+  year: 2025
+  venue: IEEE SPL
+  links:
+    paper: "https://doi.org/10.1109/lsp.2025.3545947"
+  categories: [steganalysis/pre-trained/llm]
+  features: {pretrained: true, llm_based: true}
+  added: '2026-10-03'
+
+- id: luo2025pseudo
+  title: Pseudo-label Based Domain Adaptation for Zero-Shot Text Steganalysis
+  authors: [Yufei Luo, Zhen Yang, Ru Zhang, Jianyi Liu]
+  year: 2025
+  venue: ICCES
+  links: {}
+  categories: [steganalysis/pre-trained/masked-lm]
+  backbone: BERT; Bi-LSTMs
+  features: {pretrained: true, llm_based: false}
+  datasets: [imdb, twitter, news]
+  survey_key: 10.1007/978-3-031-82907-9_10
+
+- id: xu2025sn
+  name: SN-Stego
+  title: "SN-Stego: Dataset for Social Networks Text Steganalysis via Local Group Discovery and Sample Distribution Regulation"
+  authors: [Qiong Xu, Ru Zhang, Jianyi Liu, Yongfeng Huang]
+  year: 2025
+  venue: Data Intelligence
+  links:
+    paper: "https://doi.org/10.3724/2096-7004.di.2025.0126"
+  categories: [steganalysis]
+  datasets: [sn-stego]
+  added: '2026-10-03'
+
+- id: wang2025stlc
+  name: STLC-KG
+  title: "STLC-KG:A Social Text Steganalysis Method Combining Large-Scale Language Models and Common-Sense Knowledge Graphs"
+  authors: [Zhuang Wang, Linna Zhou, Xuekai Chen, Zhili Zhou, Zhongliang Yang]
+  year: 2025
+  venue: AAAI
+  links:
+    paper: "https://doi.org/10.1609/aaai.v39i24.34735"
+  categories: [steganalysis/pre-trained/llm]
+  backbone: LLM (model-agnostic); GNNs
+  features: {pretrained: true, llm_based: true}
+  datasets: [imdb, twitter, news]
+  survey_key: Wang_Zhou_Chen_Zhou_Yang_2025
+
+- id: zhang2025student
+  title: Student-Augmented Self-Training with Closed Loop Feedback in Linguistic Steganalysis
+  authors: [Ziwei Zhang, Juan Wen, Wanli Peng, Haowei Chang]
+  year: 2025
+  venue: CIKM
+  links:
+    paper: "https://doi.org/10.1145/3746252.3760827"
+  categories: [steganalysis/pre-trained/masked-lm]
+  backbone: BERT
+  features: {pretrained: true, llm_based: false}
+  datasets: [imdb, twitter, news]
+  survey_key: 10.1145/3746252.3760827
+
+- id: wang2025synonym
+  title: Synonym Substitution Steganalysis Based on Heterogeneous Feature Extraction and Hard Sample Mining Re-Perception
+  authors: [Jingang Wang, Hui Na Du, Peng Liu]
+  year: 2025
+  venue: Big Data and Cognitive Computing
+  links:
+    paper: "https://doi.org/10.3390/bdcc9080192"
+  categories: [steganalysis]
+  added: '2026-10-03'
+
+- id: niu2025text
+  title: Text Steganalysis with Language Style for Social
+  authors: [Qingying Niu, Zhen Yang]
+  year: 2025
+  venue: ICCES
+  links: {}
+  categories: [steganalysis/pre-trained/masked-lm]
+  backbone: RoBERTa; Bi-RNNs
+  features: {pretrained: true, llm_based: false}
+  datasets: [other]
+  survey_key: niu2025text
+
+- id: lu2025tgca
+  name: TGCA
+  title: "TGCA: A Transformer GNN-based Approach with Cross-Attention Mechanism for Steganographic Text Detection in Social\
+    \ Networks"
+  authors: [Junkai Lu, Zhongliang Yang, Kaibo Huang, Zhuang Wang, Zhili Zhou, Linna Zhou]
+  year: 2025
+  venue: ICASSP
+  links:
+    paper: "https://doi.org/10.1109/ICASSP49660.2025.10888159"
+  categories: [steganalysis/self-trained/hybrid]
+  backbone: CNNs; GNNs; Attention
+  features: {pretrained: false, llm_based: false}
+  datasets: [other]
+  survey_key: '10888159'
+
+- id: wu2024test
+  title: A Test-Time Entropy Minimization Method for Cross-Domain Linguistic Steganalysis
+  authors: [Jiaxuan Wu, Xin Chen, Juan Wen, Wanli Peng, Yiming Xue]
+  year: 2024
+  venue: IEEE SPL
+  links:
+    paper: "https://doi.org/10.1109/LSP.2024.3421946"
+  categories: [steganalysis/pre-trained/masked-lm]
+  backbone: BERT
+  features: {pretrained: true, llm_based: false}
+  datasets: [imdb, twitter, news]
+  survey_key: '10582504'
+
+- id: xue2024adaptive
+  title: Adaptive Domain-Invariant Feature Extraction for Cross-Domain Linguistic Steganalysis
+  authors: [Yiming Xue, Jiaxuan Wu, Ronghua Ji, Ping Zhong, Juan Wen, Wanli Peng]
+  year: 2024
+  venue: IEEE TIFS
+  links:
+    paper: "https://doi.org/10.1109/TIFS.2023.3328455"
+  categories: [steganalysis/pre-trained/masked-lm]
+  backbone: BERT; CNNs
+  features: {pretrained: true, llm_based: false}
+  datasets: [imdb, twitter, news]
+  survey_key: '10299660'
+
+- id: pang2024cats
+  name: CATS
+  title: "CATS: Connection-Aware and Interaction-Based Text Steganalysis in Social Networks"
+  authors: [Kaiyi Pang, Jinshuai Yang, Yue Gao, Minhao Bai, Zhongliang Yang, Minghu Jiang, Yongfeng Huang]
+  year: 2024
+  venue: ICONIP
+  links: {}
+  categories: [steganalysis/self-trained/gnn]
+  backbone: GNNs
+  features: {pretrained: false, llm_based: false}
+  datasets: [twitter, other]
+  survey_key: 10.1007/978-981-99-8073-4_9
+
+- id: wang2024cross
+  title: Cross-Domain Detection of Generative Linguistic Steganography Based on Source and Target Domain In-depth Alignment
+  authors: [Jingang Wang, Songbin Li, Hui Du]
+  year: 2024
+  venue: ICBCTIS
+  links:
+    paper: "https://doi.org/10.1109/ICBCTIS64495.2024.00027"
+  categories: [steganalysis/self-trained/cnn]
+  backbone: CNNs; Attention
+  features: {pretrained: false, llm_based: false}
+  datasets: [imdb, twitter, news]
+  survey_key: '10805412'
+
+- id: bai2024exploration
+  title: Exploration of the Effectiveness and Characteristics of ChatGPT in Steganalysis Tasks
+  authors: [Minhao Bai, Yongfeng Huang, Jinshuai Yang, Kaiyi Pang, Songbin Li]
+  year: 2024
+  venue: Asia Service Sciences and Software Engineering Conference
+  links:
+    paper: "https://doi.org/10.1145/3634814.3634837"
+  categories: [steganalysis/pre-trained/llm]
+  backbone: LLM (model-agnostic)
+  features: {pretrained: true, llm_based: true}
+  datasets: [imdb, twitter]
+  survey_key: 10.1145/3634814.3634837
+
+- id: you2024linguistic
+  title: Linguistic steganalysis via multi-task with crossing generative-natural domain
+  authors: [Huiqing You, Lingyun Xiang, Chunfang Yang, Xiaobo Shen]
+  year: 2024
+  venue: Neurocomputing
+  links:
+    paper: "https://doi.org/https://doi.org/10.1016/j.neucom.2024.128260"
+  categories: [steganalysis/pre-trained/masked-lm]
+  backbone: BERT
+  features: {pretrained: true, llm_based: false}
+  datasets: [imdb, twitter]
+  survey_key: YOU2024128260
+
+- id: gao2024linguistic-2
+  title: Linguistic Steganalysis via Probabilistic Weighted Contrastive Learning
+  authors: [Liting Gao, Juan Wen, Ziwei Zhang, Guangying Fan, Yinghan Zhou]
+  year: 2024
+  venue: IEEE SPL
+  links:
+    paper: "https://doi.org/10.1109/LSP.2024.3426927"
+  categories: [steganalysis/pre-trained/other]
+  backbone: ELECTRA pmlr-v9-gutmann10a
+  features: {pretrained: true, llm_based: false}
+  datasets: [imdb, twitter, news]
+  survey_key: '10596690'
+
+- id: yuan2024multi
+  title: Multi-task few-shot text steganalysis based on context-attentive prototypes
+  authors: [Kaiguo Yuan, Yu Yang, Ziwei Zhang, Juan Wen]
+  year: 2024
+  venue: Expert Systems with Applications
+  links:
+    paper: "https://doi.org/https://doi.org/10.1016/j.eswa.2024.123437"
+  categories: [steganalysis/pre-trained/masked-lm]
+  backbone: BERT; Bi-LSTMs
+  features: {pretrained: true, llm_based: false}
+  datasets: [imdb, twitter, news]
+  survey_key: YUAN2024123437
+
+- id: yang2024next
+  title: "Towards Next-Generation Steganalysis: LLMs Unleash the Power of Detecting Steganography"
+  authors: [Minhao Bai. Jinshuai Yang, Kaiyi Pang, Huili Wang, Yongfeng Huang]
+  year: 2024
+  venue: arXiv
+  links:
+    arxiv: "https://arxiv.org/abs/2405.09090"
+  categories: [steganalysis/pre-trained/llm]
+  backbone: LLM (model-agnostic); LoRA
+  features: {pretrained: true, llm_based: true}
+  datasets: [imdb, twitter, news]
+  survey_key: yang2024nextgenerationsteganalysisllmsunleash
+
+- id: xiang2023general
+  title: A General Linguistic Steganalysis Framework Using Multi-Task Learning.
+  authors: [Lingyun Xiang, Rong Wang, Yuhang Liu, Yangfan Liu, Lina Tan]
+  year: 2023
+  venue: Computer Systems Science & Engineering
+  links: {}
+  categories: [steganalysis/self-trained/cnn]
+  backbone: CNNs
+  features: {pretrained: false, llm_based: false}
+  datasets: [other]
+  survey_key: xiang2023general
+
+- id: li2023detection
+  title: Detection of Generative Linguistic Steganography Based on Explicit and Latent Text Word Relation Mining Using Deep
+    Learning
+  authors: [Songbin Li, Jingang Wang, Peng Liu]
+  year: 2023
+  venue: IEEE TDSC
+  links:
+    paper: "https://doi.org/10.1109/TDSC.2022.3156972"
+  categories: [steganalysis/self-trained/cnn]
+  backbone: Attention; CNNs
+  features: {pretrained: false, llm_based: false}
+  datasets: [imdb, twitter]
+  survey_key: '9732641'
+
+- id: xu2023linguistic
+  title: Linguistic Steganalysis by Enhancing and Integrating Local and Global Features
+  authors: [Qiong Xu, Ru Zhang, Jianyi Liu]
+  year: 2023
+  venue: IEEE SPL
+  links:
+    paper: "https://doi.org/10.1109/LSP.2023.3238283"
+  categories: [steganalysis/self-trained/other]
+  backbone: CNNs; Bi-GRU
+  features: {pretrained: false, llm_based: false}
+  datasets: [other]
+  survey_key: '10021965'
+
+- id: wang2023linguistic
+  title: Linguistic Steganalysis in Few-Shot Scenario
+  authors: [Huili Wang, Zhongliang Yang, Jinshuai Yang, Cheng Chen, Yongfeng Huang]
+  year: 2023
+  venue: IEEE TIFS
+  links:
+    paper: "https://doi.org/10.1109/TIFS.2023.3298210"
+  categories: [steganalysis/pre-trained/masked-lm]
+  backbone: BERT
+  features: {pretrained: true, llm_based: false}
+  datasets: [imdb, twitter, news]
+  survey_key: '10190738'
+
+- id: yang2023linguistic
+  title: Linguistic Steganalysis Toward Social Network
+  authors: [Jinshuai Yang, Zhongliang Yang, Jiajun Zou, Haoqin Tu, Yongfeng Huang]
+  year: 2023
+  venue: IEEE TIFS
+  links:
+    paper: "https://doi.org/10.1109/TIFS.2022.3226909"
+  categories: [steganalysis/self-trained/gnn]
+  backbone: GNNs
+  features: {pretrained: false, llm_based: false}
+  datasets: [other]
+  survey_key: '9970400'
+
+- id: wen2023linguistic
+  title: Linguistic Steganalysis via Fusing Multi-Granularity Attentional Text Features
+  authors: [Juan Wen, Yaqian Deng, Wanli Peng, Yiming Xue]
+  year: 2023
+  venue: Chinese Journal of Electronics
+  links:
+    paper: "https://doi.org/10.23919/cje.2022.00.009"
+  categories: [steganalysis/self-trained/hybrid]
+  backbone: Bi-LSTMs; CNNs
+  features: {pretrained: false, llm_based: false}
+  datasets: [imdb, twitter, news, other]
+  survey_key: '10038789'
+
+- id: yang2023link
+  name: LINK
+  title: "LINK: Linguistic Steganalysis Framework with External Knowledge"
+  authors: [Jinshuai Yang, Zhongliang Yang, Xinrui Ge, Jiajun Zou, Yue Gao, Yongfeng Huang]
+  year: 2023
+  venue: ICASSP
+  links:
+    paper: "https://doi.org/10.1109/ICASSP49357.2023.10097161"
+  categories: [steganalysis/self-trained/gnn]
+  backbone: GNNs
+  features: {pretrained: false, llm_based: false}
+  datasets: [imdb, twitter]
+  survey_key: '10097161'
+
+- id: wang2023rls
+  name: RLS-DTS
+  title: "RLS-DTS: Reinforcement-Learning Linguistic Steganalysis in Distribution-Transformed Scenario"
+  authors: [Yihao Wang, Ru Zhang, Jianyi Liu]
+  year: 2023
+  venue: IEEE SPL
+  links:
+    paper: "https://doi.org/10.1109/LSP.2023.3310380"
+  categories: [steganalysis/pre-trained/other]
+  backbone: GloVe; LSTMs
+  features: {pretrained: true, llm_based: false}
+  datasets: [other]
+  survey_key: '10234544'
+
+- id: wen2023scl
+  name: SCL-Stega
+  title: "SCL-Stega: Exploring Advanced Objective in Linguistic Steganalysis using Contrastive Learning"
+  authors: [Juan Wen, Liting Gao, Guangying Fan, Ziwei Zhang, Jianghao Jia, Yiming Xue]
+  year: 2023
+  venue: ACM IH&MMSec
+  links:
+    paper: "https://doi.org/10.1145/3577163.3595111"
+    code: "https://github.com/Katelin-glt/SCL-Stega"
+  categories: [steganalysis/pre-trained/masked-lm]
+  backbone: BERT
+  features: {pretrained: true, llm_based: false}
+  datasets: [imdb, twitter, news]
+  survey_key: 10.1145/3577163.3595111
+
+- id: peng2023text
+  title: Text Steganalysis Based on Hierarchical Supervised Learning and Dual Attention Mechanism
+  authors: [Wanli Peng, Sheng Li, Zhenxing Qian, Xinpeng Zhang]
+  year: 2023
+  venue: IEEE/ACM TASLP
+  links:
+    paper: "https://doi.org/10.1109/TASLP.2023.3319975"
+  categories: [steganalysis/pre-trained/masked-lm]
+  backbone: BERT
+  features: {pretrained: true, llm_based: false}
+  datasets: [imdb, twitter]
+  survey_key: '10268497'
+
+- id: wang2023v
+  name: V-A3tS
+  title: "V-A3tS: A rapid text steganalysis method based on position information and variable parameter multi-head self-attention\
+    \ controlled by length"
+  authors: [Yihao Wang, Ru Zhang, Jianyi Liu]
+  year: 2023
+  venue: Journal of Information Security and Applications
+  links:
+    paper: "https://doi.org/https://doi.org/10.1016/j.jisa.2023.103512"
+  categories: [steganalysis/pre-trained/masked-lm]
+  backbone: BERT
+  features: {pretrained: true, llm_based: false}
+  datasets: [imdb, twitter]
+  survey_key: WANG2023103512
+
+- id: xiang2022aggregating
+  title: Aggregating Local and Global Text Features for Linguistic Steganalysis
+  authors: [Lingyun Xiang, Yuhang Liu, Huiqing You, Chengfu Ou]
+  year: 2022
+  venue: IEEE SPL
+  links:
+    paper: "https://doi.org/10.1109/LSP.2022.3185946"
+  categories: [steganalysis/pre-trained/masked-lm]
+  backbone: BERT; GNNs
+  features: {pretrained: true, llm_based: false}
+  datasets: [imdb, twitter]
+  survey_key: '9806187'
+
+- id: xue2022effective
+  title: An effective linguistic steganalysis framework based on hierarchical mutual learning
+  authors: [Yiming Xue, Lingzhi Kong, Wanli Peng, Ping Zhong, Juan Wen]
+  year: 2022
+  venue: Information Sciences
+  links:
+    paper: "https://doi.org/https://doi.org/10.1016/j.ins.2021.11.086"
+  categories: [steganalysis/self-trained/cnn]
+  backbone: CNNs
+  features: {pretrained: false, llm_based: false}
+  datasets: [imdb, twitter, news]
+  survey_key: XUE2022140
+
+- id: xue2022domain
+  title: Domain Adaptational Text Steganalysis Based on Transductive Learning
+  authors: [Yiming Xue, Boya Yang, Yaqian Deng, Wanli Peng, Juan Wen]
+  year: 2022
+  venue: ACM IH&MMSec
+  links:
+    paper: "https://doi.org/10.1145/3531536.3532963"
+  categories: [steganalysis/pre-trained/masked-lm]
+  backbone: BERT; CNNs
+  features: {pretrained: true, llm_based: false}
+  datasets: [imdb, twitter, news]
+  survey_key: 10.1145/3531536.3532963
+
+- id: yi2022exploiting
+  title: Exploiting Language Model For Efficient Linguistic Steganalysis
+  authors: [Biao Yi, Hanzhou Wu, Guorui Feng, Xinpeng Zhang]
+  year: 2022
+  venue: ICASSP
+  links:
+    paper: "https://doi.org/10.1109/ICASSP43922.2022.9746219"
+  categories: [steganalysis/self-trained/rnn]
+  backbone: LSTMs
+  features: {pretrained: false, llm_based: false}
+  datasets: [imdb, twitter]
+  survey_key: '9746219'
+
+- id: wen2022few
+  title: Few-shot Text Steganalysis Based on Attentional Meta-learner
+  authors: [Juan Wen, Ziwei Zhang, Yu Yang, Yiming Xue]
+  year: 2022
+  venue: ACM IH&MMSec
+  links:
+    paper: "https://doi.org/10.1145/3531536.3532949"
+  categories: [steganalysis/pre-trained/masked-lm]
+  backbone: BERT; Bi-LSTMs
+  features: {pretrained: true, llm_based: false}
+  datasets: [imdb, twitter, news]
+  survey_key: 10.1145/3531536.3532949
+
+- id: fu2022hga
+  name: HGA
+  title: "HGA: Hierarchical Feature Extraction With Graph and Attention Mechanism for Linguistic Steganalysis"
+  authors: [Zhangjie Fu, Qi Yu, Fan Wang, Changhao Ding]
+  year: 2022
+  venue: IEEE SPL
+  links:
+    paper: "https://doi.org/10.1109/LSP.2022.3194844"
+  categories: [steganalysis/self-trained/gnn]
+  backbone: GNNs
+  features: {pretrained: false, llm_based: false}
+  datasets: [imdb, twitter]
+  survey_key: '9844755'
+
+- id: wen2022lifelong
+  title: Lifelong Learning for Text Steganalysis Based on Chronological Task Sequence
+  authors: [Juan Wen, Yaqian Deng, Jiaxuan Wu, Xingpeng Liu, Yiming Xue]
+  year: 2022
+  venue: IEEE SPL
+  links:
+    paper: "https://doi.org/10.1109/LSP.2022.3223803"
+  categories: [steganalysis/pre-trained/masked-lm]
+  backbone: BERT
+  features: {pretrained: true, llm_based: false}
+  datasets: [imdb, twitter, news]
+  survey_key: '9956902'
+
+- id: guo2022linguistic
+  title: Linguistic Steganalysis Merging Semantic and Statistical Features
+  authors: [Shengnan Guo, Jianyi Liu, Zhongliang Yang, Weike You, Ru Zhang]
+  year: 2022
+  venue: IEEE SPL
+  links:
+    paper: "https://doi.org/10.1109/LSP.2022.3212630"
+  categories: [steganalysis/pre-trained/masked-lm]
+  backbone: BERT
+  features: {pretrained: true, llm_based: false}
+  datasets: [imdb, twitter, news]
+  survey_key: '9913623'
+
+- id: yang2022sesy
+  name: SeSy
+  title: "SeSy: Linguistic Steganalysis Framework Integrating Semantic and Syntactic Features"
+  authors: [Jinshuai Yang, Zhongliang Yang, Siyu Zhang, Haoqin Tu, Yongfeng Huang]
+  year: 2022
+  venue: IEEE SPL
+  links:
+    paper: "https://doi.org/10.1109/LSP.2021.3122901"
+  categories: [steganalysis/pre-trained/masked-lm]
+  backbone: BERT; GNNs
+  features: {pretrained: true, llm_based: false}
+  datasets: [imdb, twitter, news]
+  survey_key: '9591452'
+
+- id: xu2022small
+  title: Small-Scale Linguistic Steganalysis for Multi-Concealed Scenarios
+  authors: [Yimin Xu, Tengyun Zhao, Ping Zhong]
+  year: 2022
+  venue: IEEE SPL
+  links:
+    paper: "https://doi.org/10.1109/LSP.2021.3128372"
+  categories: [steganalysis/pre-trained/masked-lm]
+  backbone: BERT; Bi-GRUs; CNNs
+  features: {pretrained: true, llm_based: false}
+  datasets: [imdb, twitter, news]
+  survey_key: '9616404'
+
+- id: xu2021linguistic
+  title: A novel linguistic steganalysis method for hybrid steganographic texts
+  authors: [Yimin Xu, Liran Yang, Tengyun Zhao, Ping Zhong]
+  year: 2021
+  venue: "Journal of Physics: Conference Series"
+  links:
+    paper: "https://doi.org/10.1088/1742-6596/1873/1/012053"
+  categories: [steganalysis/pre-trained/masked-lm]
+  backbone: BERT; Bi-LSTMs
+  features: {pretrained: true, llm_based: false}
+  datasets: [imdb, twitter, news]
+  survey_key: Xu_2021
+
+- id: zou2021high
+  title: High-Performance Linguistic Steganalysis, Capacity Estimation and Steganographic Positioning
+  authors: [Jiajun Zou, Zhongliang Yang, Siyu Zhang, Sadaqat ur Rehman, Yongfeng Huang]
+  year: 2021
+  venue: Digital Forensics and Watermarking
+  links:
+    code: "https://github.com/YangzlTHU/Linguistic-Steganography-and-Steganalysis"
+  categories: [steganalysis/pre-trained/masked-lm]
+  backbone: BERT; Bi-LSTMs
+  features: {pretrained: true, llm_based: false}
+  datasets: [twitter, news]
+  survey_key: 10.1007/978-3-030-69449-4_7
+
+- id: wu2021linguistic
+  title: Linguistic Steganalysis With Graph Neural Networks
+  authors: [Hanzhou Wu, Biao Yi, Feng Ding, Guorui Feng, Xinpeng Zhang]
+  year: 2021
+  venue: IEEE SPL
+  links:
+    paper: "https://doi.org/10.1109/LSP.2021.3062233"
+  categories: [steganalysis/self-trained/gnn]
+  backbone: GNNs
+  features: {pretrained: false, llm_based: false}
+  datasets: [imdb, twitter]
+  survey_key: '9364681'
+
+- id: jiao2021neural
+  title: Neural Linguistic Steganalysis via Multi-Head Self-Attention
+  authors: [Sai-Mei Jiao, Hai-feng Wang, Kun Zhang, Ya-qi Hu]
+  year: 2021
+  venue: Journal of Electrical and Computer Engineering
+  links: {}
+  categories: [steganalysis/self-trained/other]
+  backbone: Attention
+  features: {pretrained: false, llm_based: false}
+  datasets: [imdb, twitter, news]
+  survey_key: jiao2021neural
+
+- id: peng2021real
+  title: Real-Time Text Steganalysis Based on Multi-Stage Transfer Learning
+  authors: [Wanli Peng, Jinyu Zhang, Yiming Xue, Zhenghong Yang]
+  year: 2021
+  venue: IEEE SPL
+  links:
+    paper: "https://doi.org/10.1109/LSP.2021.3097241"
+  categories: [steganalysis/pre-trained/masked-lm]
+  backbone: BERT; Bi-LSTMs; CNNs
+  features: {pretrained: true, llm_based: false}
+  datasets: [imdb, twitter]
+  survey_key: '9484749'
+
+- id: li2020two
+  title: A two-stage highly robust text steganalysis model
+  authors: [Enlu Li, Zhangjie Fu, Siyu Chen, Junfu Chen]
+  year: 2020
+  venue: Journal of Cybersecurity
+  links: {}
+  categories: [steganalysis/self-trained/hybrid]
+  backbone: Bi-LSTMs; GNNs
+  features: {pretrained: false, llm_based: false}
+  datasets: [other]
+  survey_key: li2020two
+
+- id: yang2020linguistic
+  title: Linguistic Steganalysis via Densely Connected LSTM with Feature Pyramid
+  authors: [Hao Yang, YongJian Bao, Zhongliang Yang, Sheng Liu, Yongfeng Huang, Saimei Jiao]
+  year: 2020
+  venue: ACM IH&MMSec
+  links:
+    paper: "https://doi.org/10.1145/3369412.3395067"
+  categories: [steganalysis/self-trained/rnn]
+  backbone: Bi-LSTMs
+  features: {pretrained: false, llm_based: false}
+  datasets: [imdb, twitter, news]
+  survey_key: 10.1145/3369412.3395067
+
+- id: bao2020text
+  title: Text Steganalysis with Attentional L STM-CNN
+  authors: [YongJian Bao, Hao Yang, ZhongLiang Yang, Sheng Liu, YongFeng Huang]
+  year: 2020
+  venue: ICCCS
+  links:
+    paper: "https://doi.org/10.1109/ICCCS49078.2020.9118410"
+  categories: [steganalysis/self-trained/hybrid]
+  backbone: Bi-LSTMs; CNNs
+  features: {pretrained: false, llm_based: false}
+  datasets: [imdb, twitter, news]
+  survey_key: '9118410'
+
+- id: yang2020ts
+  name: TS-CSW
+  title: "TS-CSW: text steganalysis and hidden capacity estimation based on convolutional sliding windows"
+  authors: [Zhongliang Yang, Yongfeng Huang, Yu-Jin Zhang]
+  year: 2020
+  venue: Multimedia Tools and Applications
+  links:
+    paper: "https://doi.org/10.1007/s11042-020-08716-w"
+  categories: [steganalysis/self-trained/cnn]
+  backbone: CNNs
+  features: {pretrained: false, llm_based: false}
+  datasets: [other]
+  survey_key: 10.1007/s11042-020-08716-w
+
+- id: yang2019fast
+  name: FCN
+  title: A Fast and Efficient Text Steganalysis Method
+  authors: [Zhongliang Yang, Yongfeng Huang, Yu-Jin Zhang]
+  year: 2019
+  venue: IEEE SPL
+  links:
+    paper: "https://doi.org/10.1109/LSP.2019.2902095"
+  categories: [steganalysis/self-trained/other]
+  backbone: Feed-forward neural networks
+  features: {pretrained: false, llm_based: false}
+  datasets: [other]
+  survey_key: '8653856'
+
+- id: niu2019hybrid
+  name: R-BiLSTM-C
+  title: A Hybrid R-BILSTM-C Neural Network Based Text Steganalysis
+  authors: [Yan Niu, Juan Wen, Ping Zhong, Yiming Xue]
+  year: 2019
+  venue: IEEE SPL
+  links:
+    paper: "https://doi.org/10.1109/LSP.2019.2953953"
+  categories: [steganalysis/self-trained/hybrid]
+  backbone: Bi-LSTMs; CNNs
+  features: {pretrained: false, llm_based: false}
+  datasets: [imdb, twitter]
+  survey_key: '8903243'
+
+- id: wen2019convolutional
+  name: CNN
+  title: Convolutional Neural Network Based Text Steganalysis
+  authors: [Juan Wen, Xuejing Zhou, Ping Zhong, Yiming Xue]
+  year: 2019
+  venue: IEEE SPL
+  links:
+    paper: "https://doi.org/10.1109/LSP.2019.2895286"
+  categories: [steganalysis/pre-trained/other]
+  backbone: Word2vec; CNNs
+  features: {pretrained: true, llm_based: false}
+  datasets: [other]
+  survey_key: '8625512'
+
+- id: yang2019ts
+  name: TS-RNN
+  title: "TS-RNN: Text Steganalysis Based on Recurrent Neural Networks"
+  authors: [Zhongliang Yang, Ke Wang, Jian Li, Yongfeng Huang, Yu-Jin Zhang]
+  year: 2019
+  venue: IEEE SPL
+  links:
+    paper: "https://doi.org/10.1109/LSP.2019.2920452"
+  categories: [steganalysis/self-trained/rnn]
+  backbone: Bi-RNNs; LSTMs
+  features: {pretrained: false, llm_based: false}
+  datasets: [imdb, twitter]
+  survey_key: '8727932'

@@ -1,0 +1,2174 @@
+# Generative linguistic steganography (sample a stegotext from an LM).
+# Schema and contribution guide: CONTRIBUTING.md.  Seeded from the survey; edit freely.
+
+- id: xiang2026content
+  title: A Content-Preserving Secure Linguistic Steganography
+  authors: [Lingyun Xiang, Chengfu Ou, Xu He, Zhongliang Yang, Yuling Liu]
+  year: 2026
+  venue: AAAI
+  links:
+    paper: "https://doi.org/10.1609/aaai.v40i42.40903"
+  categories: [generative/security/modeling]
+  targets: [security]
+  scenario: General
+  backbone: BERT
+  features: {llm_adaptable: false, training_free: false, asymmetric: true, black_box: false}
+  evaluation:
+    metrics: [ppl, bpt, embedding_rate, speed, error_rate]
+    steganalysis: [other]
+  survey_key: Xiang_Ou_He_Yang_Liu_2026
+
+- id: cao2026alkaid
+  name: Alkaid
+  title: "Alkaid: Resilience to Edit Errors in Provably Secure Steganography via Distance-Constrained Encoding"
+  authors: [Zhihan Cao, Gaolei Li, Jun Wu, Jianhua Li, Hang Zhang, Mingzhe Chen]
+  year: 2026
+  venue: arXiv
+  links:
+    arxiv: "https://arxiv.org/abs/2603.06169"
+  categories: [generative/robustness/external, generative/security/provable]
+  targets: [security, robustness]
+  added: '2026-10-03'
+
+- id: barlev2026additive
+  title: An Additive Approximation Scheme for Generating Dyadic Codings for the Outputs of an LLM
+  authors: [Daniella Bar-Lev, Farzad Farnoud, Ryan Gabrys]
+  year: 2026
+  venue: arXiv
+  links:
+    arxiv: "https://arxiv.org/abs/2605.05837"
+  categories: [generative/security/other]
+  targets: [security, efficiency]
+  added: '2026-10-03'
+
+- id: yan2026anchored
+  name: ASW
+  title: "Anchored Sliding Window: Toward Robust and Imperceptible Linguistic Steganography"
+  authors: [Ruiyi Yan, Shiao Meng, Yugo Murawaki]
+  year: 2026
+  venue: ACL
+  links:
+    paper: "https://aclanthology.org/2026.acl-long.44/"
+    code: "https://github.com/ryehr/ASW_steganography"
+  categories: [generative/robustness/external]
+  targets: [robustness]
+  scenario: General
+  backbone: Model-agnostic
+  features: {llm_adaptable: true, training_free: false, asymmetric: false, black_box: false}
+  evaluation:
+    metrics: [ppl, step_kld, bleu, rouge, human_eval, bpt, speed, error_rate]
+    steganalysis: [other]
+  survey_key: yan2026anchoredslidingwindowrobust
+
+- id: moszczynski2026asymmetric
+  title: Asymmetric Resource Constrained Decoding for Lightweight Linguistic Steganography in Causal LLMs
+  authors: [Paweł Moszczyński, Szymon Tokarski, Jakub Nowakowski, Wojciech Mazurczyk]
+  year: 2026
+  venue: ARES
+  links:
+    paper: "https://doi.org/10.1007/978-3-032-37218-5_7"
+  categories: [generative/efficiency/other]
+  targets: [efficiency]
+  features: {asymmetric: true}
+  added: '2026-10-03'
+
+- id: shao2026black
+  title: Black-Box Steganography for Large Language Models via Preference Ranking
+  authors: [Zhengkang Shao, Zichi Wang, H B Wu]
+  year: 2026
+  venue: PRMVAI
+  links:
+    paper: "https://doi.org/10.1109/prmvai70103.2026.11605556"
+  categories: [generative/security/llm]
+  targets: [security]
+  features: {black_box: true}
+  added: '2026-10-03'
+
+- id: wang2026breaking
+  name: ANStega
+  title: "Breaking the Generative Steganography Trilemma: ANStega for Optimal Capacity, Efficiency, and Security"
+  authors: [Yaofei Wang, Weilong Pang, Kejiang Chen, Jinyang Ding, Donghui Hu, Weiming Zhang, Nenghai Yu]
+  year: 2026
+  venue: NDSS
+  links:
+    paper: "https://doi.org/10.14722/ndss.2026.240605"
+  categories: [generative/security/provable, generative/efficiency/entropy]
+  targets: [security, efficiency]
+  added: '2026-10-03'
+
+- id: ghantous2026carts
+  name: CARTS
+  title: "CARTS: Contextual Autoregressive Rank Transcoding Steganography for Full-Capacity Keyed Text Encoding"
+  authors: [Wissam Ghantous, Alexander V. Mantzaris]
+  year: 2026
+  venue: arXiv
+  links:
+    arxiv: "https://arxiv.org/abs/2609.10744"
+  categories: [generative/efficiency/other]
+  targets: [security, efficiency]
+  added: '2026-10-03'
+
+- id: pang2026codetta
+  name: Codetta
+  title: "Codetta: High-Capacity, Keyless, and Undetectable Multi-Agent Collusion"
+  authors: [Qi Pang, Virginia Smith, Wenting Zheng]
+  year: 2026
+  venue: arXiv
+  links:
+    arxiv: "https://arxiv.org/abs/2609.28900"
+  categories: [generative/security/llm]
+  targets: [security, efficiency]
+  added: '2026-10-03'
+
+- id: zhou2026conceptual
+  title: Conceptual Steganography
+  authors: [Zhejian Zhou, Jonathan May]
+  year: 2026
+  venue: arXiv
+  links:
+    arxiv: "https://arxiv.org/abs/2605.26537"
+  categories: [generative/security/other]
+  targets: [security]
+  added: '2026-10-03'
+
+- id: jiang2026disreo
+  name: Disreo
+  title: "Disreo: Provably Secure No-Box-Extraction Linguistic Steganography Based on Distribution Reorganization"
+  authors: [Jun Jiang, Kejiang Chen, Na Zhao, Yuang Qi, Xin Zhang, Weiming Zhang, Nenghai Yu]
+  year: 2026
+  venue: IEEE TMM
+  links:
+    paper: "https://doi.org/10.1109/TMM.2026.3651038"
+  categories: [generative/security/provable]
+  targets: [security, efficiency]
+  scenario: General
+  backbone: Model-agnostic
+  features: {llm_adaptable: true, training_free: true, asymmetric: true, black_box: false}
+  evaluation:
+    metrics: [ppl, bpt, embedding_rate, speed, error_rate]
+    steganalysis: [fcn, r-bilstm-c, other]
+  survey_key: '11329500'
+
+- id: fu2026dualsteg
+  name: DualSteg
+  title: "DualSteg: High-Capacity Provably Secure Text Steganography in Asymmetric Resource Scenario via Dual-Scale LLMs"
+  authors: [Haocheng Fu, Meiyang Lv, Y Cao]
+  year: 2026
+  venue: ICASSP
+  links:
+    paper: "https://doi.org/10.1109/icassp55912.2026.11465154"
+  categories: [generative/security/provable]
+  targets: [security, efficiency]
+  features: {asymmetric: true}
+  added: '2026-10-03'
+
+- id: yan2026efficient
+  name: RRC
+  title: Efficient Provably Secure Linguistic Steganography via Range Coding
+  authors: [Ruiyi Yan, Yugo Murawaki]
+  year: 2026
+  venue: ACL
+  links:
+    paper: "https://aclanthology.org/2026.acl-long.39/"
+    code: "https://github.com/ryehr/RRC_steganography"
+  categories: [generative/security/provable]
+  targets: [security, efficiency]
+  scenario: General
+  backbone: Model-agnostic
+  features: {llm_adaptable: true, training_free: true, asymmetric: false, black_box: false}
+  evaluation:
+    metrics: [ppl, step_kld, human_eval, bpt, entropy_util, speed]
+    steganalysis: [other]
+  survey_key: yan2026efficientprovablysecurelinguistic
+
+- id: wang2026emotion
+  title: "Emotion-Driven Steganography for Short-Text Communication: Securing Social Media with Affective Triplet Embedding\
+    \ and Similarity-Gray Coding"
+  authors: [Zhennan Wang, Jiajun Zou, Jinshuai Yang, Zhaoliang Wu, Yongfeng Huang]
+  year: 2026
+  venue: AIS
+  links:
+    paper: "https://doi.org/10.1109/ais69919.2026.11621704"
+  categories: [generative/security/llm]
+  targets: [security]
+  added: '2026-10-03'
+
+- id: johnston2026entropy
+  name: Entropy-Steering
+  title: "Entropy-Steering: A Lookahead Approach to High-Capacity Generative Linguistic Steganography"
+  authors: [Emile Johnston]
+  year: 2026
+  venue: "Master's thesis, TU Wien"
+  links:
+    paper: "https://doi.org/10.34726/hss.2026.133201"
+  categories: [generative/efficiency/entropy]
+  targets: [efficiency]
+  added: '2026-10-03'
+
+- id: guo2026feedback
+  title: Feedback Coding Enables Inference-Time Covert Agentic Communication
+  authors: [Sidong Guo, Sajani Vithana, Atefeh Gilani, Lalitha Sankar, Oliver Kosut, Flavio P. Calmon]
+  year: 2026
+  venue: arXiv
+  links:
+    arxiv: "https://arxiv.org/abs/2609.24994"
+  categories: [generative/security/llm]
+  targets: [security]
+  features: {black_box: true}
+  added: '2026-10-03'
+
+- id: yan2026hitms
+  name: HiTMS
+  title: "HiTMS: A High-Throughput Multi-Stream Linguistic Steganography Framework"
+  authors: [Ruiyi Yan, Zhongliang Yang, Yugo Murawaki]
+  year: 2026
+  venue: arXiv
+  links:
+    arxiv: "https://arxiv.org/abs/2607.23597"
+  categories: [generative/efficiency/units]
+  targets: [efficiency]
+  added: '2026-10-03'
+
+- id: teterev2026improving
+  title: Improving the Efficiency of Lossless Embedding in Text Steganography
+  authors: [Nikolai V. Teterev, Alla B. Levina]
+  year: 2026
+  venue: SmartIndustryCon
+  links:
+    paper: "https://doi.org/10.1109/smartindustrycon68821.2026.11492963"
+  categories: [generative/efficiency/entropy]
+  targets: [efficiency]
+  added: '2026-10-03'
+
+- id: zhang2026keyword
+  title: Keyword-Based Robust Linguistic Steganography Against Paraphrasing Attacks
+  authors: [Yueying Zhang, Zhen Yang, Xin Xu, Yelei Wang, Yuqi Liu]
+  year: 2026
+  venue: IEEE SPL
+  links:
+    paper: "https://doi.org/10.1109/LSP.2026.3657992"
+  categories: [generative/robustness/external]
+  targets: [security, robustness]
+  scenario: General
+  backbone: BERT, GPT-2
+  features: {llm_adaptable: false, training_free: false, asymmetric: false, black_box: false}
+  evaluation:
+    metrics: [ppl, bpt, error_rate]
+    steganalysis: [fcn, other]
+  survey_key: '11363394'
+
+- id: hadi2026large
+  title: Large Language Models and Hybrid Prompt Engineering for Emotional Text Steganography Based on Cloud
+  authors: [Ameer Kadhim Hadi]
+  year: 2026
+  venue: CCIS
+  links:
+    paper: "https://doi.org/10.1007/978-3-032-25568-6_24"
+  categories: [generative/security/llm]
+  targets: [security]
+  added: '2026-10-03'
+
+- id: fan2026pe
+  name: PE-Stega
+  title: "PE-Stega: A Robust Visually-Enhanced Linguistic Steganography Framework for Social Networks"
+  authors: [Jiacheng Fan, Yefan Wang, Xiaofan Deng, Feitong Wei, Qirui Ji, Jing Liu]
+  year: 2026
+  venue: ICANN
+  links:
+    paper: "https://doi.org/10.1007/978-3-032-38407-2_2"
+  categories: [generative/robustness]
+  targets: [robustness]
+  added: '2026-10-03'
+
+- id: pang2026provably
+  title: Provably Secure Steganography Based on List Decoding
+  authors: [Kaiyi Pang, Minhao Bai]
+  year: 2026
+  venue: arXiv
+  links:
+    arxiv: "https://arxiv.org/abs/2604.21394"
+  categories: [generative/security/provable]
+  targets: [security, efficiency]
+  added: '2026-10-03'
+
+- id: pinas2026rank
+  title: "Rank-Token Mapping Steganography in LLM Chatbots: Evaluating Capacity and Performance Across Multiple LLMs"
+  authors: [Kamil Pinas, Filip Połatyński, Marek R. Ogiela]
+  year: 2026
+  venue: Electronics
+  links:
+    paper: "https://doi.org/10.3390/electronics15184251"
+  categories: [generative/efficiency/other]
+  targets: [efficiency]
+  added: '2026-10-03'
+
+- id: wang2026retoksync
+  name: ReTokSync
+  title: "ReTokSync: Self-Synchronizing Tokenization Disambiguation for Generative Linguistic Steganography"
+  authors: [Yaofei Wang, Rui Wang, Weilong Pang, JiaLiang Han, Yuan Qi, Donghui Hu, Kejiang Chen]
+  year: 2026
+  venue: arXiv
+  links:
+    arxiv: "https://arxiv.org/abs/2604.25486"
+  categories: [generative/robustness/tokenization]
+  targets: [efficiency, robustness]
+  scenario: General
+  backbone: Model-agnostic
+  features: {llm_adaptable: true, training_free: true, asymmetric: true, black_box: false}
+  evaluation:
+    metrics: [ppl, step_kld, bpt, entropy_util, speed, error_rate]
+    steganalysis: [fcn, other]
+  survey_key: wang2026retoksyncselfsynchronizingtokenizationdisambiguation
+
+- id: xiong2026robust
+  title: Robust Coverless Linguistic Steganography via Sentence Embedding Space with Global Resynchronization
+  authors: [Lizhi Xiong, Yuping Lu, Jun Li, Ziqiang Li, Zhangjie Fu]
+  year: 2026
+  venue: arXiv
+  links:
+    arxiv: "https://arxiv.org/abs/2609.04970"
+  categories: [generative/robustness/external]
+  targets: [robustness]
+  added: '2026-10-03'
+
+- id: li2026robust
+  title: Robust Semantic Steganography via Large Language Models
+  authors: [Xiaohui Li, Zhihong Liu, Yong Zeng]
+  year: 2026
+  venue: NaNA
+  links:
+    paper: "https://doi.org/10.23919/nanacps00070.2026.00072"
+  categories: [generative/robustness/external]
+  targets: [robustness]
+  added: '2026-10-03'
+
+- id: wang2026rs
+  name: RS-Stega
+  title: "RS-Stega: A Token-Level Quality-Control Framework for Generative Text Steganography"
+  authors: [Pengtao Wang, Jianfeng Qu, Yu Liu, Yanmei Kang]
+  year: 2026
+  venue: APWeb-WAIM
+  links:
+    paper: "https://doi.org/10.1007/978-981-95-5716-5_6"
+  categories: [generative/security/modeling]
+  targets: [security]
+  added: '2026-10-03'
+
+- id: stinebrickner2026semantic
+  title: Semantic Length Limits in LLM Based Steganography
+  authors: [Haley Stinebrickner, Alexander V. Mantzaris, Wissam Ghantous]
+  year: 2026
+  venue: FLAIRS
+  links:
+    paper: "https://doi.org/10.32473/flairs.39.1.141579"
+  categories: [generative/efficiency/other]
+  targets: [efficiency]
+  added: '2026-10-03'
+
+- id: ke2026semanticzip
+  name: SemanticZip
+  title: "SemanticZip: Improving Text Steganographic Capacity via LLM-Guided Semantic Lossless Compression"
+  authors: [Shi Ke, Wang Jingang, Peng Liu]
+  year: 2026
+  venue: SSRN
+  links:
+    paper: "https://doi.org/10.2139/ssrn.7118010"
+  categories: [generative/efficiency/other]
+  targets: [efficiency]
+  added: '2026-10-03'
+
+- id: mantzaris2026steganography
+  title: Steganography with Large Language Models
+  authors: [Alexander V. Mantzaris, Wissam Ghantous, Haley Stinebrickner, Samira Jahangiri, Stephen Webinga]
+  year: 2026
+  venue: FLAIRS
+  links:
+    paper: "https://doi.org/10.32473/flairs.39.1.141573"
+  categories: [generative/security/other]
+  targets: [security]
+  added: '2026-10-03'
+
+- id: machtle2026steganography
+  title: "Steganography Without Modification: Hidden Communication via LLM Seeds"
+  authors: [Felix Mächtle, Jonas Sander, Sebastian Berndt, Ben Weimar, Nils Loose, Thomas Eisenbarth]
+  year: 2026
+  venue: arXiv
+  links:
+    arxiv: "https://arxiv.org/abs/2606.09135"
+  categories: [generative/security/provable]
+  targets: [security]
+  added: '2026-10-03'
+
+- id: rufail2026synchronized
+  name: SLS
+  title: "Synchronized Logit Steering: Real-world Steganography"
+  authors: [Andrew Rufail, Aadi Dash, Onir Narahari, Ethan Mui, Mahi Gajare, Prakhar Tiwari, Shrija Makapothula, Nick Cui]
+  year: 2026
+  venue: arXiv
+  links:
+    arxiv: "https://arxiv.org/abs/2608.14697"
+  categories: [generative/robustness/synchronization]
+  targets: [robustness]
+  added: '2026-10-03'
+
+- id: gao2026text
+  title: Text Steganography with Dynamic Codebook and Multimodal Large Language Model
+  authors: [Jianxin Gao, Ruohan Lei, Wanli Peng]
+  year: 2026
+  venue: arXiv
+  links:
+    arxiv: "https://arxiv.org/abs/2604.20269"
+  categories: [generative/security/llm]
+  targets: [security]
+  scenario: General
+  backbone: Multimodal LLM
+  features: {llm_adaptable: true, training_free: true, asymmetric: true, black_box: true}
+  evaluation:
+    metrics: [ppl, text_kld, human_eval, bpt, speed, error_rate]
+    steganalysis: [other]
+  survey_key: gao2026textsteganographydynamiccodebook
+
+- id: zhou2026ti
+  name: TI-StegoAlign
+  title: "TI-StegoAlign: Channel-Guided Post-Training for Generative Text Steganography under Tokenization Inconsistency"
+  authors: [Jiuan Zhou, Yuhao Xue, Yu Cheng, Yuan Xie, Zhaoxia Yin]
+  year: 2026
+  venue: arXiv
+  links:
+    arxiv: "https://arxiv.org/abs/2608.00382"
+  categories: [generative/robustness/tokenization]
+  targets: [robustness]
+  features: {training_free: false}
+  added: '2026-10-03'
+
+- id: rippin2026tool
+  title: Tool Use Enables Undetectable Steganography in Multi-Agent LLM Systems
+  authors: [Jimmy Laurence Rippin, Simon C. Marshall, David Demitri Africa, Christian Schroeder de Witt]
+  year: 2026
+  venue: arXiv
+  links:
+    arxiv: "https://arxiv.org/abs/2606.28425"
+  categories: [generative/security/llm]
+  targets: [security]
+  added: '2026-10-03'
+
+- id: vaikuntanathan2026undetectable
+  title: Undetectable Conversations Between AI Agents via Pseudorandom Noise-Resilient Key Exchange
+  authors: [Vinod Vaikuntanathan, Or Zamir]
+  year: 2026
+  venue: arXiv
+  links:
+    arxiv: "https://arxiv.org/abs/2604.04757"
+  categories: [generative/security/provable]
+  targets: [security]
+  added: '2026-10-03'
+
+- id: chen2025character
+  title: A Character-based Diffusion Embedding Algorithm for Enhancing the Generation Quality of Generative Linguistic Steganographic
+    Texts
+  authors: [Yingquan Chen, Qianmu Li, Xiaocong Wu, Huifeng Li, Qing Chang]
+  year: 2025
+  venue: arXiv
+  links:
+    arxiv: "https://arxiv.org/abs/2505.00977"
+  categories: [generative/security/modeling]
+  targets: [security]
+  added: '2026-10-03'
+
+- id: liao2025framework
+  title: A framework for designing provably secure steganography
+  authors: [Guorui Liao, Jinshuai Yang, Weizhi Shao, Yongfeng Huang]
+  year: 2025
+  venue: USENIX Security
+  links: {}
+  categories: [generative/security/provable]
+  targets: [security]
+  scenario: General
+  backbone: Model-agnostic
+  features: {llm_adaptable: true, training_free: true, asymmetric: false, black_box: false}
+  evaluation:
+    metrics: [step_kld, bpt, entropy_util, speed]
+    steganalysis: [ts-csw]
+  survey_key: liao2025framework
+
+- id: feng2025high
+  title: A High-Capacity and Secure Disambiguation Algorithm for Neural Linguistic Steganography
+  authors: [Yapei Feng, Feng Jiang, Shanhao Wu, Hua Zhong]
+  year: 2025
+  venue: arXiv
+  links:
+    arxiv: "https://arxiv.org/abs/2510.02332"
+  categories: [generative/robustness/tokenization]
+  targets: [efficiency, robustness]
+  scenario: General
+  backbone: Model-agnostic
+  features: {llm_adaptable: true, training_free: true, asymmetric: false, black_box: false}
+  evaluation:
+    metrics: [ppl, step_kld, bpt, error_rate]
+    steganalysis: []
+  survey_key: feng2025highcapacitysecuredisambiguationalgorithm
+
+- id: jiang2025high
+  title: A high-capacity linguistic steganography based on entropy-driven rank-token mapping
+  authors: [Jun Jiang, Weiming Zhang, Nenghai Yu, Kejiang Chen]
+  year: 2025
+  venue: arXiv
+  links:
+    arxiv: "https://arxiv.org/abs/2510.23035"
+  categories: [generative/efficiency/entropy]
+  targets: [efficiency]
+  added: '2026-10-03'
+
+- id: yang2025framework
+  title: A Novel Framework of Semantic-Based Text Steganography
+  authors: [Jinshuai Yang, Minhao Bai, Kaiyi Pang, Yue Gao, Jiajun Zou, Yongfeng Huang]
+  year: 2025
+  venue: IEEE TDSC
+  links:
+    paper: "https://doi.org/10.1109/tdsc.2025.3632510"
+  categories: [generative/robustness/external]
+  targets: [security, robustness]
+  added: '2026-10-03'
+
+- id: yan2025addressing
+  title: Addressing Tokenization Inconsistency in Steganography and Watermarking Based on Large Language Models
+  authors: [Ruiyi Yan, Yugo Murawaki]
+  year: 2025
+  venue: EMNLP
+  links:
+    paper: "https://aclanthology.org/2025.emnlp-main.361/"
+  categories: [generative/robustness/tokenization]
+  targets: [security, robustness]
+  scenario: General
+  backbone: Model-agnostic
+  features: {llm_adaptable: true, training_free: true, asymmetric: false, black_box: false}
+  evaluation:
+    metrics: [ppl, step_kld, bpt, speed, error_rate]
+    steganalysis: [other]
+  survey_key: yan-murawaki-2025-addressing
+
+- id: chintala2025advanced
+  title: Advanced Text Steganography Using Variational Autoencoders and Greedy Sampling
+  authors: [Tarush Chintala, Ritesh Mishra, J. Shobana]
+  year: 2025
+  venue: RDICCT
+  links:
+    paper: "https://doi.org/10.5220/0013921200004919"
+  categories: [generative/security/modeling]
+  targets: [security]
+  added: '2026-10-03'
+
+- id: zhou2025auto
+  name: Auto-Stega
+  title: "Auto-Stega: An Agent-Driven System for Lifelong Strategy Evolution in LLM-Based Text Steganography"
+  authors: [Jiuan Zhou, Yu Cheng, Yuan Xie, Zhaoxia Yin]
+  year: 2025
+  venue: arXiv
+  links:
+    arxiv: "https://arxiv.org/abs/2510.06565"
+  categories: [generative/security/llm]
+  targets: [security]
+  scenario: General
+  backbone: Multi-agent
+  features: {llm_adaptable: true, training_free: true, asymmetric: true, black_box: false}
+  evaluation:
+    metrics: [ppl, text_kld, human_eval, bpt]
+    steganalysis: [cnn, other]
+  survey_key: zhou2025autostegaagentdrivenlifelongstrategy
+
+- id: li2025black
+  title: Black-box Steganography for Large Language Models
+  authors: [Xinxin Li, Zichi Wang, Xinpeng Zhang]
+  year: 2025
+  venue: IEEE TCSVT
+  links:
+    paper: "https://doi.org/10.1109/TCSVT.2025.3574808"
+  categories: [generative/efficiency/other]
+  targets: [efficiency]
+  scenario: General
+  backbone: Multi-agent
+  features: {llm_adaptable: true, training_free: false, asymmetric: false, black_box: true}
+  evaluation:
+    metrics: [error_rate]
+    steganalysis: [fcn, other]
+  survey_key: '11017758'
+
+- id: umezawa2025contextual
+  title: Contextual Coherence Evaluation of Perfectly Secure Steganography in Text Documents
+  authors: [Katsuyuki Umezawa, Toshikatsu Kashima, Sven Wohlgemuth, Kazuo Takaragi]
+  year: 2025
+  venue: LNCS
+  links:
+    paper: "https://doi.org/10.1007/978-3-032-00635-6_14"
+  categories: [generative/security/provable]
+  targets: [security]
+  added: '2026-10-03'
+
+- id: rajendran2025covert
+  title: Covert Text Communication Using GPT-Based Language Models and Semantic Similarity Constraints
+  authors: [Megala Rajendran, Priya Vij]
+  year: 2025
+  venue: ICNGCS
+  links:
+    paper: "https://doi.org/10.1109/icngcs64900.2025.11183393"
+  categories: [generative/security/modeling]
+  targets: [security]
+  added: '2026-10-03'
+
+- id: chang2025da
+  name: DA-Mamba Stega
+  title: "DA-Mamba Stega: Linguistic Steganography Based on Data Augmentation and Mamba Blocks"
+  authors: [Qing Chang, Qianmu Li, Yingquan Chen, Huifeng Li, Xiaowei Wu]
+  year: 2025
+  venue: IEEE SWC
+  links:
+    paper: "https://doi.org/10.1109/swc65939.2025.00130"
+  categories: [generative/security/modeling]
+  targets: [security]
+  added: '2026-10-03'
+
+- id: kuznetsov2025deepstego
+  name: DeepStego
+  title: "DeepStego: Privacy-Preserving Natural Language Steganography Using Large Language Models and Advanced Neural Architectures"
+  authors: [Oleksandr Kuznetsov, Kyrylo Chernov, Aigul Shaikhanova, Kainizhamal Iklassova, Dinara Kozhakhmetova]
+  year: 2025
+  venue: Computers
+  links:
+    paper: "https://doi.org/10.3390/computers14050165"
+  categories: [generative/security/llm]
+  targets: [security]
+  scenario: General
+  backbone: Model-agnostic
+  features: {llm_adaptable: true, training_free: true, asymmetric: false, black_box: false}
+  evaluation:
+    metrics: [ppl, embedding_rate, speed, error_rate]
+    steganalysis: [ts-rnn, other]
+  survey_key: computers14050165
+
+- id: wang2025dynamically
+  name: DAIRstega
+  title: Dynamically allocated interval-based generative linguistic steganography with roulette wheel
+  authors: [Yihao Wang, Ruiqi Song, Lingxiao Li, Ru Zhang, Jianyi Liu]
+  year: 2025
+  venue: Applied Soft Computing
+  links:
+    paper: "https://doi.org/https://doi.org/10.1016/j.asoc.2025.113101"
+    code: "https://github.com/WangYH-BUPT/DAIRstega"
+  categories: [generative/security/provable]
+  targets: [security]
+  scenario: General
+  backbone: Model-agnostic
+  features: {llm_adaptable: true, training_free: true, asymmetric: false, black_box: false}
+  evaluation:
+    metrics: [ppl, text_kld, bleu, bpt]
+    steganalysis: [cnn, ts-csw, other]
+  survey_key: WANG2025113101
+
+- id: fan2025emoji
+  name: Emoji-Stega
+  title: "Emoji-Stega: An Emoji-Powered Linguistic Steganography Framework for Social Networks"
+  authors: [Jiacheng Fan, Zhenyang Shen, Zhe Chen, Jiahao Chen, Sixing Wu]
+  year: 2025
+  venue: NLPCC
+  links:
+    paper: "https://doi.org/10.1007/978-981-95-3352-7_11"
+  categories: [generative]
+  added: '2026-10-03'
+
+- id: shi2025emotionally
+  title: Emotionally Controllable Text Steganography Based on Large Language Model and Named Entity
+  authors: [Hao Shi, Wenpu Guo, Shaoyuan Gao]
+  year: 2025
+  venue: Technologies
+  links:
+    paper: "https://doi.org/10.3390/technologies13070264"
+  categories: [generative/security/llm]
+  targets: [security]
+  scenario: General
+  backbone: XLM-RoBERTa, Transformer
+  features: {llm_adaptable: false, training_free: true, asymmetric: false, black_box: false}
+  evaluation:
+    metrics: [ppl, step_kld, bleu, bpt]
+    steganalysis: [cnn, ts-rnn, other]
+  survey_key: technologies13070264
+
+- id: chen2025enhancement
+  title: Enhancement of the Generation Quality of Generative Linguistic Steganographic Texts by a Character-Based Diffusion
+    Embedding Algorithm (CDEA)
+  authors: [Yingquan Chen, Qianmu Li, Aniruddha Bhattacharjya, Xiaocong Wu, Huifeng Li, Qing Chang, Le Zhu, Yan Xiao]
+  year: 2025
+  venue: Applied Sciences
+  links:
+    paper: "https://doi.org/10.3390/app15179663"
+  categories: [generative/security/other]
+  targets: [security]
+  scenario: General
+  backbone: Model-agnostic
+  features: {llm_adaptable: true, training_free: true, asymmetric: false, black_box: false}
+  evaluation:
+    metrics: [ppl, text_kld, distinct_n, bpt]
+    steganalysis: [fcn, cnn, r-bilstm-c, ts-rnn, other]
+  survey_key: app15179663
+
+- id: pang2025frestega
+  name: FreStega
+  title: "FreStega: A Plug-and-Play Method for Boosting Imperceptibility and Capacity in Generative Linguistic Steganography\
+    \ for Real-World Scenarios"
+  authors: [Kaiyi Pang]
+  year: 2025
+  venue: arXiv
+  links:
+    arxiv: "https://arxiv.org/abs/2412.19652"
+  categories: [generative/efficiency/entropy]
+  targets: [security, efficiency]
+  scenario: General
+  backbone: Model-agnostic
+  features: {llm_adaptable: true, training_free: true, asymmetric: false, black_box: false}
+  evaluation:
+    metrics: [ppl, distinct_n, bpt, speed]
+    steganalysis: [r-bilstm-c, ts-rnn, ts-csw, other]
+  survey_key: pang2025frestegaplugandplaymethodboosting
+
+- id: wu2025gtsd
+  name: GTSD
+  title: "GTSD: Generative Text Steganography Based on Diffusion Model"
+  authors: [Zhengxian Wu, Juan Wen, Yiming Xue, Ziwei Zhang, Yinghan Zhou]
+  year: 2025
+  venue: ICONIP
+  links: {}
+  categories: [generative/efficiency/other]
+  targets: [efficiency]
+  scenario: General
+  backbone: Diffusion language model
+  features: {llm_adaptable: true, training_free: false, asymmetric: false, black_box: false}
+  evaluation:
+    metrics: [text_kld, bpt, speed, error_rate]
+    steganalysis: [cnn, ts-rnn, other]
+  survey_key: 10.1007/978-981-96-7005-5_12
+
+- id: rogov2025hiding
+  title: "Hiding in Meaning: Semantic Encoding for Generative Text Steganography"
+  authors: [Oleg Y. Rogov, Dmitrii Evgenievich Indenbom, Dmitrii Korzh, Darya Valeryaevna Pugacheva, Vsevolod Alexandrovich
+      Voronov, Elena Viktorovna Tutubalina]
+  year: 2025
+  venue: Russian Digital Libraries Journal
+  links:
+    paper: "https://doi.org/10.26907/1562-5419-2025-28-5-1165-1185"
+  categories: [generative/security/modeling]
+  targets: [security]
+  added: '2026-10-03'
+
+- id: rinza2025linguistic
+  title: Linguistic Steganography in Text with Artificial Intelligence
+  authors: [Barbara Emma Sánchez Rinza, Mariano AldairAquino Regalado]
+  year: 2025
+  venue: ICECER
+  links:
+    paper: "https://doi.org/10.1109/icecer65523.2025.11400752"
+  categories: [generative/security/other]
+  targets: [security]
+  added: '2026-10-03'
+
+- id: liu2025linguistic
+  title: Linguistic Steganography via Self-Adjusting Asymmetric Number System
+  authors: [Yiting Liu, Chungen Xu, Fei Yang, Pan Zhang, Linlong Wang]
+  year: 2025
+  venue: Computational Linguistics
+  links:
+    paper: "https://doi.org/10.1162/coli.a.22"
+  categories: [generative/security/provable]
+  targets: [security]
+  scenario: General
+  backbone: Model-agnostic
+  features: {llm_adaptable: true, training_free: true, asymmetric: false, black_box: false}
+  evaluation:
+    metrics: [ppl, text_kld, human_eval, bpt]
+    steganalysis: [other]
+  survey_key: 10.1162/coli.a.22
+
+- id: liu2025manhuff
+  name: Manhuff
+  title: "Manhuff: Adaptive Inverted Huffman Coding for High-Capacity Imperceptible Generative Linguistic Steganography"
+  authors: [Yu Liu, Jun Ma, Xun Liu, Yanmei Kang, JiaJia Li]
+  year: 2025
+  venue: IEEE ISPA
+  links:
+    paper: "https://doi.org/10.1109/ispa67752.2025.00190"
+  categories: [generative/efficiency/entropy]
+  targets: [security, efficiency]
+  added: '2026-10-03'
+
+- id: shih2025multi
+  title: Multi-Channel Linguistic Steganography Using Frequency Multiplexing and Minimum Entropy Coupling
+  authors: [Jeanne-Louise Shih]
+  year: 2025
+  venue: TechRxiv
+  links:
+    paper: "https://doi.org/10.36227/techrxiv.176288326.62494538/v1"
+  categories: [generative/efficiency/units]
+  targets: [efficiency]
+  added: '2026-10-03'
+
+- id: wozniak2025multi
+  title: Multi-criteria linguistic optimization for covert communication in secure LLM-based steganography
+  authors: [Kamil Woźniak, Marek R. Ogiela, Lidia Ogiela]
+  year: 2025
+  venue: Applied Soft Computing
+  links:
+    paper: "https://doi.org/https://doi.org/10.1016/j.asoc.2025.113960"
+  categories: [generative/security/llm]
+  targets: [security]
+  scenario: General
+  backbone: Model-agnostic
+  features: {llm_adaptable: true, training_free: true, asymmetric: false, black_box: false}
+  evaluation:
+    metrics: [ppl, bpt]
+    steganalysis: []
+  survey_key: WOZNIAK2025113960
+
+- id: lin2025position
+  title: Position-Agnostic Probabilistic Generation for Robust Steganographic Text
+  authors: [Shuo Lin, Zhenyang Shen, Xiang Li, Jiacheng Fan, Sixing Wu]
+  year: 2025
+  venue: CIKM
+  links:
+    paper: "https://doi.org/10.1145/3746252.3760861"
+  categories: [generative/robustness/external]
+  targets: [robustness]
+  added: '2026-10-03'
+
+- id: pang2025provable
+  title: Provable Secure Steganography Based on Adaptive Dynamic Sampling
+  authors: [Kaiyi Pang]
+  year: 2025
+  venue: arXiv
+  links:
+    arxiv: "https://arxiv.org/abs/2504.12579"
+  categories: [generative/efficiency/entropy]
+  targets: [efficiency]
+  scenario: General
+  backbone: Model-agnostic
+  features: {llm_adaptable: true, training_free: true, asymmetric: false, black_box: true}
+  evaluation:
+    metrics: [ppl, distinct_n, bpt, entropy_util, speed]
+    steganalysis: [ts-csw]
+  survey_key: pang2025provablesecuresteganographybased
+
+- id: bai2025provably
+  title: Provably Robust and Secure Steganography in Asymmetric Resource Scenario
+  authors: [Minhao Bai, Jinshuai Yang, Kaiyi Pang, Xin Xu, Zhen Yang, Yongfeng Huang]
+  year: 2025
+  venue: IEEE S&P
+  links:
+    paper: "https://doi.org/10.1109/SP61157.2025.00155"
+  categories: [generative/robustness/external]
+  targets: [security, robustness]
+  scenario: General
+  backbone: Model-agnostic
+  features: {llm_adaptable: true, training_free: true, asymmetric: true, black_box: false}
+  evaluation:
+    metrics: [ppl, bpt, speed, error_rate]
+    steganalysis: []
+  survey_key: '11023508'
+
+- id: qi2025provably
+  name: SyncPool
+  title: Provably Secure Disambiguating Neural Linguistic Steganography
+  authors: [Yuang Qi, Kejiang Chen, Kai Zeng, Weiming Zhang, Nenghai Yu]
+  year: 2025
+  venue: IEEE TDSC
+  links:
+    paper: "https://doi.org/10.1109/TDSC.2024.3519322"
+  categories: [generative/robustness/tokenization]
+  targets: [security, robustness]
+  scenario: General
+  backbone: Model-agnostic
+  features: {llm_adaptable: true, training_free: true, asymmetric: false, black_box: false}
+  evaluation:
+    metrics: [ppl, step_kld, bpt, entropy_util, speed, error_rate]
+    steganalysis: []
+  survey_key: '10804596'
+
+- id: zhang2025provably
+  title: Provably Secure Public-Key Steganography Based on Admissible Encoding
+  authors: [Xin Zhang, Kejiang Chen, Na Zhao, Weiming Zhang, Nenghai Yu]
+  year: 2025
+  venue: IEEE TIFS
+  links:
+    paper: "https://doi.org/10.1109/TIFS.2025.3550076"
+  categories: [generative/security/provable]
+  targets: [security]
+  scenario: General
+  backbone: Model-agnostic
+  features: {llm_adaptable: true, training_free: true, asymmetric: false, black_box: false}
+  evaluation:
+    metrics: []
+    steganalysis: [fcn, r-bilstm-c, other]
+  survey_key: '10919187'
+
+- id: huang2025relatively
+  title: Relatively-Secure LLM-Based Steganography via Constrained Markov Decision Processes
+  authors: [Yu-Shin Huang, Chao Tian, Krishna Narayanan, Lizhong Zheng]
+  year: 2025
+  venue: arXiv
+  links:
+    arxiv: "https://arxiv.org/abs/2502.01827"
+  categories: [generative/efficiency/other]
+  targets: [efficiency]
+  scenario: General
+  backbone: Model-agnostic
+  features: {llm_adaptable: true, training_free: true, asymmetric: false, black_box: false}
+  evaluation:
+    metrics: [bpt]
+    steganalysis: []
+  survey_key: huang2025relativelysecurellmbasedsteganographyconstrained
+
+- id: chen2025research
+  title: Research on Making Two Models Based on the Generative Linguistic Steganography for Securing Linguistic Steganographic
+    Texts from Active Attacks
+  authors: [Yingquan Chen, Qianmu Li, Xiaocong Wu, Zijian Ying]
+  year: 2025
+  venue: Symmetry
+  links:
+    paper: "https://doi.org/10.3390/sym17091416"
+  categories: [generative/robustness/external]
+  targets: [robustness]
+  scenario: General
+  backbone: Model-agnostic
+  features: {llm_adaptable: true, training_free: true, asymmetric: false, black_box: false}
+  evaluation:
+    metrics: [ppl, text_kld, distinct_n, bpt, error_rate]
+    steganalysis: [fcn, ts-rnn, other]
+  survey_key: sym17091416
+
+- id: pan2025rethinking
+  title: Rethinking Prefix-Based Steganography for Enhanced Security and Efficiency
+  authors: [Chao Pan, Donghui Hu, Yaofei Wang, Kejiang Chen, Yinyin Peng, Xianjin Rong, Chen Gu, Meng Li]
+  year: 2025
+  venue: IEEE TIFS
+  links:
+    paper: "https://doi.org/10.1109/TIFS.2025.3550073"
+  categories: [generative/efficiency/entropy]
+  targets: [security, efficiency]
+  scenario: General
+  backbone: Model-agnostic
+  features: {llm_adaptable: true, training_free: true, asymmetric: false, black_box: false}
+  evaluation:
+    metrics: [step_kld, bpt, entropy_util, speed]
+    steganalysis: [fcn, r-bilstm-c, other]
+  survey_key: '10919130'
+
+- id: perry2025robust
+  title: Robust Steganography from Large Language Models
+  authors: [Neil Perry, Sanket Gupte, Nishant Pitta, Lior Rotem]
+  year: 2025
+  venue: arXiv
+  links:
+    arxiv: "https://arxiv.org/abs/2504.08977"
+  categories: [generative/robustness/external]
+  targets: [robustness]
+  scenario: General
+  backbone: Model-agnostic
+  features: {llm_adaptable: true, training_free: true, asymmetric: false, black_box: false}
+  evaluation:
+    metrics: [error_rate]
+    steganalysis: []
+  survey_key: perry2025robuststeganographylargelanguage
+
+- id: long2025scf
+  name: SCF-Stega
+  title: "SCF-Stega: Controllable Linguistic Steganography Based on Semantic Communications Framework"
+  authors: [Yilin Long, Zhongliang Yang, Zhuang Wang, Zhili Zhou, Yongfeng Huang, Linna Zhou]
+  year: 2025
+  venue: ICASSP
+  links:
+    paper: "https://doi.org/10.1109/ICASSP49660.2025.10888762"
+  categories: [generative/security/other]
+  targets: [security]
+  scenario: General
+  backbone: Model-agnostic
+  features: {llm_adaptable: true, training_free: true, asymmetric: false, black_box: false}
+  evaluation:
+    metrics: [ppl, bleu, rouge, meteor, bpt]
+    steganalysis: [fcn, cnn, r-bilstm-c]
+  survey_key: '10888762'
+
+- id: guo2025secc
+  name: SECC-Stega
+  title: "SECC-Stega: Generative Linguistic Steganographic Framework Based on Error Correcting Codes"
+  authors: [Yuzhe Guo, Zhongliang Yang, Zhuang Wang, Zhili Zhou, Linna Zhou]
+  year: 2025
+  venue: ICASSP
+  links:
+    paper: "https://doi.org/10.1109/ICASSP49660.2025.10888607"
+  categories: [generative/robustness/external]
+  targets: [robustness]
+  scenario: General
+  backbone: Model-agnostic
+  features: {llm_adaptable: true, training_free: true, asymmetric: false, black_box: false}
+  evaluation:
+    metrics: [error_rate]
+    steganalysis: []
+  survey_key: '10888607'
+
+- id: bai2025shifting
+  name: Shifting-Merging
+  title: "Shifting-Merging: Secure, High-Capacity and Efficient Steganography via Large Language Models"
+  authors: [Minhao Bai, Jinshuai Yang, Kaiyi Pang, Yongfeng Huang, Yue Gao]
+  year: 2025
+  venue: arXiv
+  links:
+    arxiv: "https://arxiv.org/abs/2501.00786"
+  categories: [generative/security/provable]
+  targets: [security, efficiency]
+  added: '2026-10-03'
+
+- id: bai2025shimmer
+  name: Shimmer
+  title: "Shimmer: a Provably Secure Steganography Based on Entropy Collecting Mechanism"
+  authors: [Minhao Bai, Kaiyi Pang, Guorui Liao, Jinshuai Yang, Yongfeng Huang]
+  year: 2025
+  venue: USENIX Security
+  links: {}
+  categories: [generative/efficiency/entropy]
+  targets: [security, efficiency]
+  scenario: General
+  backbone: Model-agnostic
+  features: {llm_adaptable: true, training_free: true, asymmetric: false, black_box: false}
+  evaluation:
+    metrics: [ppl, bpt, entropy_util, speed]
+    steganalysis: []
+  survey_key: bai2025shimmer
+
+- id: wang2025sparsamp
+  name: SparSamp
+  title: "SparSamp: Efficient Provably Secure Steganography Based on Sparse Sampling"
+  authors: [Yaofei Wang, Gang Pei, Kejiang Chen, Jinyang Ding, Chao Pan, Weilong Pang, Donghui Hu, Weiming Zhang]
+  year: 2025
+  venue: USENIX Security
+  links:
+    paper: "https://www.usenix.org/conference/usenixsecurity25/presentation/wang-yaofei"
+  categories: [generative/efficiency/entropy]
+  targets: [security, efficiency]
+  scenario: General
+  backbone: Model-agnostic
+  features: {llm_adaptable: true, training_free: true, asymmetric: false, black_box: false}
+  evaluation:
+    metrics: [step_kld, bpt, entropy_util, speed, error_rate]
+    steganalysis: [fcn, r-bilstm-c, other]
+  survey_key: wang2025sparsampefficientprovablysecure
+
+- id: qi2025stead
+  name: STEAD
+  title: "STEAD: Robust Provably Secure Linguistic Steganography with Diffusion Language Model"
+  authors: [Yuang Qi, Na Zhao, Qiyi Yao, Benlong Wu, Weiming Zhang, Nenghai Yu, Kejiang Chen]
+  year: 2025
+  venue: NeurIPS
+  links:
+    paper: "https://openreview.net/forum?id=SF2POTDz2o"
+  categories: [generative/robustness/external]
+  targets: [security, robustness]
+  scenario: General
+  backbone: Diffusion language model
+  features: {llm_adaptable: true, training_free: true, asymmetric: false, black_box: false}
+  evaluation:
+    metrics: [ppl, bpt, speed, error_rate]
+    steganalysis: [fcn, r-bilstm-c, other]
+  survey_key: qi2025stead
+
+- id: adeeb2025steggpt
+  name: StegGPT
+  title: "StegGPT: A Novel Foundation-Model-Based Character-Level Linguistic Steganography Method Utilizing Large Language\
+    \ Models"
+  authors: [Omer Farooq Ahmed Adeeb, Seyed Jahanshah Kabudian]
+  year: 2025
+  venue: IEEE Access
+  links:
+    paper: "https://doi.org/10.1109/ACCESS.2025.3568339"
+  categories: [generative/efficiency/units]
+  targets: [efficiency]
+  scenario: General
+  backbone: Model-agnostic
+  features: {llm_adaptable: true, training_free: true, asymmetric: false, black_box: false}
+  evaluation:
+    metrics: [ppl, bpt]
+    steganalysis: [other]
+  survey_key: '11008605'
+
+- id: jiang2025stegozip
+  name: StegoZip
+  title: "StegoZip: Enhancing Linguistic Steganography Payload in Practice with Large Language Models"
+  authors: [Jun Jiang, Zijin Yang, Weiming Zhang, Nenghai Yu, Kejiang Chen]
+  year: 2025
+  venue: NeurIPS
+  links:
+    paper: "https://proceedings.neurips.cc/paper_files/paper/2025/file/6c8e215afa321d5d0b295dc1882820df-Paper-Conference.pdf"
+  categories: [generative/efficiency/entropy]
+  targets: [security, efficiency]
+  scenario: General
+  backbone: Multi-agent
+  features: {llm_adaptable: true, training_free: false, asymmetric: true, black_box: false}
+  evaluation:
+    metrics: [rouge, bpt, embedding_rate, speed]
+    steganalysis: [fcn, other]
+  survey_key: NEURIPS2025_6c8e215a
+
+- id: meier2025trojanstego
+  name: TrojanStego
+  title: "TrojanStego: Your Language Model Can Secretly Be A Steganographic Privacy Leaking Agent"
+  authors: [Dominik Meier, Jan Philip Wahle, Paul Röttger, Terry Ruas, Bela Gipp]
+  year: 2025
+  venue: EMNLP
+  links:
+    paper: "https://doi.org/10.18653/v1/2025.emnlp-main.1386"
+    arxiv: "https://arxiv.org/abs/2505.20118"
+  categories: [generative/security/llm]
+  targets: [security]
+  features: {training_free: false}
+  added: '2026-10-03'
+
+- id: pang2025winstega
+  name: WinStega
+  title: "WinStega: An Adaptive Robust Enhancement Framework for Generative Linguistic Steganography"
+  authors: [Kaiyi Pang, Minhao Bai, Jinshuai Yang, Wei-Qiang Zhang, Minghu Jiang, Yongfeng Huang]
+  year: 2025
+  venue: ICASSP
+  links:
+    paper: "https://doi.org/10.1109/ICASSP49660.2025.10888944"
+  categories: [generative/robustness/external]
+  targets: [robustness]
+  scenario: General
+  backbone: Model-agnostic
+  features: {llm_adaptable: true, training_free: true, asymmetric: false, black_box: false}
+  evaluation:
+    metrics: [ppl, rouge, distinct_n, bpt, error_rate]
+    steganalysis: [ts-csw]
+  survey_key: '10888944'
+
+- id: yan2024near
+  title: A Near-Imperceptible Disambiguating Approach via Verification for Generative Linguistic Steganography
+  authors: [Ruiyi Yan, Tian Song, Yating Yang]
+  year: 2024
+  venue: SMC
+  links:
+    paper: "https://doi.org/10.1109/SMC54092.2024.10831370"
+  categories: [generative/robustness/tokenization]
+  targets: [security, robustness]
+  scenario: General
+  backbone: Model-agnostic
+  features: {llm_adaptable: true, training_free: true, asymmetric: false, black_box: false}
+  evaluation:
+    metrics: [ppl, step_kld, bpt, error_rate]
+    steganalysis: [other]
+  survey_key: '10831370'
+
+- id: lin2024method
+  title: A novel method for linguistic steganography by English translation using attention mechanism and probability distribution
+    theory
+  authors: [YiQing Lin, ZhongHua Wang]
+  year: 2024
+  venue: PLOS ONE
+  links: {}
+  categories: [generative/security/modeling]
+  targets: [security]
+  scenario: Translation
+  backbone: LSTM
+  features: {llm_adaptable: false, training_free: false, asymmetric: false, black_box: false}
+  evaluation:
+    metrics: [ppl, bleu, bpt]
+    steganalysis: [cnn, other]
+  survey_key: lin2024novel
+
+- id: li2024semantic
+  title: A Semantic Controllable Long Text Steganography Framework Based on LLM Prompt Engineering and Knowledge Graph
+  authors: [Yihao Li, Ru Zhang, Jianyi Liu, Qi Lei]
+  year: 2024
+  venue: IEEE SPL
+  links:
+    paper: "https://doi.org/10.1109/LSP.2024.3456636"
+  categories: [generative/security/llm]
+  targets: [security]
+  scenario: General
+  backbone: Model-agnostic
+  features: {llm_adaptable: true, training_free: true, asymmetric: false, black_box: false}
+  evaluation:
+    metrics: [ppl, rouge, bpt]
+    steganalysis: [r-bilstm-c, ts-csw]
+  survey_key: '10669737'
+
+- id: qin2024adlm
+  title: "ADLM – stega: A Universal Adaptive Token Selection Algorithm for Improving Steganographic Text Quality via Information\
+    \ Entropy"
+  authors: [Zezheng Qin, Congcong Sun, Taiyi He, Yuke He, Azizol Abdullah, Normalia Samian, Nuur Alifah Roslan]
+  year: 2024
+  venue: arXiv
+  links:
+    arxiv: "https://arxiv.org/abs/2410.20825"
+  categories: [generative/security/provable]
+  targets: [security]
+  scenario: General
+  backbone: Model-agnostic
+  features: {llm_adaptable: true, training_free: true, asymmetric: false, black_box: false}
+  evaluation:
+    metrics: [ppl, distinct_n]
+    steganalysis: [other]
+  survey_key: qin2024adlmstegauniversal
+
+- id: liao2024co
+  name: Co-Stega
+  title: "Co-Stega: Collaborative Linguistic Steganography for the Low Capacity Challenge in Social Media"
+  authors: [Guorui Liao, Jinshuai Yang, Kaiyi Pang, Yongfeng Huang]
+  year: 2024
+  venue: ACM IH&MMSec
+  links:
+    paper: "https://doi.org/10.1145/3658664.3659657"
+  categories: [generative/efficiency/entropy]
+  targets: [efficiency]
+  scenario: Social media
+  backbone: Model-agnostic
+  features: {llm_adaptable: true, training_free: true, asymmetric: false, black_box: false}
+  evaluation:
+    metrics: [ppl, bpt]
+    steganalysis: []
+  survey_key: 10.1145/3658664.3659657
+
+- id: zhang2024controllable
+  title: Controllable Semantic Linguistic Steganography via Summarization Generation
+  authors: [Ruifan Zhang, Jianyi Liu, Ru Zhang]
+  year: 2024
+  venue: ICASSP
+  links:
+    paper: "https://doi.org/10.1109/ICASSP48485.2024.10447545"
+  categories: [generative/security/modeling]
+  targets: [security]
+  scenario: Summarization
+  backbone: BERT, Conditional Random Field (CRF)
+  features: {llm_adaptable: false, training_free: true, asymmetric: false, black_box: false}
+  evaluation:
+    metrics: [rouge, meteor, speed]
+    steganalysis: [ts-csw, other]
+  survey_key: '10447545'
+
+- id: pang2024fremax
+  name: FREmax
+  title: "FREmax: A Simple Method Towards Truly Secure Generative Linguistic Steganography"
+  authors: [Kaiyi Pang, Minhao Bai, Jinshuai Yang, Huili Wang, Minghu Jiang, Yongfeng Huang]
+  year: 2024
+  venue: ICASSP
+  links:
+    paper: "https://doi.org/10.1109/ICASSP48485.2024.10446027"
+  categories: [generative/security/provable]
+  targets: [security]
+  scenario: General
+  backbone: Model-agnostic
+  features: {llm_adaptable: true, training_free: true, asymmetric: false, black_box: false}
+  evaluation:
+    metrics: [ppl, distinct_n]
+    steganalysis: [ts-csw]
+  survey_key: '10446027'
+
+- id: cao2024generative
+  title: Generative Steganography Based on Long Readable Text Generation
+  authors: [Yi Cao, Zhili Zhou, Chinmay Chakraborty, Meimin Wang, Q. M. Jonathan Wu, Xingming Sun, Keping Yu]
+  year: 2024
+  venue: IEEE Transactions on Computational Social Systems
+  links:
+    paper: "https://doi.org/10.1109/TCSS.2022.3174013"
+  categories: [generative/security/other]
+  targets: [security]
+  scenario: General
+  backbone: Model-agnostic
+  features: {llm_adaptable: true, training_free: true, asymmetric: false, black_box: false}
+  evaluation:
+    metrics: [ppl, text_kld, bleu, bpt, embedding_rate, speed]
+    steganalysis: [ts-rnn]
+  survey_key: '9778236'
+
+- id: liu2024generative
+  title: Generative Steganography via Live Comments on Streaming Video Frames
+  authors: [Yuling Liu, Cuilin Wang, Jie Wang, Bo Ou, Xin Liao]
+  year: 2024
+  venue: IEEE Transactions on Computational Social Systems
+  links:
+    paper: "https://doi.org/10.1109/TCSS.2024.3352979"
+  categories: [generative/security/modeling]
+  targets: [security]
+  scenario: Live comments
+  backbone: ResNet, LSTM
+  features: {llm_adaptable: false, training_free: false, asymmetric: false, black_box: false}
+  evaluation:
+    metrics: [ppl, bleu, rouge, bpt]
+    steganalysis: []
+  survey_key: '10462497'
+
+- id: wu2024generative
+  name: LLM-Stega
+  title: Generative Text Steganography with Large Language Model
+  authors: [Jiaxuan Wu, Zhengxian Wu, Yiming Xue, Juan Wen, Wanli Peng]
+  year: 2024
+  venue: ACM MM
+  links:
+    paper: "https://doi.org/10.1145/3664647.3680562"
+  categories: [generative/security/llm]
+  targets: [security]
+  scenario: General
+  backbone: Model-agnostic
+  features: {llm_adaptable: true, training_free: true, asymmetric: true, black_box: true}
+  evaluation:
+    metrics: [ppl, text_kld, human_eval, bpt]
+    steganalysis: [cnn, other]
+  survey_key: 10.1145/3664647.3680562
+
+- id: wang2024hi
+  name: Hi-Stega
+  title: "Hi-Stega: A Hierarchical Linguistic Steganography Framework Combining Retrieval and Generation"
+  authors: [Huili Wang, Zhongliang Yang, Jinshuai Yang, Yue Gao, Yongfeng Huang]
+  year: 2024
+  venue: ICONIP
+  links:
+    code: "https://github.com/wanghl21/Hi-Stega"
+  categories: [generative/efficiency/units]
+  targets: [efficiency]
+  scenario: Social media
+  backbone: Model-agnostic
+  features: {llm_adaptable: true, training_free: true, asymmetric: false, black_box: false}
+  evaluation:
+    metrics: [ppl, distinct_n, bpt]
+    steganalysis: [other]
+  survey_key: 10.1007/978-981-99-8073-4_4
+
+- id: li2024imperceptible
+  title: Imperceptible Text Steganography based on Group Chat
+  authors: [Fanxiao Li, Ping Wei, Tingchao Fu, Yu Lin, Wei Zhou]
+  year: 2024
+  venue: ICME
+  links:
+    paper: "https://doi.org/10.1109/ICME57554.2024.10687958"
+  categories: [generative/security/modeling]
+  targets: [security]
+  scenario: Group chat
+  backbone: BERT, Transformer
+  features: {llm_adaptable: false, training_free: true, asymmetric: false, black_box: false}
+  evaluation:
+    metrics: [ppl, bleu, rouge]
+    steganalysis: [ts-csw]
+  survey_key: '10687958'
+
+- id: xiang2024linguistic
+  title: "Linguistic Steganography: Hiding Information in Syntax Space"
+  authors: [Lingyun Xiang, Chengfu Ou, Daojian Zeng]
+  year: 2024
+  venue: IEEE SPL
+  links:
+    paper: "https://doi.org/10.1109/LSP.2023.3347153"
+  categories: [generative/security/modeling, modification/rewriting/syntax]
+  targets: [security]
+  scenario: Translation
+  backbone: BERT, LSTM
+  features: {llm_adaptable: false, training_free: false, asymmetric: false, black_box: false}
+  evaluation:
+    metrics: [ppl, step_kld, bleu, bpt]
+    steganalysis: [cnn, r-bilstm-c, ts-rnn]
+  survey_key: '10374202'
+
+- id: chen2024minimizing
+  title: Minimizing Distortion in Steganography via Adaptive Language Model Tuning
+  authors: [Cheng Chen, Jinshuai Yang, Yue Gao, Huili Wang, Yongfeng Huang]
+  year: 2024
+  venue: ICONIP
+  links: {}
+  categories: [generative/security/provable]
+  targets: [security]
+  scenario: General
+  backbone: Model-agnostic
+  features: {llm_adaptable: true, training_free: false, asymmetric: false, black_box: false}
+  evaluation:
+    metrics: [ppl, text_kld, bpt]
+    steganalysis: [ts-csw]
+  survey_key: 10.1007/978-981-99-8148-9_44
+
+- id: steinebach2024natural
+  title: Natural Language Steganography by ChatGPT
+  authors: [Martin Steinebach]
+  year: 2024
+  venue: International Conference on Availability, Reliability and Security
+  links:
+    paper: "https://doi.org/10.1145/3664476.3670930"
+  categories: [generative/efficiency/other]
+  targets: [efficiency]
+  scenario: General
+  backbone: Model-agnostic
+  features: {llm_adaptable: true, training_free: true, asymmetric: true, black_box: true}
+  evaluation:
+    metrics: [bpt, error_rate]
+    steganalysis: []
+  survey_key: 10.1145/3664476.3670930
+
+- id: huang2024od
+  name: OD-Stega
+  title: "OD-Stega: LLM-Based Near-Imperceptible Steganography via Optimized Distributions"
+  authors: [Yu-Shin Huang, Peter Just, Krishna Narayanan, Chao Tian]
+  year: 2024
+  venue: arXiv
+  links:
+    arxiv: "https://arxiv.org/abs/2410.04328"
+  categories: [generative/robustness/external]
+  targets: [security, robustness]
+  scenario: General
+  backbone: Model-agnostic
+  features: {llm_adaptable: true, training_free: true, asymmetric: false, black_box: false}
+  evaluation:
+    metrics: [step_kld, llm_judge, bpt, error_rate]
+    steganalysis: []
+  survey_key: huang2024odstegallmbasednearimperceptiblesteganography
+
+- id: bai2024semantic
+  title: "Semantic Steganography: A Framework for Robust and High-Capacity Information Hiding using Large Language Models"
+  authors: [Minhao Bai, Jinshuai Yang, Kaiyi Pang, Yongfeng Huang, Yue Gao]
+  year: 2024
+  venue: arXiv
+  links:
+    arxiv: "https://arxiv.org/abs/2412.11043"
+  categories: [generative/robustness/external]
+  targets: [efficiency, robustness]
+  scenario: General
+  backbone: Model-agnostic
+  features: {llm_adaptable: true, training_free: true, asymmetric: false, black_box: true}
+  evaluation:
+    metrics: [ppl, distinct_n, llm_judge, bpt, error_rate]
+    steganalysis: []
+  survey_key: bai2024semanticsteganographyframeworkrobust
+
+- id: namitha2024stegabb
+  name: StegAbb
+  title: "StegAbb: A Cover-Generating Text Steganographic Tool Using GPT-3 Language Modeling for Covert Communication Across\
+    \ SDRs"
+  authors: [M. V. Namitha, G. R. Manjula, Manjula C. Belavagi]
+  year: 2024
+  venue: IEEE Access
+  links:
+    paper: "https://doi.org/10.1109/ACCESS.2024.3411288"
+  categories: [generative/security/llm]
+  targets: [security]
+  scenario: General
+  backbone: Model-agnostic
+  features: {llm_adaptable: true, training_free: true, asymmetric: false, black_box: false}
+  evaluation:
+    metrics: [ppl, human_eval, bpt, speed, error_rate]
+    steganalysis: [other]
+  survey_key: '10551807'
+
+- id: yan2024tokenfree
+  name: TokenFree
+  title: "TokenFree: A Tokenization-Free Generative Linguistic Steganographic Approach with Enhanced Imperceptibility"
+  authors: [Ruiyi Yan, Tian Song, Yating Yang]
+  year: 2024
+  venue: SMC
+  links:
+    paper: "https://doi.org/10.1109/SMC54092.2024.10831652"
+  categories: [generative/efficiency/units]
+  targets: [security, efficiency]
+  scenario: General
+  backbone: ByGPT5
+  features: {llm_adaptable: false, training_free: true, asymmetric: false, black_box: false}
+  evaluation:
+    metrics: [ppl, text_kld, embedding_rate]
+    steganalysis: [other]
+  survey_key: '10831652'
+
+- id: lin2024zero
+  title: Zero-shot Generative Linguistic Steganography
+  authors: [Ke Lin, Yiyang Luo, Zijian Zhang, Luo Ping]
+  year: 2024
+  venue: NAACL
+  links:
+    paper: "https://aclanthology.org/2024.naacl-long.289/"
+  categories: [generative/security/llm]
+  targets: [security]
+  scenario: General
+  backbone: Model-agnostic
+  features: {llm_adaptable: true, training_free: true, asymmetric: false, black_box: false}
+  evaluation:
+    metrics: [ppl, text_kld, llm_judge, bpt]
+    steganalysis: [r-bilstm-c, other]
+  survey_key: lin-etal-2024-zero
+
+- id: yan2023secure
+  name: MWIS
+  title: A Secure and Disambiguating Approach for Generative Linguistic Steganography
+  authors: [Ruiyi Yan, Yating Yang, Tian Song]
+  year: 2023
+  venue: IEEE SPL
+  links:
+    paper: "https://doi.org/10.1109/LSP.2023.3302749"
+  categories: [generative/robustness/tokenization]
+  targets: [security, robustness]
+  scenario: General
+  backbone: Model-agnostic
+  features: {llm_adaptable: true, training_free: true, asymmetric: false, black_box: false}
+  evaluation:
+    metrics: [ppl, step_kld, text_kld, bpt, speed, error_rate]
+    steganalysis: [other]
+  survey_key: '10215094'
+
+- id: peng2023cross
+  title: Cross-Modal Text Steganography Against Synonym Substitution-Based Text Attack
+  authors: [Wanli Peng, Tao Wang, Zhenxing Qian, Sheng Li, Xinpeng Zhang]
+  year: 2023
+  venue: IEEE SPL
+  links:
+    paper: "https://doi.org/10.1109/LSP.2023.3258862"
+  categories: [generative/robustness/external]
+  targets: [robustness]
+  scenario: Image-to-text
+  backbone: ResNet-101, LSTM
+  features: {llm_adaptable: false, training_free: false, asymmetric: false, black_box: false}
+  evaluation:
+    metrics: [text_kld, bleu, rouge, meteor, bpt, error_rate]
+    steganalysis: [cnn, r-bilstm-c, other]
+  survey_key: '10075392'
+
+- id: ding2023discop
+  name: Discop
+  title: "Discop: Provably Secure Steganography in Practice Based on \"Distribution Copies\""
+  authors: [Jinyang Ding, Kejiang Chen, Yaofei Wang, Na Zhao, Weiming Zhang, Nenghai Yu]
+  year: 2023
+  venue: IEEE S&P
+  links:
+    paper: "https://doi.org/10.1109/SP46215.2023.10179287"
+  categories: [generative/security/provable]
+  targets: [security]
+  scenario: General
+  backbone: Model-agnostic
+  features: {llm_adaptable: true, training_free: true, asymmetric: false, black_box: false}
+  evaluation:
+    metrics: [ppl, step_kld, bpt, entropy_util, speed]
+    steganalysis: [fcn, r-bilstm-c, other]
+  survey_key: '10179287'
+
+- id: wang2023enhancing
+  title: Enhancing Semantic Consistency in Linguistic Steganography via Denosing Auto-Encoder and Semantic-Constrained Huffman
+    Coding
+  authors: [Shuoxin Wang, Fanxiao Li, Jiong Yu, Haosen Lai, Sixing Wu, Wei Zhou]
+  year: 2023
+  venue: NLPCC
+  links:
+    code: "https://github.com/Y-NLP/LinguisticSteganography/tree/main/NLPCC2023_SPLS-AutoEncoder"
+  categories: [generative/security/modeling]
+  targets: [security]
+  scenario: General
+  backbone: BART, GPT-2
+  features: {llm_adaptable: false, training_free: true, asymmetric: false, black_box: false}
+  evaluation:
+    metrics: [ppl, text_kld, bleu, rouge, bpt]
+    steganalysis: [r-bilstm-c, other]
+  survey_key: 10.1007/978-3-031-44696-2_62
+
+- id: wang2023icstega
+  name: ICStega
+  title: "ICStega: Image Captioning-based Semantically Controllable Linguistic Steganography"
+  authors: [Xilong Wang, Yaofei Wang, Kejiang Chen, Jinyang Ding, Weiming Zhang, Nenghai Yu]
+  year: 2023
+  venue: ICASSP
+  links:
+    paper: "https://doi.org/10.1109/ICASSP49357.2023.10095722"
+  categories: [generative/security/modeling]
+  targets: [security]
+  scenario: Image-to-text
+  backbone: ClipCap
+  features: {llm_adaptable: false, training_free: false, asymmetric: false, black_box: false}
+  evaluation:
+    metrics: [ppl, bleu, meteor, distinct_n, bpt]
+    steganalysis: [fcn]
+  survey_key: '10095722'
+
+- id: lu2023neural
+  title: Neural Linguistic Steganography with Controllable Security
+  authors: [Tianhe Lu, Gongshen Liu, Ru Zhang, Tianjie Ju]
+  year: 2023
+  venue: IJCNN
+  links:
+    paper: "https://doi.org/10.1109/IJCNN54540.2023.10191218"
+  categories: [generative/security/provable]
+  targets: [security]
+  scenario: General
+  backbone: Model-agnostic
+  features: {llm_adaptable: true, training_free: true, asymmetric: false, black_box: false}
+  evaluation:
+    metrics: [ppl, step_kld, bpt, error_rate]
+    steganalysis: [r-bilstm-c, ts-rnn, ts-csw]
+  survey_key: '10191218'
+
+- id: witt2023perfectly
+  name: iMEC
+  title: Perfectly Secure Steganography Using Minimum Entropy Coupling
+  authors: [Christian Schroeder de Witt, Samuel Sokota, J Zico Kolter, Jakob Nicolaus Foerster, Martin Strohmeier]
+  year: 2023
+  venue: ICLR
+  links:
+    paper: "https://openreview.net/forum?id=HQ67mj5rJdR"
+  categories: [generative/security/provable]
+  targets: [security]
+  scenario: General
+  backbone: Model-agnostic
+  features: {llm_adaptable: true, training_free: true, asymmetric: false, black_box: false}
+  evaluation:
+    metrics: [step_kld, entropy_util, speed, error_rate]
+    steganalysis: []
+  survey_key: witt2023perfectly
+
+- id: wang2023png
+  name: PNG-Stega
+  title: "PNG-Stega: Progressive Non-Autoregressive Generative Linguistic Steganography"
+  authors: [Rong Wang, Lingyun Xiang, Yangfan Liu, Chunfang Yang]
+  year: 2023
+  venue: IEEE SPL
+  links:
+    paper: "https://doi.org/10.1109/LSP.2023.3272798"
+  categories: [generative/security/modeling]
+  targets: [security]
+  scenario: General
+  backbone: Transformer
+  features: {llm_adaptable: false, training_free: false, asymmetric: false, black_box: false}
+  evaluation:
+    metrics: [ppl, bpt]
+    steganalysis: [other]
+  survey_key: '10115433'
+
+- id: lu2023robust
+  title: Robust Secret Data Hiding for Transformer-based Neural Machine Translation
+  authors: [Tianhe Lu, Gongshen Liu, Ru Zhang, Peixuan Li, Tianjie Ju]
+  year: 2023
+  venue: IJCNN
+  links:
+    paper: "https://doi.org/10.1109/IJCNN54540.2023.10191984"
+  categories: [generative/robustness/external]
+  targets: [security, robustness]
+  scenario: Translation
+  backbone: Transformer
+  features: {llm_adaptable: false, training_free: false, asymmetric: false, black_box: false}
+  evaluation:
+    metrics: [bleu, error_rate]
+    steganalysis: [r-bilstm-c, ts-rnn, ts-csw]
+  survey_key: '10191984'
+
+- id: sun2023topic
+  title: Topic Controlled Steganography via Graph-to-Text Generation
+  authors: [Bowen Sun, Yamin Li, Jun Zhang, Honghong Xu, Xiaoqiang Ma, Ping Xia]
+  year: 2023
+  venue: CMES - Computer Modeling in Engineering and Sciences
+  links:
+    paper: "https://doi.org/https://doi.org/10.32604/cmes.2023.025082"
+  categories: [generative/security/modeling]
+  targets: [security]
+  scenario: General
+  backbone: T5
+  features: {llm_adaptable: false, training_free: false, asymmetric: false, black_box: false}
+  evaluation:
+    metrics: [ppl, bleu, rouge, embedding_rate]
+    steganalysis: [fcn, cnn, r-bilstm-c]
+  survey_key: SUN2023157
+
+- id: nozaki2022addressing
+  title: Addressing Segmentation Ambiguity in Neural Linguistic Steganography
+  authors: [Jumon Nozaki, Yugo Murawaki]
+  year: 2022
+  venue: AACL-IJCNLP
+  links:
+    paper: "https://aclanthology.org/2022.aacl-short.15"
+  categories: [generative/robustness/tokenization]
+  targets: [robustness]
+  scenario: General
+  backbone: Model-agnostic
+  features: {llm_adaptable: true, training_free: true, asymmetric: false, black_box: false}
+  evaluation:
+    metrics: [bpt, error_rate]
+    steganalysis: [other]
+  survey_key: nozaki-murawaki-2022-addressing
+
+- id: yi2022alisa
+  name: ALiSa
+  title: "ALiSa: Acrostic Linguistic Steganography Based on BERT and Gibbs Sampling"
+  authors: [Biao Yi, Hanzhou Wu, Guorui Feng, Xinpeng Zhang]
+  year: 2022
+  venue: IEEE SPL
+  links:
+    paper: "https://doi.org/10.1109/LSP.2022.3152126"
+  categories: [generative/efficiency/units]
+  targets: [security, efficiency]
+  scenario: General
+  backbone: BERT
+  features: {llm_adaptable: false, training_free: true, asymmetric: false, black_box: false}
+  evaluation:
+    metrics: [ppl]
+    steganalysis: [ts-rnn, other]
+  survey_key: '9714779'
+
+- id: adeeb2022arabic
+  title: Arabic Text Steganography Based on Deep Learning Methods
+  authors: [Omer Farooq Ahmed Adeeb, Seyed Jahanshah Kabudian]
+  year: 2022
+  venue: IEEE Access
+  links:
+    paper: "https://doi.org/10.1109/ACCESS.2022.3201019"
+  categories: [generative/efficiency/units]
+  targets: [efficiency]
+  scenario: Arabic text
+  backbone: LSTM
+  features: {llm_adaptable: false, training_free: false, asymmetric: false, black_box: false}
+  evaluation:
+    metrics: [embedding_rate]
+    steganalysis: []
+  survey_key: '9864312'
+
+- id: zhou2022linguistic
+  title: Linguistic Steganography Based on Adaptive Probability Distribution
+  authors: [Xuejing Zhou, Wanli Peng, Boya Yang, Juan Wen, Yiming Xue, Ping Zhong]
+  year: 2022
+  venue: IEEE TDSC
+  links:
+    paper: "https://doi.org/10.1109/TDSC.2021.3079957"
+  categories: [generative/security/modeling]
+  targets: [security]
+  scenario: General
+  backbone: LSTM, CNN
+  features: {llm_adaptable: false, training_free: false, asymmetric: false, black_box: false}
+  evaluation:
+    metrics: [ppl, bpt, embedding_rate]
+    steganalysis: [cnn, r-bilstm-c, ts-rnn]
+  survey_key: '9430708'
+
+- id: arsoy2022lzw
+  name: LZW-CIE
+  title: "LZW-CIE: a high-capacity linguistic steganography based on LZW char index encoding"
+  authors: [Merve Varol Arısoy]
+  year: 2022
+  venue: Neural Computing and Applications
+  links: {}
+  categories: [generative/efficiency/units]
+  targets: [efficiency]
+  scenario: General
+  backbone: LSTM
+  features: {llm_adaptable: false, training_free: false, asymmetric: false, black_box: false}
+  evaluation:
+    metrics: [ppl, text_kld, bpt, embedding_rate, speed]
+    steganalysis: [fcn, cnn, other]
+  survey_key: varol2022lzw
+
+- id: yu2022mts
+  name: Mts-stega
+  title: "Mts-stega: Linguistic steganography based on multi-time-step"
+  authors: [Long Yu, Yuliang Lu, Xuehu Yan, Yongqiang Yu]
+  year: 2022
+  venue: Entropy
+  links: {}
+  categories: [generative/security/other]
+  targets: [security]
+  scenario: General
+  backbone: Model-agnostic
+  features: {llm_adaptable: true, training_free: true, asymmetric: false, black_box: false}
+  evaluation:
+    metrics: [ppl, bpt, speed]
+    steganalysis: []
+  survey_key: yu2022mts
+
+- id: yang2022t
+  name: T-GRU
+  title: "T-GRU: conTextual Gated Recurrent Unit model for high quality Linguistic Steganography"
+  authors: [Zhen Yang, Zihan Xu, Ru Zhang, Yongfeng Huang]
+  year: 2022
+  venue: IEEE TIFS
+  links:
+    paper: "https://doi.org/10.1109/WIFS55849.2022.9975301"
+  categories: [generative/security/modeling]
+  targets: [security]
+  scenario: Lyric
+  backbone: GRU
+  features: {llm_adaptable: false, training_free: false, asymmetric: false, black_box: false}
+  evaluation:
+    metrics: [ppl, bpt, embedding_rate]
+    steganalysis: []
+  survey_key: '9975301'
+
+- id: yang2021generation
+  title: A Generation-based Text Steganography by Maintaining Consistency of Probability Distribution.
+  authors: [Boya Yang, Wanli Peng, Yiming Xue, Ping Zhong]
+  year: 2021
+  venue: KSII TIIS
+  links: {}
+  categories: [generative/security/modeling]
+  targets: [security]
+  scenario: General
+  backbone: LSTM
+  features: {llm_adaptable: false, training_free: false, asymmetric: false, black_box: false}
+  evaluation:
+    metrics: [ppl, text_kld, bleu, distinct_n, bpt, speed]
+    steganalysis: [cnn, ts-rnn]
+  survey_key: yang2021generation
+
+- id: wang2021gan
+  name: GAN-GLS
+  title: "GAN-GLS: Generative Lyric Steganography Based on Generative Adversarial Networks"
+  authors: [Cuilin Wang, Yuling Liu, Yongju Tong, Jingwen Wang]
+  year: 2021
+  venue: Computers, Materials and Continua
+  links:
+    paper: "https://doi.org/https://doi.org/10.32604/cmc.2021.017950"
+  categories: [generative/security/modeling]
+  targets: [security]
+  scenario: Lyric
+  backbone: LSTM
+  features: {llm_adaptable: false, training_free: false, asymmetric: false, black_box: false}
+  evaluation:
+    metrics: [bpt, speed]
+    steganalysis: []
+  survey_key: WANG20211375
+
+- id: yang2021linguistic
+  title: Linguistic Generative Steganography With Enhanced Cognitive-Imperceptibility
+  authors: [Zhongliang Yang, Lingyun Xiang, Siyu Zhang, Xingming Sun, Yongfeng Huang]
+  year: 2021
+  venue: IEEE SPL
+  links:
+    paper: "https://doi.org/10.1109/LSP.2021.3058889"
+  categories: [generative/security/modeling]
+  targets: [security]
+  scenario: General
+  backbone: LSTM, GRU, Transformer
+  features: {llm_adaptable: false, training_free: false, asymmetric: false, black_box: false}
+  evaluation:
+    metrics: [ppl, rouge, meteor]
+    steganalysis: [fcn, ts-rnn, ts-csw]
+  survey_key: '9353234'
+
+- id: zhang2021linguistic
+  title: "Linguistic Steganography: From Symbolic Space to Semantic Space"
+  authors: [Siyu Zhang, Zhongliang Yang, Jinshuai Yang, Yongfeng Huang]
+  year: 2021
+  venue: IEEE SPL
+  links:
+    paper: "https://doi.org/10.1109/LSP.2020.3042413"
+  categories: [generative/security/modeling]
+  targets: [security]
+  scenario: General
+  backbone: Transformer
+  features: {llm_adaptable: false, training_free: false, asymmetric: false, black_box: false}
+  evaluation:
+    metrics: [ppl]
+    steganalysis: [fcn, ts-csw]
+  survey_key: '9280343'
+
+- id: kaptchuk2021meteor
+  name: Meteor
+  title: "Meteor: Cryptographically Secure Steganography for Realistic Distributions"
+  authors: [Gabriel Kaptchuk, Tushar M. Jois, Matthew Green, Aviel D. Rubin]
+  year: 2021
+  venue: ACM CCS
+  links:
+    paper: "https://doi.org/10.1145/3460120.3484550"
+  categories: [generative/security/provable]
+  targets: [security]
+  scenario: General
+  backbone: Model-agnostic
+  features: {llm_adaptable: true, training_free: true, asymmetric: false, black_box: false}
+  evaluation:
+    metrics: [ppl, step_kld, bpt, speed]
+    steganalysis: []
+  survey_key: 10.1145/3460120.3484550
+
+- id: zhang2021provably
+  name: ADG
+  title: Provably Secure Generative Linguistic Steganography
+  authors: [Siyu Zhang, Zhongliang Yang, Jinshuai Yang, Yongfeng Huang]
+  year: 2021
+  venue: Findings of ACL
+  links:
+    paper: "https://aclanthology.org/2021.findings-acl.268/"
+  categories: [generative/security/provable]
+  targets: [security]
+  scenario: General
+  backbone: Model-agnostic
+  features: {llm_adaptable: true, training_free: true, asymmetric: false, black_box: false}
+  evaluation:
+    metrics: [step_kld, text_kld, bpt]
+    steganalysis: [fcn, ts-csw]
+  survey_key: zhang-etal-2021-provably
+
+- id: li2021topic
+  title: Topic-aware Neural Linguistic Steganography Based on Knowledge Graphs
+  authors: [Yamin Li, Jun Zhang, Zhongliang Yang, Ru Zhang]
+  year: 2021
+  venue: ACM/IMS Trans. Data Sci.
+  links:
+    paper: "https://doi.org/10.1145/3418598"
+  categories: [generative/security/modeling]
+  targets: [security]
+  scenario: General
+  backbone: LSTM, Transformer
+  features: {llm_adaptable: false, training_free: false, asymmetric: false, black_box: false}
+  evaluation:
+    metrics: [ppl, bleu, meteor, bpt]
+    steganalysis: [fcn]
+  survey_key: 10.1145/3418598
+
+- id: yang2021vae
+  name: VAE-Stega
+  title: "VAE-Stega: Linguistic Steganography Based on Variational Auto-Encoder"
+  authors: [Zhong-Liang Yang, Si-Yu Zhang, Yu-Ting Hu, Zhi-Wen Hu, Yong-Feng Huang]
+  year: 2021
+  venue: IEEE TIFS
+  links:
+    paper: "https://doi.org/10.1109/TIFS.2020.3023279"
+  categories: [generative/security/modeling]
+  targets: [security]
+  scenario: General
+  backbone: LSTM, BERT
+  features: {llm_adaptable: false, training_free: false, asymmetric: false, black_box: false}
+  evaluation:
+    metrics: [ppl, text_kld, human_eval, bpt]
+    steganalysis: [fcn, cnn, other]
+  survey_key: '9193914'
+
+- id: yang2020gan
+  name: GAN-TStega
+  title: "GAN-TStega: Text Steganography Based on Generative Adversarial Networks"
+  authors: [Zhongliang Yang, Nan Wei, Qinghe Liu, Yongfeng Huang, Yujin Zhang]
+  year: 2020
+  venue: Digital Forensics and Watermarking
+  links: {}
+  categories: [generative/security/modeling]
+  targets: [security]
+  scenario: General
+  backbone: GRU
+  features: {llm_adaptable: false, training_free: false, asymmetric: false, black_box: false}
+  evaluation:
+    metrics: [ppl, bpt]
+    steganalysis: []
+  survey_key: 10.1007/978-3-030-43575-2_2
+
+- id: kang2020generative
+  title: Generative Text Steganography Based on LSTM Network and Attention Mechanism with Keywords
+  authors: [Huixian Kang, Hanzhou Wu, Xinpeng Zhang]
+  year: 2020
+  venue: Electronic Imaging
+  links:
+    paper: "https://doi.org/10.2352/ISSN.2470-1173.2020.4.MWSF-291"
+  categories: [generative/security/modeling]
+  targets: [security]
+  scenario: General
+  backbone: LSTM
+  features: {llm_adaptable: false, training_free: false, asymmetric: false, black_box: false}
+  evaluation:
+    metrics: [ppl, bpt]
+    steganalysis: [other]
+  survey_key: "doi:10.2352/ISSN.2470-1173.2020.4.MWSF-291"
+
+- id: yang2020graph
+  name: Graph-Stega
+  title: "Graph-Stega: Semantic Controllable Steganographic Text Generation Guided by Knowledge Graph"
+  authors: [Zhongliang Yang, Baitao Gong, Yamin Li, Jinshuai Yang, Zhiwen Hu, Yongfeng Huang]
+  year: 2020
+  venue: arXiv
+  links:
+    arxiv: "https://arxiv.org/abs/2006.08339"
+  categories: [generative/security/modeling]
+  targets: [security]
+  scenario: General
+  backbone: LSTM
+  features: {llm_adaptable: false, training_free: false, asymmetric: false, black_box: false}
+  evaluation:
+    metrics: [ppl, bleu, rouge, bpt, embedding_rate]
+    steganalysis: [fcn]
+  survey_key: yang2020graphstegasemanticcontrollablesteganographic
+
+- id: shen2020near
+  name: Self-adjusting AC
+  title: Near-imperceptible Neural Linguistic Steganography via Self-Adjusting Arithmetic Coding
+  authors: [Jiaming Shen, Heng Ji, Jiawei Han]
+  year: 2020
+  venue: EMNLP
+  links:
+    paper: "https://aclanthology.org/2020.emnlp-main.22"
+  categories: [generative/security/provable]
+  targets: [security]
+  scenario: General
+  backbone: Model-agnostic
+  features: {llm_adaptable: true, training_free: true, asymmetric: false, black_box: false}
+  evaluation:
+    metrics: [step_kld, human_eval, bpt, speed]
+    steganalysis: []
+  survey_key: shen-etal-2020-near
+
+- id: xiang2020linguistic
+  name: CLLS
+  title: Novel Linguistic Steganography Based on Character-Level Text Generation
+  authors: [Lingyun Xiang, Shuanghui Yang, Yuhang Liu, Qian Li, Chengzhang Zhu]
+  year: 2020
+  venue: Mathematics
+  links:
+    paper: "https://doi.org/10.3390/math8091558"
+  categories: [generative/efficiency/units]
+  targets: [efficiency]
+  scenario: General
+  backbone: LSTM
+  features: {llm_adaptable: false, training_free: false, asymmetric: false, black_box: false}
+  evaluation:
+    metrics: [ppl, embedding_rate, speed]
+    steganalysis: []
+  survey_key: math8091558
+
+- id: wu2020stbs
+  name: STBS-Stega
+  title: "STBS-Stega: Coverless text steganography based on state transition-binary sequence"
+  authors: [Ning Wu, Zhongliang Yang, Yi Yang, Lian Li, Poli Shang, Weibo Ma, Zhenru Liu]
+  year: 2020
+  venue: International Journal of Distributed Sensor Networks
+  links:
+    paper: "https://doi.org/10.1177/1550147720914257"
+  categories: [generative/security/modeling]
+  targets: [security]
+  scenario: General
+  backbone: Markov
+  features: {llm_adaptable: false, training_free: false, asymmetric: false, black_box: false}
+  evaluation:
+    metrics: [ppl, embedding_rate, speed]
+    steganalysis: [other]
+  survey_key: "doi:10.1177/1550147720914257"
+
+- id: yang2019linguistic
+  title: Linguistic Steganography by Sampling-based Language Generation
+  authors: [Rui Yang, Zhen-Hua Ling]
+  year: 2019
+  venue: APSIPA ASC
+  links:
+    paper: "https://doi.org/10.1109/APSIPAASC47483.2019.9023313"
+  categories: [generative/security/provable]
+  targets: [security]
+  scenario: General
+  backbone: Model-agnostic
+  features: {llm_adaptable: true, training_free: true, asymmetric: false, black_box: false}
+  evaluation:
+    metrics: [ppl, step_kld, human_eval, bpt]
+    steganalysis: [other]
+  survey_key: '9023313'
+
+- id: ziegler2019neural
+  name: AC
+  title: Neural Linguistic Steganography
+  authors: [Zachary Ziegler, Yuntian Deng, Alexander Rush]
+  year: 2019
+  venue: EMNLP
+  links:
+    paper: "https://aclanthology.org/D19-1115"
+  categories: [generative/security/provable]
+  targets: [security]
+  scenario: General
+  backbone: Model-agnostic
+  features: {llm_adaptable: true, training_free: true, asymmetric: false, black_box: false}
+  evaluation:
+    metrics: [step_kld, human_eval, bpt]
+    steganalysis: []
+  survey_key: ziegler-etal-2019-neural
+
+- id: yang2019rnn
+  name: RNN-Stega
+  title: "RNN-Stega: Linguistic Steganography Based on Recurrent Neural Networks"
+  authors: [Zhong-Liang Yang, Xiao-Qing Guo, Zi-Ming Chen, Yong-Feng Huang, Yu-Jin Zhang]
+  year: 2019
+  venue: IEEE TIFS
+  links:
+    paper: "https://doi.org/10.1109/TIFS.2018.2871746"
+  categories: [generative/security/modeling]
+  targets: [security]
+  scenario: General
+  backbone: LSTM
+  features: {llm_adaptable: false, training_free: false, asymmetric: false, black_box: false}
+  evaluation:
+    metrics: [ppl, bpt, embedding_rate, speed]
+    steganalysis: [other]
+  survey_key: '8470163'
+
+- id: tong2019text
+  title: Text steganography on RNN-Generated lyrics
+  authors: [Yongju Tong, YuLing Liu, Jie Wang, Guojiang Xin]
+  year: 2019
+  venue: Mathematical Biosciences and Engineering
+  links:
+    paper: "https://doi.org/10.3934/mbe.2019271"
+  categories: [generative/efficiency/other]
+  targets: [efficiency]
+  scenario: Lyric
+  backbone: LSTM
+  features: {llm_adaptable: false, training_free: false, asymmetric: false, black_box: false}
+  evaluation:
+    metrics: [bpt]
+    steganalysis: []
+  survey_key: Text_steganography_on_RNN-Generated-lyrics
+
+- id: dai2019near
+  title: Towards Near-imperceptible Steganographic Text
+  authors: [Falcon Dai, Zheng Cai]
+  year: 2019
+  venue: ACL
+  links:
+    paper: "https://aclanthology.org/P19-1422"
+  categories: [generative/security/provable]
+  targets: [security]
+  scenario: General
+  backbone: Model-agnostic
+  features: {llm_adaptable: true, training_free: true, asymmetric: false, black_box: false}
+  evaluation:
+    metrics: [step_kld]
+    steganalysis: []
+  survey_key: dai-cai-2019-towards
+
+- id: yang2018automatically
+  title: Automatically Generate Steganographic Text Based on Markov Model and Huffman Coding
+  authors: [Zhongliang Yang, Shuyu Jin, Yongfeng Huang, Yujin Zhang, Hui Li]
+  year: 2018
+  venue: arXiv
+  links:
+    arxiv: "https://arxiv.org/abs/1811.04720"
+  categories: [generative/security/modeling]
+  targets: [security]
+  scenario: General
+  backbone: Markov
+  features: {llm_adaptable: false, training_free: false, asymmetric: false, black_box: false}
+  evaluation:
+    metrics: [ppl, bpt, embedding_rate]
+    steganalysis: [other]
+  survey_key: yang2018automaticallygeneratesteganographictext
+
+- id: fang2017generating
+  title: Generating Steganographic Text with LSTMs
+  authors: [Tina Fang, Martin Jaggi, Katerina Argyraki]
+  year: 2017
+  venue: ACL 2017, Student Research Workshop
+  links:
+    paper: "https://aclanthology.org/P17-3017/"
+  categories: [generative/security/modeling]
+  targets: [security]
+  scenario: General
+  backbone: LSTM
+  features: {llm_adaptable: false, training_free: false, asymmetric: true, black_box: false}
+  evaluation:
+    metrics: [ppl, bpt]
+    steganalysis: []
+  survey_key: fang-etal-2017-generating
+
+- id: luo2017text
+  title: "Text Steganography with High Embedding Rate: Using Recurrent Neural Networks to Generate Chinese Classic Poetry"
+  authors: [Yubo Luo, Yongfeng Huang]
+  year: 2017
+  venue: ACM IH&MMSec
+  links:
+    paper: "https://doi.org/10.1145/3082031.3083240"
+  categories: [generative/efficiency/other]
+  targets: [efficiency]
+  scenario: Lyric
+  backbone: LSTM
+  features: {llm_adaptable: false, training_free: false, asymmetric: false, black_box: false}
+  evaluation:
+    metrics: [human_eval, embedding_rate]
+    steganalysis: []
+  survey_key: 10.1145/3082031.3083240

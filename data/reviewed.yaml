@@ -1,0 +1,210 @@
+# Candidates from scripts/find_new_papers.py that were reviewed and judged out of scope
+# (image/audio/video steganography, watermarking, AI-safety evaluations of encoded reasoning, jailbreaks,
+# model-weight steganography, artifacts, duplicates).  The finder skips these titles.
+# Reviewed on 2026-10-03.  Remove a title to have it proposed again.
+
+excluded:
+- '$\mathbf{S^2LM}$: Towards Semantic Steganography via Large Language Models'
+- A character-mapping technique based on letter frequency for enhancing feature-based text steganography
+- A Color Image and Text Steganography Based on Multi-Wavelet Transform
+- A Combination of Steganography Methods to Increase the Degree of Information Concealment
+- A Comprehensive Review of Multimedia Steganalysis Using Hybrid CNN–Transformer Deep Learning Models
+- A Comprehensive Review of Steganography Based Data Security System
+- A comprehensive review on quantum steganography techniques for data hiding
+- A comprehensive survey on stegomalware detection in digital media, research challenges and future directions
+- A Concrete Roadmap towards Safety Cases based on Chain-of-Thought Monitoring
+- A Decision-Theoretic Formalisation of Steganography With Applications to LLM Monitoring
+- A Dual-Layer Image–Text Steganography Method Integrating Composable Diffusion and LSB Embedding
+- A Fine-Grained Semantic Steganography Framework with Cross-Modal Drift Regularization
+- A Forensic-Aware Steganography Framework for Secure Semantic Metadata Embedding in Images
+- A Generic Taxonomy for Steganography Methods
+- A Hybrid Approach Using Cryptography and K-Least Significant Bit Steganography Algorithm in Cloud Computing
+- A Hybrid Security System for Text Encryption and Steganography in Video Using Multi-Level Chaotic Maps
+- A multi-image codebook approach for secure text transmission
+- A Multi-Layer Steganographic Technique Integrating Arabic Text with LLMs and Image-Based Embedding
+- 'A NEW APPROACH TO TEXT -STEGANOGRAPHY: LETTER-BY- LETTER SUBSTITUTION METHOD'
+- 'A Novel Approach to Steganography Security: Embedding Encrypted Text in Color Images Using Langton’s Ant Cellular Automaton and Hybrid Chaotic Map'
+- A Novel Method for Information Hiding in Images
+- A robust generative coverless co-steganography method of text and image
+- A Safe and Imperceptible Approach for hiding Encrypted Text in Color Images Using LSB Steganography
+- A Steganographic Approach to textual information hiding using NLP Models
+- A Survey on Steganography and Image Encryption Techniques
+- 'Adaptive Fuzzy Logic-Based Steganographic Encryption Framework: A Comprehensive Experimental Evaluation'
+- 'AI as a Modern Tower of Babel: Babylonian Mathematical Architecture, Willow-Era Quantum Claims, Celestial Steganography, and the Governance of Shared Meaning'
+- AI-Driven Cryptographic and Steganographic Integration for Enhanced Text Security Using OpenAI API
+- An Explainable Memory Forensics Approach for Malware Analysis
+- An Extended AES Scheme for Increasing Randomness in Ciphertext
+- An innovative method using artificial neural networks to evaluate linguistic steganography
+- Analysis of Data Security Resilience in Text Steganography on Indonesian Language Structure
+- Application of LSB Steganography for Encrypted Data Using Triple Transposition Vigenere on Digital Images
+- ARTIFICIAL INTELLIGENCE FROM A TECHNICAL PERSPECTIVE
+- 'Bad Padding: A Highly Stealthy Backdoor Attack Using Steganography at the Padding Stage'
+- 'Bayyinah: Detecting Concealed Adversarial Content in Digital Documents — A White Paper Applying the Munafiq Protocol to the Input Layer'
+- 'BCL-Aegis: A Multi-Layer Symbolic-Steganographic Cipher Language for Daily, Algorithmic, and Agent-Oriented Secure Text Encoding'
+- Bit-Exact AI Inference Verification Without Performance Tradeoffs
+- 'Bounding Subliminal Preference Transfer: An Information-Theoretic Rate-Distortion Analysis of Steganographic Capacity in Synthetic Training Data'
+- Closed-Loop Architecture for Ethical AI Training via Pre-Filtered Conversations, Active Memory, and Proprietary Alignment Extraction
+- Comparative Analysis of Steganographic Methods for Covert Embedding Information into Speech Signals
+- Comprehensive Countermeasures Against Subliminal Learning and Advanced Model Subversion (Volume II)
+- Comprehensive Dataset for Analyzing Detectability in LSB Steganography
+- Confirmation of authority on source program codes using text steganography in Javascript
+- 'Coverless Information Hiding: A Web Text-Based Covert Communication System with Multi-Feature Encoding and Layered Security'
+- 'CRSA-1: Compositional Runtime Safety Attestation Protocol for Multi-Principal AI Systems'
+- Cryptography and Steganography Fusion for Robust Cloud File Protection
+- Cyber-Physical Steganography in Robotic Motion Control
+- 'Deceptive Automated Interpretability: Language Models Coordinating to Fool Oversight Systems'
+- Decode Me -&amp;nbsp;An Image Analysis and Steganalysis Inspired App
+- 'Deep Generative Steganography for Multimodal Data: Integrating NLP and GANs for Secure Image-based Communication'
+- Deep steganographic approach for reliable data hiding using convolutional neural networks and adaptive loss optimization
+- 'Deep Steganography with U-Net: Hiding and Revealing Text in Video'
+- Defining Cost Function of Steganography with Large Language Models
+- Development of Two-Stage Steganography Method
+- Diffusion-Based Generative Coverless Steganography for Robust Face Recognition
+- Digital Image Security using Hybrid Model of Steganography and Cryptography
+- Dual-Stage Bifurcation With Genetic Algorithm Extraction for Robust Anti-Antiforensic Steganalysis in Grayscale Images
+- 'Dynamic Semantic-Constrained Adversarial Training and Defensing: A Reinforcement Learning Framework for LLM-Generated Fake Information Detection'
+- Early Signs of Steganographic Capabilities in Frontier LLMs
+- Efficient Text Data Hiding Technique Using Cryptography and Steganography
+- 'Emergent Covert Signaling in Multi-Agent LLM Negotiation: A Conceptual Framework and Experimental Protocol'
+- 'Emergent Languages in Populations of Language Model Agents: From Token Efficiency to Oversight Evasion'
+- Encrypted Text Steganography in Audio Files Using ECC, LSB and Chaotic Maps
+- End‐to‐end audio steganalysis and payload classification using SSAM and statistical feature fusion
+- Enhancing CyberSecurity Through Coverless Steganography with Diffusion Based Image Synthesis
+- Enhancing Embedding Capacity in HTML Steganography while Preserving Imperceptibility and Robustness
+- Enhancing the Arb-Syllable technique through mapping mechanism in text-based steganography
+- 'Ep. 141: Hidden in Plain Sight: The Secrets of Steganography'
+- 'Exploring AI in Steganography and Steganalysis: Trends, Clusters, and Sustainable Development Potential'
+- 'Exploring Linguistic Symmetry: Calculating Point Groups for Words and Texts'
+- Exploring Steganography Tools for Embedding Secret Multimedia Files
+- 'Extra Enhanced LSB-based Steganography: A Framework for Efficient Information Concealment'
+- Fast and Lightweight Hybrid Image Encryption and Steganography Leveraging an SPN, Chaotic Maps, and LSB Substitution
+- 'Fractal Rendition: Self-Similar Countermeasures Against Subliminal Learning and Advanced Model Subversion (Volume III)'
+- Frequency-Domain Steganography with Hexagonal Tessellation for Vision–Linguistic Knowledge Encapsulation
+- 'Gamifying cybersecurity: A narrative-driven approach to teaching steganography'
+- Gamma Statistic Kakutani Fixed Point and Equilibrium Generative Adversarial Network Based Secure Steganography
+- 'GIANT: Generated Image Adversarial Steganography Based on Narrowed Targeting'
+- 'Haiku Anagram Generation Using AI: Synthesising Poetic Isomers Through Metaphor-Driven Prompt Engineering (Educational Transformation 002)'
+- 'HCCS Encoding Method: Enhancing Text Protection in Images Using Hybrid Cryptography and Steganography Techniques'
+- 'HGAN-U-Net: Hybrid Generative Adversarial Network-U-Net Approach for Multi-Domain Text Steganography'
+- 'Hidden in Plain Sight: The Science of Steganography'
+- 'Hidden in Plain Text: Emergence & Mitigation of Steganographic Collusion in LLMs'
+- HIDE AMHARIC TEXT IN IMAGES USING CRYPTOGRAPHY AND ADAPTIVE STEGANOGRAPHY
+- 'Hide and Seek in Embedding Space: Geometry-based Steganography and Detection in Large Language Models'
+- 'Hiding in Plain Sight: A Steganographic Approach to Stealthy LLM Jailbreaks'
+- 'Humans as infrastructure: is AI-initiated steganography in social media possible?'
+- Hybrid CNN-NLP Model for Detecting LSB Steganography in Digital Images
+- Hybrid Steganalysis Using Transformer-Based Adversarial Networks and Diffusion Priors
+- Hybrid Steganography for Enhanced Information Security
+- 'IAAE-Stega: Generic Blockchain-Based Steganography Framework via Invertible Adversarial Autoencoder'
+- Image security system using hybrid cryptosystem
+- Image steganalysis based on CNN-Transformer
+- Image-Based Steganography for Hidden Text Application using the LSB Approach
+- 'ImF: Embedding an Implicit Fingerprint in Your Large Language Models'
+- 'ImF: Implicit Fingerprint for Large Language Models'
+- Implementasi Metode Steganografi Least Significant Bit (LSB) dalam Menyembunyikan Pesan Teks pada Citra Digital
+- Implementasi Teknik Hibrida Enkripsi Aes Dan Steganografi Multi-Platform Pada Aplikasi Berbasis Web 'Steganoid'
+- Implementation and comparative analysis of text steganography methods
+- Implementation and Performance Analysis of PVD Method in Concealing Encrypted Data on Images
+- Implementation of Securing Text Data Using Steganography and Cryptographic Techniques
+- Implementation of the Advanced Encryption Standard (AES) Algorithm and Bit Plane Complexity Segmentation (BPCS) Steganography Technique for Enhancing Text File Security
+- Implicit Jailbreak Attacks via Cross-Modal Information Concealment on Vision-Language Models
+- Improved Capacity and Security in Text Steganography Using the Double Secure Algorithm (DSTS)
+- Injeção Indireta de Prompt no Gemini
+- 'Intelligent Carrier Allocation: A Cross-Modal Reasoning Framework for Adaptive Multimodal Steganography'
+- Introduction to Ancient Roots of Steganography
+- 'Invisible Injections: Exploiting Vision-Language Models Through Steganographic Prompt Embedding'
+- 'Invisible Safety Threat: Malicious Finetuning for LLM via Steganography'
+- Joint Lossless Compression and Steganography for Medical Images via Large Language Models
+- 'KAN-Steganalysis: A Kolmogorov–Arnold Network Framework for Interpretable and Efficient Image Steganalysis'
+- KEAMANAN DOKUMEN MULTI-LAYER MENGGUNAKAN STEGANOGRAFI DAN HONEY ENCRYPTION
+- Large Language Models as Carriers of Hidden Messages
+- Large language models can learn and generalize steganographic chain-of-thought under process supervision
+- Learning Steganography Is Easy, Learning Steganographic Reasoning Is Hard
+- Learning, Planning, and Communicating Under Information Constraints
+- Least Significant Bit Steganography Detection and Analysis Using Large Language Models for Digital Forensics
+- 'LIARS: Low-Information Area Recognition for Steganography'
+- Lightweight DWT Steganography With ECC-ChaCha20 for Secure Medical IoT Systems
+- LSB and MSB Steganography Detecting Messenger for PNG, WAV and MP4 File Formats
+- 'LSB Steganography: A Key to Effectual Encryption and Decryption'
+- 'Mask-enhanced steganography for digital seals: a robust and imperceptible approach to copyright protection'
+- Measuring Fidelity of Steganography Approach in Securing Clinical Data Sharing Platform using Peak Signal to Noise Ratio (PSNR) and Structural Similarity Index Measure (SSIM)
+- METHOD OF HIDING INFORMATION USING THE AES ENCRYPTION ALGORITHM AND THE LSB STEGANOGRAPHIC METHOD WITH PROTECTION AGAINST CROPPING AND STEGANALYSIS
+- 'METS: Metadata-Embedded Steganography for Digital Rights Tracking in LLM-Generated Text'
+- 'Mikeup91/LLM_Cipher_Vulnerability: From Poetic Cipher to Systemic Vulnerability: An Investigation into LLM Adversarial Triggering, Cross-Platform State Persistence, and Symbolic Evasion'
+- Modeling e-script steganography for higher performance fog computing
+- 'MS-CCS: A Customizable Covert Communication System Based on Multi-Modal Steganography'
+- Multi-Layered Secure Framework for Digital Data Protection using Steganography, Embedding, and Cryptographic Techniques
+- Multilevel hiding text security using hybrid technique steganography and cryptography
+- Multimodal LLMs-Assisted Context-Aware Framework for Cyber Forensics
+- 'NEST: Nascent Encoded Steganographic Thoughts'
+- 'No Prompt, No Leaks: A Robust Generative Steganography Framework via Prompt-Free Diffusion'
+- 'Now You (Still) See Me: Detecting Evasive Steganographic Payloads in LLMs'
+- 'nukIeer/AI-Prompt-Injection-Cheatsheet: New release'
+- 'Oculoplastics and Augmented Intelligence: A Literature Review'
+- 'OD-Stega: LLM-Based Relatively Secure Steganography via Optimized Distributions'
+- 'Odysseus: Jailbreaking Commercial Multimodal LLM-integrated Systems via Dual Steganography'
+- On improving steganalysis against cover selection steganography
+- 'Once Poisoned, Arbitrarily Controlled: A Programmable Backdoor in VLMs'
+- Optical cryptosystem for reversible text-in-image hiding using weighted fractional Fourier transform, 4D Chen hyperchaos and DWT-SVD steganography
+- Optimization-driven steganographic system based on fused maps and blowfish encryption
+- 'Parasite: A Steganography-based Backdoor Attack Framework for Diffusion Models'
+- Penerapan Steganografi LSB dan Enkripsi AES untuk Keamanan Data Rahasia pada Gambar Digital
+- 'PENet+: A Lightweight Residual Transformer Framework for Efficient Image Steganalysis'
+- Possibilities of realizing a quantum steganography communication
+- PREREQUISITES FOR THE ESTABLISHMENT OF A QUANTUM STEGANOGRAPHY COMMUNICATION
+- Provably Secure Image Robust Steganography via Cross-modal Error Correction
+- Python-Based GUI for Secure Text Embedding in Images Using LSB Steganography
+- Quantum Steganography Using BB84 Protocol for Secure Data Hiding in Cover Text
+- Quantum Steganography with QKD for Secure Communication
+- 'RankCloak: Code and data for rank transcoding of cryptographic artifacts in language-model cover text'
+- Reasoning Models Sometimes Output Illegible Chains of Thought
+- Robust Generative Steganography for Image Hiding Using Concatenated Mappings
+- Robust Multimodal Steganography Framework for Secure Transmission of Text, Image, and Audio Data
+- Safeguarding LLMs Against Misuse and AI-Driven Malware Using Steganographic Canaries
+- 'SDS-TG: Secure Diffusion Steganography in Text-Guided Generative Images'
+- Secret communication using steganography and cryptography
+- 'Secrets in the Synapses: When Steganography Meets Large Language Models'
+- Secure Data Communication Using Steganography
+- SECURE DATA TRANSMISSION THROUGH HYBRID CRYPTOGRAPHY AND STEGANOGRAPHIC TECHNIQUES
+- Secure Message Embedding With AES-GCM, LSB Steganography, and Quantum Key Distribution
+- Secure Multi-Media Steganography with AES Encryption
+- 'Secure Share: A Web-Based Steganography Platform for Secure Communication'
+- 'SecureLayer: A Multi-Layered Architecture for Tamper-Proof File Sharing via Blockchain-Anchored Steganography and Visual Cryptography'
+- Securing and Hiding Text Data Through Multimedia Steganography Using LSB and 3-Tier DWT with AES-256 Encryption
+- Securing Data with Steganography Techniques
+- Security Challenges and Attack Vectors in Modern Steganography
+- 'SemCrys-Secure: Toward Governed Semantic Transport and Authorization-Scoped Semantic Interpretability for Machine Cognition'
+- Sentinelle Active - Semantic Composite Score System for LLM Input Protection (PATCH 35.0)
+- Speeding Up and Lowering Memory Footprint of Neural Networks by Decision Rules Extraction for LSB Steganalysis
+- 'Stealthier Backdoor Attacks for Multimodal Models: Bidirectional Triggers via Coverless Steganography and Semantic Preservation'
+- Steganographic embedding model in files with hierarchical structure
+- Steganography beyond space-time with chain of multimodal AI
+- 'Steganography in IoT: A Comprehensive Survey on Approaches, Challenges, and Future Directions'
+- Steganography in Large Language Models
+- Steganography in Text by Using MS Word Symbols
+- Steganography in text generated by autoregressive models
+- 'Steganography: Hiding Information in Plain Sight'
+- 'StegoGuard reproducibility artifact: reported tables and independent-captioner evaluation code'
+- 'StegPDF-21: A Feature-Engineered Dataset for PDF Steganography Detection'
+- StegPDF-21:A systematic methodology for constructing a multi-technique PDF steganalysis benchmark dataset
+- 'TASDF-Stega: High Capacity Secure Text-Audio Joint Steganography Using Diffusion Latent Space'
+- 'Text -Steganography: Review Study & Comparative Analysis'
+- Text cryptography and steganography based on RNA sequences generation, true random number generators, and codebook method
+- 'The Alignment Tax: Is AI Safety Making Models Dumber?'
+- 'The Analog Hole: Why Your Screen is a Security Leak'
+- 'The Duodecimal Scriptorium Engine: A Mechanical and Palaeographical Framework for Shifting Spatial Coordinates and Dual-Shorthand Mechanics in the Voynich Manuscript'
+- 'The Equation Reduction Model (ERM): A Universal Framework for Mathematical Stability and Invariant Discovery'
+- The Ghost's Scripture
+- The Steganographic Potentials of Language Models
+- 'The Voynich Manuscript : A Multi-layered Visual and Linguistic Encoding System'
+- 'Toward Accountable AI-Generated Content on Social Platforms: Steganographic Attribution and Multimodal Harm Detection'
+- Transformers for Pooled Steganalysis
+- Unveiling the Art of Steganography
+- 'VectorSmuggle: Steganographic Exfiltration in Embedding Stores and a Cryptographic Provenance Defense'
+- Verifying LLM Inference to Detect Model Weight Exfiltration
+- Vision-conditioned diffusion steganography with enhanced controllability and robustness
+- 'Visual Steganography and Algorithmic Transposition: A Deterministic Solution to the Voynich Manuscript (MS 408)'
+- 'WITHDRAWN: Digital image steganalysis based on spatial rich model features and dimensionality reduction'
+- 'WSMS: weakly supervised multi-feature steganalysis with EVT calibration for cloud-edge collaborative intelligence'
+- 'You Can''t Escape Your Own Activations : Evaluation Awareness and Multi-Agent Monitoring'
+- 証明可能ステガノグラフィを用いた チャットへの情報埋め込み実験 An Experiment on Embedding Information into Chat Messages Using Provably Secure Steganography
