@@ -27,7 +27,9 @@ The collection was seeded from our survey *[A Comprehensive Survey on Linguistic
 
 ## Dashboard
 
-**283** entries, including **198** steganographic methods. Filter, sort and search all of them on the **[interactive dashboard](https://ryehr.github.io/awesome-linguistic-steganography/)**.
+> **[Open the interactive dashboard →](https://ryehr.github.io/awesome-linguistic-steganography/)** to search, filter (area, category, year, LLM-era features, code availability, papers beyond the survey) and sort all entries. The charts below are static snapshots regenerated on every update.
+
+**283** entries, including **198** steganographic methods.
 
 | | Entries | With code |
 |---|:-:|:-:|

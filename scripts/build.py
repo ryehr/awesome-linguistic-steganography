@@ -618,7 +618,8 @@ def write_pages_data(papers, taxonomy, metrics, datasets, S, charts):
         "taxonomy": taxonomy, "category_names": names, "entries": entries, "metrics": metrics,
         "datasets": datasets, "charts": ["assets/taxonomy.svg"] + [f"assets/{name}" for name, _ in charts],
     }
-    (DOCS / "data.json").write_text(json.dumps(data, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
+    (DOCS / "data.json").write_text(json.dumps(data, ensure_ascii=False, separators=(",", ":")) + "\n",
+                                    encoding="utf-8")
 
 
 def main():
